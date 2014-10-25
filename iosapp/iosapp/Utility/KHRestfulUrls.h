@@ -1,5 +1,5 @@
 //
-//  RestfulUrls.h
+//  KHRestfulUrls.h
 //  iosapp
 //
 //  Created by Mac on 10/11/14.
@@ -8,7 +8,7 @@
 
 #include <Foundation/Foundation.h>
 
-@interface RestfulUrls : NSObject
+@interface KHRestfulUrls : NSObject
 
 - (NSString*) getUserById:(NSString*)userId;
 

@@ -1,27 +1,38 @@
 //
-//  AppDelegate.m
+//  KHAppDelegate.m
 //  iosapp
 //
 //  Created by Mac on 10/7/14.
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "KHAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "Controllers/KHLoginUIViewController.h"
 
-@interface AppDelegate ()
+@interface KHAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation KHAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //to limit screen flicker, if the user is logged in we want to
+    //immediately move to the tabbed ui control
     
-    // Load the FBProfilePictureView
-    // You can find more information about why you need to add this line of code in our troubleshooting guide
-    // https://developers.facebook.com/docs/ios/troubleshooting#objc
-    [FBProfilePictureView class];
+    //This line allows the session to be activated without transitioning
+    //the user to the facebook login screen if there is a token cached.
+    //Not entirely sure what would happen if this was set to yes and
+    //there was a token cached. Would it still go to the login screen?
+    //Mostly curious about this because there would be no reason to go to the login screen.
+    [FBSession openActiveSessionWithAllowLoginUI:NO]; //this allows the app to login without
+    
+    //Get a Facebook login session
+    FBSession *session = [FBSession activeSession];
+    if (session.isOpen) {
+        [self showLoginScreen:NO];
+    }
     
     return YES;
 }
@@ -63,4 +74,27 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void) showLoginScreen:(BOOL)animated {
+    // Get login screen from storyboard and present it
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    KHLoginUIViewController *loginUIViewController = (KHLoginUIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"loginUIViewController"];
+    [self.window makeKeyAndVisible];
+    [self.window.rootViewController presentViewController:loginUIViewController
+                                                 animated:animated
+                                               completion:nil];
+}
+    
+- (void) logout {
+    // Remove data from singleton (where all my app data is stored)
+    //[AppData clearData];
+        
+    // Reset view controller (this will quickly clear all the views)
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *mainUITabBarController = (UITabBarController *)[storyboard instantiateViewControllerWithIdentifier:@"mainUITabBarController"];
+    [self.window setRootViewController:mainUITabBarController];
+        
+    // Show login screen
+    [self showLoginScreen:NO];
+}
+    
 @end

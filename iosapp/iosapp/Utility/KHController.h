@@ -8,7 +8,7 @@
 
 #include <Foundation/Foundation.h>
 
-@interface Controller : NSObject
+@interface KHController : NSObject
 
 @property NSString *const contenTypeHeaderName;
 @property NSString *const contenTypeHeaderValue;

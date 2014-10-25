@@ -1,5 +1,5 @@
 //
-//  LoginController.m
+//  KHLoginController.m
 //  iosapp
 //
 //  Created by Mac on 10/9/14.
@@ -16,13 +16,9 @@
  https://developers.facebook.com/docs/ios/errors
  */
 
-#import "LoginUIViewController.h"
-#import "RestfulUrls.h"
-#import "Controller.h"
-#import "User.h"
-@import Foundation;
+#import "KHLoginUIViewController.h"
 
-@implementation LoginUIViewController
+@implementation KHLoginUIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,39 +51,12 @@
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
     
-    //need to call kindhat services to see if user has registered before
-    RestfulUrls *restfulUrls = [[RestfulUrls alloc]init];
-    Controller *controller = [[Controller alloc]init];
-    
-    [controller
-     callApi:[restfulUrls getUserById:[user objectID]]
-     withMethod:@"GET"
-     callHandler:^(
-       NSURLResponse *response,
-       NSData *data,
-       NSError *error){
-        
-        if (data.length > 0 && error == nil)
-        {
-            User *kindHatUser = [[User alloc]init];
-            NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
-                                      options:0
-                                      error:NULL];
-            [kindHatUser map: jsonData];
-            if([kindHatUser requiredFieldsMet])
-            {
-                //route to dashboard
-            }
-            else
-            {
-                //route to additional account setup screen
-            }
-        }
-    }];
-    
-    //in addition, if there is any required data missing we'll need to
-    //forcibly route them to additional account setup screen
-    //otherwise show their dashboard
+     //Send notification that the login was successful
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSuccessful" object:self];
+
+    //because ui main is ui tab bar controller we want to
+    //simply remove this view as the login was succesful
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // Implement the loginViewShowingLoggedInUser: delegate method to modify your app's UI for a logged-in user experience

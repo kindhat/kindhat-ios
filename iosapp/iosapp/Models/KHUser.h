@@ -1,5 +1,5 @@
 //
-//  User.h
+//  KHUser.h
 //  iosapp
 //
 //  Created by Mac on 10/20/14.
@@ -8,7 +8,7 @@
 
 #include <Foundation/Foundation.h>
 
-@interface User : NSObject
+@interface KHUser : NSObject
 
 @property NSString * userId;
 @property NSString * name;

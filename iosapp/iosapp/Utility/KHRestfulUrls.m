@@ -1,14 +1,14 @@
 //
-//  RestfulUrls.m
+//  KHRestfulUrls.m
 //  iosapp
 //
 //  Created by Mac on 10/11/14.
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "RestfulUrls.h"
+#import "KHRestfulUrls.h"
 
-@implementation RestfulUrls
+@implementation KHRestfulUrls
 
 - (NSString*) getUserById:(NSString*)userId {
     

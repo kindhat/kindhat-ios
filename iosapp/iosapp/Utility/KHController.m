@@ -1,14 +1,14 @@
 //
-//  Controller.m
+//  KHController.m
 //  iosapp
 //
 //  Created by Mac on 10/11/14.
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "Controller.h"
+#import "KHController.h"
 
-@implementation Controller
+@implementation KHController
 
 NSString *const contenTypeHeaderName = @"content-type";
 NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";

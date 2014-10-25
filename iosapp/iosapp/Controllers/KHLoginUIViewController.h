@@ -1,5 +1,5 @@
 //
-//  LoginController.h
+//  KHLoginController.h
 //  iosapp
 //
 //  Created by Mac on 10/9/14.
@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface LoginUIViewController : UIViewController <FBLoginViewDelegate>
+@interface KHLoginUIViewController : UIViewController <FBLoginViewDelegate>
 @end

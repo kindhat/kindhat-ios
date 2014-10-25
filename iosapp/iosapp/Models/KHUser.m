@@ -1,14 +1,14 @@
 //
-//  User.m
+//  KHUser.m
 //  iosapp
 //
 //  Created by Mac on 10/20/14.
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "User.h"
+#import "KHUser.h"
 
-@implementation User
+@implementation KHUser
 
 @synthesize userId;
 @synthesize name;
