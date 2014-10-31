@@ -17,6 +17,8 @@
  */
 
 #import "KHLoginUIViewController.h"
+#import "KHMainUITabBarController.h"
+#import "../Utility/KHExternalIdType.h"
 
 @implementation KHLoginUIViewController
 
@@ -26,45 +28,39 @@
         
         // Create a FBLoginView to log the user in with basic, email and friend list permissions
         // You should ALWAYS ask for basic permissions (public_profile) when logging the user in
-        FBLoginView *loginView = [[FBLoginView alloc] initWithReadPermissions:@[
-           @"public_profile",
-           @"email",
-           @"user_friends"]];
-        
-        // Set this loginUIViewController to be the loginView button's delegate
-        loginView.delegate = self;
-        
-        // Align the button in the center horizontally
-        loginView.frame = CGRectOffset(loginView.frame,
-                                       (self.view.center.x - (loginView.frame.size.width / 2)),
-                                       5);
-        
-        // Align the button in the center vertically
-        loginView.center = self.view.center;
-        
-        // Add the button to the view
-        [self.view addSubview:loginView];
-        
-}
-
-// This method will be called when the user information has been fetched
-- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
-                            user:(id<FBGraphUser>)user {
+        [[self loginView] setReadPermissions:@[@"public_profile",
+                                                  @"email",
+                                                  @"user_friends"]];
     
-     //Send notification that the login was successful
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSuccessful" object:self];
-
-    //because ui main is ui tab bar controller we want to
-    //simply remove this view as the login was succesful
-    [self dismissViewControllerAnimated:YES completion:nil];
+        // Set this loginUIViewController to be the loginView button's delegate
+        [[self loginView] setDelegate:self];
+        
 }
 
-// Implement the loginViewShowingLoggedInUser: delegate method to modify your app's UI for a logged-in user experience
-- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showMainUITabBarController"]) {
+        KHMainUITabBarController *khMainUITabBarController = segue.destinationViewController;
+        [khMainUITabBarController setExternalId: [self externalId]];
+        [khMainUITabBarController setExternalIdType: [self externalIdType]];
+        [khMainUITabBarController setDelegate: khMainUITabBarController];
+    }
 }
 
-// Implement the loginViewShowingLoggedOutUser: delegate method to modify your app's UI for a logged-out user experience
-- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
+#pragma mark - FBLoginViewDelegate
+
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
+{
+    [self setExternalId: [user objectID]];
+    [self setExternalIdType: Facebook];
+    [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
+}
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
+{
+}
+
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
+{
 }
 
 // You need to override loginView:handleError in order to handle possible errors that can occur during login

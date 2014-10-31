@@ -29,7 +29,7 @@
     aboutMe = [[jsonData objectForKey:@"_aboutMe"] stringValue];
     image = [[jsonData objectForKey:@"_image"] stringValue];
     email = [[jsonData objectForKey:@"_email"] stringValue];
-    termsAndConditions = [[jsonData objectForKey:@"_termsAndConditions"] stringValue];
+    termsAndConditions = [[jsonData objectForKey:@"_termsAndConditions"] boolValue];
     externalIdType = [[jsonData objectForKey:@"_externalIdType"] stringValue];
     externalId = [[jsonData objectForKey:@"_externalId"] stringValue];
     requests = [[jsonData objectForKey:@"_requests"] stringValue];
@@ -37,7 +37,10 @@
 }
 
 - (BOOL) requiredFieldsMet {
-    return true;
+    return (([self name] != (id)[NSNull null] || [[self name] length] > 0 )
+            && ([self postalCode] != (id)[NSNull null] || [[self postalCode] length] > 0 )
+            && ([self email] != (id)[NSNull null] || [[self email] length] > 0 )
+            && [self termsAndConditions]);
 }
 
 @end

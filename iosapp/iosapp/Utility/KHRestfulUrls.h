@@ -7,9 +7,10 @@
 //
 
 #include <Foundation/Foundation.h>
+#include "KHExternalIdType.h"
 
 @interface KHRestfulUrls : NSObject
 
-- (NSString*) getUserById:(NSString*)userId;
+- (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType;
 
 @end

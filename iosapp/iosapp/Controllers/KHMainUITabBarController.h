@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Utility/KHExternalIdType.h"
+#import "../Models/KHUser.h"
 
-@interface KHMainUITabBarController : UITabBarController
+@interface KHMainUITabBarController : UITabBarController<UITabBarControllerDelegate>
 
-@property(nonatomic) NSString *externalId;
-@property(nonatomic) KHExternalIdType *externalIdType;
+@property(strong, nonatomic) NSString* externalId;
+@property(assign, nonatomic) KHExternalIdType externalIdType;
+@property(strong, nonatomic) KHUser* khUser;
 
 @end

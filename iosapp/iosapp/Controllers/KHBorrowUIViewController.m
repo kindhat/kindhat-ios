@@ -19,8 +19,6 @@
     KHExternalIdType *_externalIdType;
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,12 +29,14 @@
     KHRestfulUrls *restfulUrls = [[KHRestfulUrls alloc]init];
     KHController *controller = [[KHController alloc]init];
     [controller
-     callApi:[restfulUrls getUserById:[self externalId]]
+     callApi:[restfulUrls getUserByExternalId:[self externalId] withExternalIdType:[self externalIdType]]
      withMethod:@"GET"
      callHandler:^(
                    NSURLResponse *response,
                    NSData *data,
                    NSError *error){
+         
+         [[self activityIndicatorView] stopAnimating];
          
          if (data.length > 0 && error == nil)
          {
@@ -44,13 +44,17 @@
              NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
                                                                     options:0
                                                                     error:NULL];
-             
              [khUser map: jsonData];
-             if(![khUser requiredFieldsMet])
+             KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController *)[self parentViewController];
+             [khMainUITabBarController setKhUser: khUser];
+             if(![[khMainUITabBarController khUser] requiredFieldsMet])
              {
                  //we want to push the user to the account profile screen
                  //in addition we want to lock down all other tabs until they've
                  //completed all required fields
+
+                 [khMainUITabBarController setSelectedIndex:3];
+                 
              }
          }
      }];

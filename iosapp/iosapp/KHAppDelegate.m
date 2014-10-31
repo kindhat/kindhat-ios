@@ -16,6 +16,12 @@
 
 @implementation KHAppDelegate
 
++ (void)initialize
+{
+    // Nib files require the type to have been loaded before they can do the wireup successfully.
+    // http://stackoverflow.com/questions/1725881/unknown-class-myclass-in-interface-builder-file-error-at-runtime
+    [FBLoginView class];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //to limit screen flicker, if the user is logged in we want to
@@ -28,11 +34,11 @@
     //Mostly curious about this because there would be no reason to go to the login screen.
     [FBSession openActiveSessionWithAllowLoginUI:NO]; //this allows the app to login without
     
-    //Get a Facebook login session
-    FBSession *session = [FBSession activeSession];
-    if (session.isOpen) {
-        [self showLoginScreen:NO];
-    }
+    ////Get a Facebook login session
+    //FBSession *session = [FBSession activeSession];
+    //if (!session.isOpen) {
+    //    [self showLoginScreen:NO];
+    //}
     
     return YES;
 }
@@ -74,27 +80,27 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void) showLoginScreen:(BOOL)animated {
-    // Get login screen from storyboard and present it
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    KHLoginUIViewController *loginUIViewController = (KHLoginUIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"loginUIViewController"];
-    [self.window makeKeyAndVisible];
-    [self.window.rootViewController presentViewController:loginUIViewController
-                                                 animated:animated
-                                               completion:nil];
-}
+//- (void) showLoginScreen:(BOOL)animated {
+//    // Get login screen from storyboard and present it
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    KHLoginUIViewController *loginUIViewController = (KHLoginUIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"loginUIViewController"];
+//    [self.window makeKeyAndVisible];
+//    [self.window.rootViewController presentViewController:loginUIViewController
+//                                                 animated:animated
+//                                               completion:nil];
+//}
     
-- (void) logout {
-    // Remove data from singleton (where all my app data is stored)
-    //[AppData clearData];
+//- (void) logout {
+//    // Remove data from singleton (where all my app data is stored)
+//    //[AppData clearData];
         
-    // Reset view controller (this will quickly clear all the views)
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UITabBarController *mainUITabBarController = (UITabBarController *)[storyboard instantiateViewControllerWithIdentifier:@"mainUITabBarController"];
-    [self.window setRootViewController:mainUITabBarController];
+//    // Reset view controller (this will quickly clear all the views)
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UITabBarController *mainUITabBarController = (UITabBarController *)[storyboard instantiateViewControllerWithIdentifier:@"mainUITabBarController"];
+//    [self.window setRootViewController:mainUITabBarController];
         
     // Show login screen
-    [self showLoginScreen:NO];
-}
+//    [self showLoginScreen:NO];
+//}
     
 @end

@@ -16,7 +16,7 @@
 @property NSString * aboutMe;
 @property NSString * image;
 @property NSString * email;
-@property NSString * termsAndConditions;
+@property BOOL termsAndConditions;
 @property NSString * externalIdType;
 @property NSString * externalId;
 @property NSString * requests;

@@ -13,6 +13,15 @@
 NSString *const contenTypeHeaderName = @"content-type";
 NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";
 
+
+-(KHUser *) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType *)externalIdType {
+    [controller
+     callApi:[restfulUrls getUserByExternalId:[self externalId] withExternalIdType:[self externalIdType]]
+     withMethod:@"GET"
+     callHandler:
+}
+
+
 - (void) callApi:(NSString*)url withMethod:(NSString*)method callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:url]];

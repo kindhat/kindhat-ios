@@ -7,13 +7,11 @@
 //
 
 #include <Foundation/Foundation.h>
+#include "../Models/KHUser.h"
 
 @interface KHController : NSObject
 
-@property NSString *const contenTypeHeaderName;
-@property NSString *const contenTypeHeaderValue;
-
-- (void) callApi:(NSString*)url withMethod:(NSString*)method callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+-(KHUser *) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType *)externalIdType;
 
 @end
 

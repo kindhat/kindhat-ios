@@ -23,7 +23,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kindhat_logo_hat_orangefeather" translatesAutoresizingMaskIntoConstraints="NO" id="mYi-Hh-vlf">
-                    <rect key="frame" x="104" y="170" width="88" height="74"/>
+                    <rect key="frame" x="143" y="171" width="88" height="74"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="74" id="TOX-qG-1uF"/>
                         <constraint firstAttribute="width" constant="88" id="oKA-Uq-3bO"/>
@@ -37,10 +37,10 @@
                 <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="95" id="5Lh-E4-RvP"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="39" id="6dK-si-vTC"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="H28-Cl-tDw"/>
-                <constraint firstItem="mYi-Hh-vlf" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="32" id="JRN-uq-ZXg"/>
+                <constraint firstItem="mYi-Hh-vlf" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="33" id="JRN-uq-ZXg"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="kId-c2-rCX" secondAttribute="leading" id="T4D-AU-e5T"/>
-                <constraint firstItem="mYi-Hh-vlf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="104" id="Vpc-ht-UZZ"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="mYi-Hh-vlf" secondAttribute="bottom" constant="37" id="g9p-LN-Yfr"/>
+                <constraint firstItem="mYi-Hh-vlf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="143" id="Vpc-ht-UZZ"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="mYi-Hh-vlf" secondAttribute="bottom" constant="36" id="g9p-LN-Yfr"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
