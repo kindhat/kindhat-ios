@@ -12,8 +12,6 @@
 
 @interface KHMainUITabBarController : UITabBarController<UITabBarControllerDelegate>
 
-@property(strong, nonatomic) NSString* externalId;
-@property(assign, nonatomic) KHExternalIdType externalIdType;
 @property(strong, nonatomic) KHUser* khUser;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation KHUser
 
-@synthesize userId;
+@synthesize identifier;
 @synthesize name;
 @synthesize postalCode;
 @synthesize aboutMe;
@@ -22,25 +22,49 @@
 @synthesize requests;
 @synthesize responses;
 
-- (void) map: (NSDictionary*) jsonData{
-    userId = [[jsonData objectForKey:@"_id"] stringValue];
-    name = [[jsonData objectForKey:@"_name"] stringValue];
-    postalCode = [[jsonData objectForKey:@"_postalCode"] stringValue];
-    aboutMe = [[jsonData objectForKey:@"_aboutMe"] stringValue];
-    image = [[jsonData objectForKey:@"_image"] stringValue];
-    email = [[jsonData objectForKey:@"_email"] stringValue];
-    termsAndConditions = [[jsonData objectForKey:@"_termsAndConditions"] boolValue];
-    externalIdType = [[jsonData objectForKey:@"_externalIdType"] stringValue];
-    externalId = [[jsonData objectForKey:@"_externalId"] stringValue];
-    requests = [[jsonData objectForKey:@"_requests"] stringValue];
-    responses = [[jsonData objectForKey:@"_responses"] stringValue];
+- (void) deserialize:(NSDictionary *)jsonData{
+    KHApiKey *khApiKey = [[KHApiKey alloc]init];
+    [khApiKey deserialize:[jsonData objectForKey:@"id"]];
+    
+    [self setIdentifier: khApiKey];
+    [self setName: [jsonData objectForKey:@"name"]];
+    [self setPostalCode: [jsonData objectForKey:@"postalCode"]];
+    [self setAboutMe: [jsonData objectForKey:@"aboutMe"]];
+    [self setImage: [jsonData objectForKey:@"image"]];
+    [self setEmail: [jsonData objectForKey:@"email"]];
+    
+    NSNumber *nsNumberTermsAndConditions = [jsonData objectForKey:@"termsAndConditions"];
+    [self setTermsAndConditions: [nsNumberTermsAndConditions boolValue]];
+    
+    NSNumber *nsExternIdType = [jsonData objectForKey:@"externalIdType"];
+    [self setExternalIdType: [nsExternIdType intValue]];
+    
+    [self setExternalId: [jsonData objectForKey:@"externalId"]];
+    [self setRequests: [jsonData objectForKey:@"requests"]];
+    [self setResponses: [jsonData objectForKey:@"responses"]];
+}
+
+- (NSData*) serialize {
+    NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  [self.identifier serialize], @"key",
+                                  self.name, @"name",
+                                  self.postalCode, @"postalCode",
+                                  self.aboutMe, @"aboutMe",
+                                  self.image, @"image",
+                                  self.email, @"email",
+                                  [NSNumber numberWithBool: self.termsAndConditions], @"termsAndConditions",
+                                  [NSNumber numberWithInt: self.externalIdType], @"externalIdType",
+                                  self.externalId, @"externalId",
+                                  nil];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsDictionary options:NSJSONWritingPrettyPrinted error:nil];
+    return jsonData;
 }
 
 - (BOOL) requiredFieldsMet {
     return (([self name] != (id)[NSNull null] || [[self name] length] > 0 )
             && ([self postalCode] != (id)[NSNull null] || [[self postalCode] length] > 0 )
             && ([self email] != (id)[NSNull null] || [[self email] length] > 0 )
-            && [self termsAndConditions]);
+            && [self termsAndConditions] > 0);
 }
 
 @end

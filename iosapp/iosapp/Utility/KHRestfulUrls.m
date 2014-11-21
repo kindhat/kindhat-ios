@@ -10,13 +10,23 @@
 
 @implementation KHRestfulUrls
 
-- (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType{
+static NSString *const userUrl = @"http://localhost:8888/_ah/api/userendpoint/v1/user";
+
+- (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType {
     
-    NSString *url = @"http://localhost:8888/_ah/api/userendpoint/v1/user/%@/%@";
+    NSString *url = [userUrl stringByAppendingString: @"/%@/%@"];
     NSString *returnString = [NSString stringWithFormat: url,
                               externalId,
-                              KHExternalIdType_toString[(int)externalIdType]];
+                              KHExternalIdTypeToString[(int)externalIdType]];
     return returnString;
+}
+
+- (NSString*) postUser {
+    return userUrl;
+}
+
+- (NSString*) putUser {
+    return userUrl;
 }
 
 @end

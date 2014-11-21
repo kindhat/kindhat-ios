@@ -12,7 +12,7 @@
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController
 shouldSelectViewController:(UIViewController *)viewController{
-    return [self userRequiredFieldsMet];
+    return [[self khUser] requiredFieldsMet];
 }
 
 @end

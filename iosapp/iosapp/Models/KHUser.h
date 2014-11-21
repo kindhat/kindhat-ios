@@ -7,22 +7,26 @@
 //
 
 #include <Foundation/Foundation.h>
+#include "KHApiKey.h"
+#include "../Utility/KHExternalIdType.h"
 
 @interface KHUser : NSObject
 
-@property NSString * userId;
+@property KHApiKey * identifier;
 @property NSString * name;
 @property NSString * postalCode;
 @property NSString * aboutMe;
 @property NSString * image;
 @property NSString * email;
 @property BOOL termsAndConditions;
-@property NSString * externalIdType;
+@property KHExternalIdType externalIdType;
 @property NSString * externalId;
 @property NSString * requests;
 @property NSString * responses;
 
-- (void) map: (NSDictionary*) jsonData;
+- (void) deserialize: (NSDictionary*) jsonData;
+
+- (NSData*) serialize;
 
 - (BOOL) requiredFieldsMet;
 

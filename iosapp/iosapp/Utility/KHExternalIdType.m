@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "KHExternalIdType.h"
+#import <Foundation/Foundation.h>
 
-NSString * const KHExternalIdType_toString[] = {
+NSString * const KHExternalIdTypeToString[] = {
     [0] = @"Facebook",
     [1] = @"Twitter"
 };

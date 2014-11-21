@@ -21,6 +21,7 @@
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
 		04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */; };
 		04918A7719FADD5700136F9D /* KHBorrowUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A7619FADD5700136F9D /* KHBorrowUIViewController.m */; };
+		04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 04930B451A1EF59D000BD42C /* KHApiKey.m */; };
 		0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495CEDA19F59D4D0046FB4D /* KHUser.m */; };
 		0495CEDD19F5ABEF0046FB4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginUIViewController.m; sourceTree = "<group>"; };
 		04918A7519FADD5700136F9D /* KHBorrowUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowUIViewController.h; sourceTree = "<group>"; };
 		04918A7619FADD5700136F9D /* KHBorrowUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowUIViewController.m; sourceTree = "<group>"; };
+		04930B441A1EF39A000BD42C /* KHApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHApiKey.h; sourceTree = "<group>"; };
+		04930B451A1EF59D000BD42C /* KHApiKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHApiKey.m; sourceTree = "<group>"; };
 		0495CED919F598920046FB4D /* KHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUser.h; sourceTree = "<group>"; };
 		0495CEDA19F59D4D0046FB4D /* KHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUser.m; sourceTree = "<group>"; };
 		0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 			children = (
 				0495CED919F598920046FB4D /* KHUser.h */,
 				0495CEDA19F59D4D0046FB4D /* KHUser.m */,
+				04930B441A1EF39A000BD42C /* KHApiKey.h */,
+				04930B451A1EF59D000BD42C /* KHApiKey.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
 				043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */,
+				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

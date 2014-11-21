@@ -8,11 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#ifndef KHExternalIdType_h
+#define KHExternalIdType_h
+
+
 typedef enum
 {
     Facebook,
     Twitter
-} KHExternalIdType;
+}KHExternalIdType;
 
-extern NSString * const KHExternalIdType_toString[];
+#endif
+
+extern NSString * const KHExternalIdTypeToString[];
 

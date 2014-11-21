@@ -8,10 +8,18 @@
 
 #include <Foundation/Foundation.h>
 #include "../Models/KHUser.h"
+#include "KHExternalIdType.h"
 
 @interface KHController : NSObject
 
--(KHUser *) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType *)externalIdType;
+-(void) getUserByExternalId:(NSString*)externalId
+         withExternalIdType:(KHExternalIdType *)externalIdType
+                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
 
+-(void) postUser:(KHUser*)khUser
+                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+
+-(void) putUser:(KHUser*)khUser
+                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
 @end
 

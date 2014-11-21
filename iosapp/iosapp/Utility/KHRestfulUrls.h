@@ -13,4 +13,8 @@
 
 - (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType;
 
+- (NSString*) postUser;
+
+- (NSString*) putUser;
+
 @end

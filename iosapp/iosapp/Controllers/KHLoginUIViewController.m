@@ -18,6 +18,7 @@
 
 #import "KHLoginUIViewController.h"
 #import "KHMainUITabBarController.h"
+#import "../Utility/KHController.h"
 #import "../Utility/KHExternalIdType.h"
 
 @implementation KHLoginUIViewController
@@ -29,8 +30,8 @@
         // Create a FBLoginView to log the user in with basic, email and friend list permissions
         // You should ALWAYS ask for basic permissions (public_profile) when logging the user in
         [[self loginView] setReadPermissions:@[@"public_profile",
-                                                  @"email",
-                                                  @"user_friends"]];
+                                               @"email",
+                                               @"user_friends"]];
     
         // Set this loginUIViewController to be the loginView button's delegate
         [[self loginView] setDelegate:self];
@@ -39,9 +40,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showMainUITabBarController"]) {
+        
         KHMainUITabBarController *khMainUITabBarController = segue.destinationViewController;
-        [khMainUITabBarController setExternalId: [self externalId]];
-        [khMainUITabBarController setExternalIdType: [self externalIdType]];
+        [khMainUITabBarController setKhUser: [self khUser]];
+        if(![[khMainUITabBarController khUser] requiredFieldsMet])
+        {
+            //we want to push the user to the account profile screen
+            //in addition we want to lock down all other tabs until they've
+            //completed all required fields
+            
+            [khMainUITabBarController setSelectedIndex:3];
+            
+        }
         [khMainUITabBarController setDelegate: khMainUITabBarController];
     }
 }
@@ -50,9 +60,27 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
-    [self setExternalId: [user objectID]];
-    [self setExternalIdType: Facebook];
-    [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
+    KHController *controller = [[KHController alloc]init];
+    
+    [controller getUserByExternalId: [user objectID]
+                 withExternalIdType: Facebook
+                        callHandler:^(NSURLResponse *response,
+                                        NSData *data,
+                                            NSError *error){
+                    
+         if (data.length > 0 && error == nil)
+         {
+             KHUser *khUser = [[KHUser alloc]init];
+             NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
+                                                           options:0
+                                                           error:NULL];
+             [khUser deserialize: jsonData];             
+             [khUser setExternalId: [user objectID]];
+             [khUser setExternalIdType: Facebook];
+             [self setKhUser:khUser];
+             [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
+         }
+     }];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView

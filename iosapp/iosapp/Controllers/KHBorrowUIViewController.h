@@ -12,7 +12,5 @@
 @interface KHBorrowUIViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicatorView;
-@property (nonatomic, readonly) NSString *externalId;
-@property (nonatomic, readonly) KHExternalIdType *externalIdType;
 
 @end
