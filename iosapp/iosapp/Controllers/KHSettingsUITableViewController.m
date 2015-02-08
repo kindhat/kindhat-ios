@@ -27,7 +27,7 @@
     [khUser setTermsAndConditions: [NSNumber numberWithBool: [[self termsAndConditionsUISwitch] isOn]]];
     [khUser setAboutMe: [[self aboutYouUITextView] text]];
     KHController *khController = [[KHController alloc] init];
-    if([khUser identifier] == nil) //kindhat is unaware of this user
+    if([[khUser identifier]identifier] == 0) //kindhat is unaware of this user
     {
         [khController postUser:khUser callHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
             [self handleCall:response withMainUITabBarController:khMainUITabBarController withUser:khUser withData:data withError:error];

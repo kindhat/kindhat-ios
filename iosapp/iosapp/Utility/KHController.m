@@ -13,6 +13,9 @@
 
 NSString *const contenTypeHeaderName = @"content-type";
 NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";
+NSString *const getMethod = @"GET";
+NSString *const postMethod = @"POST";
+NSString *const putMethod = @"PUT";
 
 
 -(void) getUserByExternalId:(NSString*)externalId
@@ -23,7 +26,7 @@ NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";
     
     [self
      callApi:[khRestfulUrls getUserByExternalId:externalId withExternalIdType:externalIdType]
-     withMethod:@"GET"
+     withMethod: getMethod
      callHandler: handler];
 }
 
@@ -34,7 +37,7 @@ NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";
     
     [self
      callApi:[khRestfulUrls postUser]
-     withMethod:@"POST"
+     withMethod: postMethod
      withData: [khUser serialize]
      callHandler: handler];
 
@@ -47,7 +50,7 @@ NSString *const contenTypeHeaderValue = @"application/json;charset=UTF-8";
     
     [self
      callApi:[khRestfulUrls putUser]
-     withMethod:@"PUT"
+     withMethod: putMethod
      withData: [khUser serialize]
      callHandler: handler];
     

@@ -77,6 +77,8 @@
              [khUser deserialize: jsonData];             
              [khUser setExternalId: [user objectID]];
              [khUser setExternalIdType: Facebook];
+             [khUser setName: [user name]];
+             [khUser setEmail:[user ]]
              [self setKhUser:khUser];
              [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
          }
