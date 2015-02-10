@@ -13,7 +13,6 @@
 		040DD67519E5027E00AFD82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67419E5027E00AFD82E /* Images.xcassets */; };
 		040DD67819E5027E00AFD82E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67619E5027E00AFD82E /* LaunchScreen.xib */; };
 		040DD68419E5027F00AFD82E /* iosappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD68319E5027F00AFD82E /* iosappTests.m */; };
-		040DDAAC19E50FC300AFD82E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DDAAB19E50FC300AFD82E /* FacebookSDK.framework */; };
 		043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C119E994090047FEDF /* KHRestfulUrls.m */; };
 		043354C519E999CA0047FEDF /* KHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C419E999CA0047FEDF /* KHController.m */; };
 		044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB82B1A87F1F00012B2EB /* KHConfiguration.m */; };
@@ -58,6 +57,7 @@
 		044AB8841A89D1580012B2EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8721A89D1580012B2EB /* Icon.png */; };
 		044AB8851A89D1580012B2EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8731A89D1580012B2EB /* Icon@2x.png */; };
 		044AB8861A89D1580012B2EB /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */; };
+		044AB8891A89E4040012B2EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044AB8881A89E4040012B2EB /* FacebookSDK.framework */; };
 		0459096E1A0448F0006764CB /* KHSettingsUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */; };
 		0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */; };
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
@@ -90,7 +90,6 @@
 		040DD67D19E5027F00AFD82E /* iosappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DD68219E5027F00AFD82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040DD68319E5027F00AFD82E /* iosappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosappTests.m; sourceTree = "<group>"; };
-		040DDAAB19E50FC300AFD82E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		043354C119E994090047FEDF /* KHRestfulUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRestfulUrls.m; sourceTree = "<group>"; };
 		043354C319E994280047FEDF /* KHRestfulUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRestfulUrls.h; sourceTree = "<group>"; };
 		043354C419E999CA0047FEDF /* KHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHController.m; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		044AB8721A89D1580012B2EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		044AB8731A89D1580012B2EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		044AB8881A89E4040012B2EB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSettingsUITableViewController.m; sourceTree = "<group>"; };
 		0459096F1A04498C006764CB /* KHSettingsUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSettingsUITableViewController.h; sourceTree = "<group>"; };
 		0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHExternalIdType.h; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040DDAAC19E50FC300AFD82E /* FacebookSDK.framework in Frameworks */,
+				044AB8891A89E4040012B2EB /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +177,10 @@
 		040DD65B19E5027E00AFD82E = {
 			isa = PBXGroup;
 			children = (
+				044AB8881A89E4040012B2EB /* FacebookSDK.framework */,
 				044AB8611A89D1580012B2EB /* Kindhat icon grey gradient square */,
 				044AB82D1A89CF5A0012B2EB /* Kindhat ios images */,
 				0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */,
-				040DDAAB19E50FC300AFD82E /* FacebookSDK.framework */,
 				040DD66619E5027E00AFD82E /* iosapp */,
 				040DD68019E5027F00AFD82E /* iosappTests */,
 				040DD66519E5027E00AFD82E /* Products */,
@@ -664,6 +664,7 @@
 					"/Users/mac/Documents/FacebookSDK/FacebookSDK.framework/**",
 					"$(PROJECT_DIR)",
 					/Users/mac/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "iosapp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)";
@@ -687,6 +688,7 @@
 					"/Users/mac/Documents/FacebookSDK/FacebookSDK.framework/**",
 					"$(PROJECT_DIR)",
 					/Users/mac/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "iosapp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)";
