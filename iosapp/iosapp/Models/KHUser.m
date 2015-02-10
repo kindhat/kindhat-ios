@@ -11,9 +11,7 @@
 @implementation KHUser
 
 @synthesize identifier;
-@synthesize firstName;
-@synthesize middleName;
-@synthesize lastName;
+@synthesize name;
 @synthesize postalCode;
 @synthesize aboutMe;
 @synthesize image;
@@ -63,7 +61,7 @@
 }
 
 - (BOOL) requiredFieldsMet {
-    return (([self name] != (id)[NSNull null] || [[self nsame] length] > 0 )
+    return (([self name] != (id)[NSNull null] || [[self name] length] > 0 )
             && ([self postalCode] != (id)[NSNull null] || [[self postalCode] length] > 0 )
             && ([self email] != (id)[NSNull null] || [[self email] length] > 0 )
             && [self termsAndConditions] > 0);

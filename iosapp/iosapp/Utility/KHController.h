@@ -12,6 +12,8 @@
 
 @interface KHController : NSObject
 
+-(void) getConfiguration:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+
 -(void) getUserByExternalId:(NSString*)externalId
          withExternalIdType:(KHExternalIdType *)externalIdType
                 callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;

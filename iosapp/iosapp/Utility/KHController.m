@@ -17,6 +17,15 @@ NSString *const getMethod = @"GET";
 NSString *const postMethod = @"POST";
 NSString *const putMethod = @"PUT";
 
+-(void) getConfiguration:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    
+    KHRestfulUrls *khRestfulUrls = [[KHRestfulUrls alloc] init];
+    
+    [self
+     callApi:[khRestfulUrls getConfiguration]
+     withMethod: getMethod
+     callHandler: handler];
+}
 
 -(void) getUserByExternalId:(NSString*)externalId
              withExternalIdType:(KHExternalIdType *)externalIdType

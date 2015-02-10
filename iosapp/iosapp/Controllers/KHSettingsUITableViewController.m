@@ -13,6 +13,18 @@
 
 @implementation KHSettingsUITableViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
+    KHUser* khUser = [khMainUITabBarController khUser];
+    
+    [[self nameUITextField] setText: [khUser name]];
+    [[self emailUITextField] setText: [khUser email]];
+}
+
+
 - (IBAction)settingsSaved:(id)sender
 {
     //If the user doesn't have a Kindhat id

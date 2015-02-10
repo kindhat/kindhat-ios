@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosapp/Controllers/KHSettingsUITableViewController.m"
-            timestampString = "438675792.697038"
+            timestampString = "445236128.784999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-settingsSaved:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosapp/Controllers/KHSettingsUITableViewController.m"
-            timestampString = "438675972.477094"
+            timestampString = "445236128.784999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-settingsSaved:"
             landmarkType = "5">
             <Locations>
@@ -51,11 +51,11 @@
                   symbolName = "-[KHSettingsUITableViewController settingsSaved:]"
                   moduleName = "iosapp"
                   urlString = "file:///Users/mac/Desktop/Projects/Kindhat/kindhat-ios/iosapp/iosapp/Controllers/KHSettingsUITableViewController.m"
-                  timestampString = "438676764.878065"
+                  timestampString = "445240654.174725"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
                   offsetFromSymbolStart = "1031">
                </Location>
                <Location
@@ -65,11 +65,11 @@
                   symbolName = "__49-[KHSettingsUITableViewController settingsSaved:]_block_invoke"
                   moduleName = "iosapp"
                   urlString = "file:///Users/mac/Desktop/Projects/Kindhat/kindhat-ios/iosapp/iosapp/Controllers/KHSettingsUITableViewController.m"
-                  timestampString = "438676764.878304"
+                  timestampString = "445240654.174985"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
                   offsetFromSymbolStart = "112">
                </Location>
             </Locations>
@@ -82,12 +82,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosapp/Models/KHUser.m"
-            timestampString = "438676426.683692"
+            timestampString = "445236128.784999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-serialize"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iosapp/Controllers/KHSettingsUITableViewController.m"
+            timestampString = "445236128.784999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iosapp/Controllers/KHLoginUIViewController.m"
+            timestampString = "445240589.938307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-loginViewFetchedUserInfo:user:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

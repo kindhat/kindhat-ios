@@ -11,6 +11,11 @@
 @implementation KHRestfulUrls
 
 static NSString *const userUrl = @"http://localhost:8888/_ah/api/userendpoint/v1/user";
+static NSString *const configurationUrl = @"http://localhost:8888/_ah/api/configurationendpoint/v1/user";
+
+- (NSString*) getConfiguration {
+    return configurationUrl;
+}
 
 - (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType {
     

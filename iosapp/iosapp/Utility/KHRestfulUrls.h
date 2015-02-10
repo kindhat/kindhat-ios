@@ -11,6 +11,8 @@
 
 @interface KHRestfulUrls : NSObject
 
+- (NSString*) getConfiguration;
+
 - (NSString*) getUserByExternalId:(NSString*)externalId withExternalIdType:(KHExternalIdType*)externalIdType;
 
 - (NSString*) postUser;

@@ -20,6 +20,7 @@
 #import "KHMainUITabBarController.h"
 #import "../Utility/KHController.h"
 #import "../Utility/KHExternalIdType.h"
+#import "../Utility/KHConfiguration.h"
 
 @implementation KHLoginUIViewController
 
@@ -58,7 +59,7 @@
 
 #pragma mark - FBLoginViewDelegate
 
-- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(NSDictionary<FBGraphUser>*)user
 {
     KHController *controller = [[KHController alloc]init];
     
@@ -67,18 +68,35 @@
                         callHandler:^(NSURLResponse *response,
                                         NSData *data,
                                             NSError *error){
-                    
-         if (data.length > 0 && error == nil)
-         {
+         if (error != nil) {
+             //need to figure out error handling
+         }
+         else {
+             
              KHUser *khUser = [[KHUser alloc]init];
-             NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
-                                                           options:0
-                                                           error:NULL];
-             [khUser deserialize: jsonData];             
-             [khUser setExternalId: [user objectID]];
-             [khUser setExternalIdType: Facebook];
-             [khUser setName: [user name]];
-             [khUser setEmail:[user ]]
+             
+             if (data.length == 0) {
+                 KHConfiguration *khConfiguration = [[KHConfiguration alloc]init];
+                 
+                 [khUser setExternalId: [user objectID]];
+                 [khUser setExternalIdType: Facebook];
+                 [khUser setName: [user name]];
+                 [khUser setImage:[NSString stringWithFormat:
+                               [khConfiguration getConfiguration:@"kh.ios.facebookimageurl"],
+                               [user objectID]]];
+                 [khUser setEmail: [user objectForKey: @"email"]];
+
+             }
+             
+             else
+             {
+
+                 NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
+                                                                          options:0
+                                                                            error:NULL];
+                 [khUser deserialize: jsonData];
+                 
+             }
              [self setKhUser:khUser];
              [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
          }

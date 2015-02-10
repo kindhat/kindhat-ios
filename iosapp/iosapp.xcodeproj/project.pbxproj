@@ -16,6 +16,48 @@
 		040DDAAC19E50FC300AFD82E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DDAAB19E50FC300AFD82E /* FacebookSDK.framework */; };
 		043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C119E994090047FEDF /* KHRestfulUrls.m */; };
 		043354C519E999CA0047FEDF /* KHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C419E999CA0047FEDF /* KHController.m */; };
+		044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB82B1A87F1F00012B2EB /* KHConfiguration.m */; };
+		044AB8481A89CF5A0012B2EB /* kindhat century gothic white.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB82E1A89CF5A0012B2EB /* kindhat century gothic white.png */; };
+		044AB8491A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8311A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png */; };
+		044AB84A1A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.psd in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8321A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.psd */; };
+		044AB84B1A89CF5A0012B2EB /* Kindhat Launch image green gradient 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8331A89CF5A0012B2EB /* Kindhat Launch image green gradient 640x960.png */; };
+		044AB84C1A89CF5A0012B2EB /* Kindhat logo arial.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8341A89CF5A0012B2EB /* Kindhat logo arial.png */; };
+		044AB84D1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8361A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png */; };
+		044AB84E1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8371A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png */; };
+		044AB84F1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8381A89CF5A0012B2EB /* Kindhat Launch image grey gradient 768x1024.png */; };
+		044AB8501A89CF5A0012B2EB /* Kindhat Launch image white 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83A1A89CF5A0012B2EB /* Kindhat Launch image white 1242x2208.png */; };
+		044AB8511A89CF5A0012B2EB /* Kindhat Launch image white 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83B1A89CF5A0012B2EB /* Kindhat Launch image white 1536x2048.png */; };
+		044AB8521A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83C1A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png */; };
+		044AB8531A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83D1A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png */; };
+		044AB8541A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83E1A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png */; };
+		044AB8551A89CF5A0012B2EB /* Kindhat Launch image white 768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB83F1A89CF5A0012B2EB /* Kindhat Launch image white 768x1024.png */; };
+		044AB8561A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8411A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png */; };
+		044AB8571A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8421A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png */; };
+		044AB8581A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.psd in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8431A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.psd */; };
+		044AB8591A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8441A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png */; };
+		044AB85A1A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8451A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x960.png */; };
+		044AB85B1A89CF5A0012B2EB /* Kindhat Launch white hat on d 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8461A89CF5A0012B2EB /* Kindhat Launch white hat on d 750x1334.png */; };
+		044AB85C1A89CF5A0012B2EB /* Kindhat Launch white hat on d 768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8471A89CF5A0012B2EB /* Kindhat Launch white hat on d 768x1024.png */; };
+		044AB85F1A89D0C20012B2EB /* Blur background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 044AB85D1A89D0C20012B2EB /* Blur background.jpg */; };
+		044AB8601A89D0C20012B2EB /* Ghost Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB85E1A89D0C20012B2EB /* Ghost Button.png */; };
+		044AB8751A89D1580012B2EB /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8631A89D1580012B2EB /* Icon-60.png */; };
+		044AB8761A89D1580012B2EB /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8641A89D1580012B2EB /* Icon-60@2x.png */; };
+		044AB8771A89D1580012B2EB /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8651A89D1580012B2EB /* Icon-60@3x.png */; };
+		044AB8781A89D1580012B2EB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8661A89D1580012B2EB /* Icon-72.png */; };
+		044AB8791A89D1580012B2EB /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8671A89D1580012B2EB /* Icon-72@2x.png */; };
+		044AB87A1A89D1580012B2EB /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8681A89D1580012B2EB /* Icon-76.png */; };
+		044AB87B1A89D1580012B2EB /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8691A89D1580012B2EB /* Icon-76@2x.png */; };
+		044AB87C1A89D1580012B2EB /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86A1A89D1580012B2EB /* Icon-Small-40.png */; };
+		044AB87D1A89D1580012B2EB /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86B1A89D1580012B2EB /* Icon-Small-40@2x.png */; };
+		044AB87E1A89D1580012B2EB /* Icon-Small-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86C1A89D1580012B2EB /* Icon-Small-40@3x.png */; };
+		044AB87F1A89D1580012B2EB /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86D1A89D1580012B2EB /* Icon-Small-50.png */; };
+		044AB8801A89D1580012B2EB /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86E1A89D1580012B2EB /* Icon-Small-50@2x.png */; };
+		044AB8811A89D1580012B2EB /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB86F1A89D1580012B2EB /* Icon-Small.png */; };
+		044AB8821A89D1580012B2EB /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8701A89D1580012B2EB /* Icon-Small@2x.png */; };
+		044AB8831A89D1580012B2EB /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8711A89D1580012B2EB /* Icon-Small@3x.png */; };
+		044AB8841A89D1580012B2EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8721A89D1580012B2EB /* Icon.png */; };
+		044AB8851A89D1580012B2EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8731A89D1580012B2EB /* Icon@2x.png */; };
+		044AB8861A89D1580012B2EB /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */; };
 		0459096E1A0448F0006764CB /* KHSettingsUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */; };
 		0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */; };
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
@@ -53,6 +95,49 @@
 		043354C319E994280047FEDF /* KHRestfulUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRestfulUrls.h; sourceTree = "<group>"; };
 		043354C419E999CA0047FEDF /* KHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHController.m; sourceTree = "<group>"; };
 		043354C619E9A01D0047FEDF /* KHController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHController.h; sourceTree = "<group>"; };
+		044AB82A1A87F1660012B2EB /* KHConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHConfiguration.h; sourceTree = "<group>"; };
+		044AB82B1A87F1F00012B2EB /* KHConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHConfiguration.m; sourceTree = "<group>"; };
+		044AB82E1A89CF5A0012B2EB /* kindhat century gothic white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kindhat century gothic white.png"; sourceTree = "<group>"; };
+		044AB8311A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image green gradient 1536x2048.png"; sourceTree = "<group>"; };
+		044AB8321A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kindhat Launch image green gradient 1536x2048.psd"; sourceTree = "<group>"; };
+		044AB8331A89CF5A0012B2EB /* Kindhat Launch image green gradient 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image green gradient 640x960.png"; sourceTree = "<group>"; };
+		044AB8341A89CF5A0012B2EB /* Kindhat logo arial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat logo arial.png"; sourceTree = "<group>"; };
+		044AB8361A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image grey gradient 1536x2048.png"; sourceTree = "<group>"; };
+		044AB8371A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image grey gradient 640x960.png"; sourceTree = "<group>"; };
+		044AB8381A89CF5A0012B2EB /* Kindhat Launch image grey gradient 768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image grey gradient 768x1024.png"; sourceTree = "<group>"; };
+		044AB83A1A89CF5A0012B2EB /* Kindhat Launch image white 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 1242x2208.png"; sourceTree = "<group>"; };
+		044AB83B1A89CF5A0012B2EB /* Kindhat Launch image white 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 1536x2048.png"; sourceTree = "<group>"; };
+		044AB83C1A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 640x1136.png"; sourceTree = "<group>"; };
+		044AB83D1A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 640x960.png"; sourceTree = "<group>"; };
+		044AB83E1A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 750x1334.png"; sourceTree = "<group>"; };
+		044AB83F1A89CF5A0012B2EB /* Kindhat Launch image white 768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch image white 768x1024.png"; sourceTree = "<group>"; };
+		044AB8411A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 1242x2208.png"; sourceTree = "<group>"; };
+		044AB8421A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 1536x2048.png"; sourceTree = "<group>"; };
+		044AB8431A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kindhat Launch white hat on d 1536x2048.psd"; sourceTree = "<group>"; };
+		044AB8441A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 640x1136.png"; sourceTree = "<group>"; };
+		044AB8451A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 640x960.png"; sourceTree = "<group>"; };
+		044AB8461A89CF5A0012B2EB /* Kindhat Launch white hat on d 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 750x1334.png"; sourceTree = "<group>"; };
+		044AB8471A89CF5A0012B2EB /* Kindhat Launch white hat on d 768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kindhat Launch white hat on d 768x1024.png"; sourceTree = "<group>"; };
+		044AB85D1A89D0C20012B2EB /* Blur background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blur background.jpg"; sourceTree = "<group>"; };
+		044AB85E1A89D0C20012B2EB /* Ghost Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghost Button.png"; sourceTree = "<group>"; };
+		044AB8631A89D1580012B2EB /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		044AB8641A89D1580012B2EB /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		044AB8651A89D1580012B2EB /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		044AB8661A89D1580012B2EB /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		044AB8671A89D1580012B2EB /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		044AB8681A89D1580012B2EB /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		044AB8691A89D1580012B2EB /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		044AB86A1A89D1580012B2EB /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
+		044AB86B1A89D1580012B2EB /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		044AB86C1A89D1580012B2EB /* Icon-Small-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@3x.png"; sourceTree = "<group>"; };
+		044AB86D1A89D1580012B2EB /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		044AB86E1A89D1580012B2EB /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		044AB86F1A89D1580012B2EB /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		044AB8701A89D1580012B2EB /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		044AB8711A89D1580012B2EB /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		044AB8721A89D1580012B2EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		044AB8731A89D1580012B2EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSettingsUITableViewController.m; sourceTree = "<group>"; };
 		0459096F1A04498C006764CB /* KHSettingsUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSettingsUITableViewController.h; sourceTree = "<group>"; };
 		0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHExternalIdType.h; sourceTree = "<group>"; };
@@ -92,6 +177,8 @@
 		040DD65B19E5027E00AFD82E = {
 			isa = PBXGroup;
 			children = (
+				044AB8611A89D1580012B2EB /* Kindhat icon grey gradient square */,
+				044AB82D1A89CF5A0012B2EB /* Kindhat ios images */,
 				0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */,
 				040DDAAB19E50FC300AFD82E /* FacebookSDK.framework */,
 				040DD66619E5027E00AFD82E /* iosapp */,
@@ -160,8 +247,113 @@
 				043354C419E999CA0047FEDF /* KHController.m */,
 				0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */,
 				0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */,
+				044AB82A1A87F1660012B2EB /* KHConfiguration.h */,
+				044AB82B1A87F1F00012B2EB /* KHConfiguration.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		044AB82D1A89CF5A0012B2EB /* Kindhat ios images */ = {
+			isa = PBXGroup;
+			children = (
+				044AB85D1A89D0C20012B2EB /* Blur background.jpg */,
+				044AB85E1A89D0C20012B2EB /* Ghost Button.png */,
+				044AB82E1A89CF5A0012B2EB /* kindhat century gothic white.png */,
+				044AB82F1A89CF5A0012B2EB /* Kindhat launch image */,
+			);
+			path = "Kindhat ios images";
+			sourceTree = "<group>";
+		};
+		044AB82F1A89CF5A0012B2EB /* Kindhat launch image */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8301A89CF5A0012B2EB /* Green Gradient */,
+				044AB8351A89CF5A0012B2EB /* Grey Gradient  */,
+				044AB8391A89CF5A0012B2EB /* White */,
+				044AB8401A89CF5A0012B2EB /* White hat on d */,
+			);
+			path = "Kindhat launch image";
+			sourceTree = "<group>";
+		};
+		044AB8301A89CF5A0012B2EB /* Green Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8311A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png */,
+				044AB8321A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.psd */,
+				044AB8331A89CF5A0012B2EB /* Kindhat Launch image green gradient 640x960.png */,
+				044AB8341A89CF5A0012B2EB /* Kindhat logo arial.png */,
+			);
+			path = "Green Gradient";
+			sourceTree = "<group>";
+		};
+		044AB8351A89CF5A0012B2EB /* Grey Gradient  */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8361A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png */,
+				044AB8371A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png */,
+				044AB8381A89CF5A0012B2EB /* Kindhat Launch image grey gradient 768x1024.png */,
+			);
+			path = "Grey Gradient ";
+			sourceTree = "<group>";
+		};
+		044AB8391A89CF5A0012B2EB /* White */ = {
+			isa = PBXGroup;
+			children = (
+				044AB83A1A89CF5A0012B2EB /* Kindhat Launch image white 1242x2208.png */,
+				044AB83B1A89CF5A0012B2EB /* Kindhat Launch image white 1536x2048.png */,
+				044AB83C1A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png */,
+				044AB83D1A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png */,
+				044AB83E1A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png */,
+				044AB83F1A89CF5A0012B2EB /* Kindhat Launch image white 768x1024.png */,
+			);
+			path = White;
+			sourceTree = "<group>";
+		};
+		044AB8401A89CF5A0012B2EB /* White hat on d */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8411A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png */,
+				044AB8421A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png */,
+				044AB8431A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.psd */,
+				044AB8441A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png */,
+				044AB8451A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x960.png */,
+				044AB8461A89CF5A0012B2EB /* Kindhat Launch white hat on d 750x1334.png */,
+				044AB8471A89CF5A0012B2EB /* Kindhat Launch white hat on d 768x1024.png */,
+			);
+			path = "White hat on d";
+			sourceTree = "<group>";
+		};
+		044AB8611A89D1580012B2EB /* Kindhat icon grey gradient square */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8621A89D1580012B2EB /* App Icon [Squared] */,
+			);
+			path = "Kindhat icon grey gradient square";
+			sourceTree = "<group>";
+		};
+		044AB8621A89D1580012B2EB /* App Icon [Squared] */ = {
+			isa = PBXGroup;
+			children = (
+				044AB8631A89D1580012B2EB /* Icon-60.png */,
+				044AB8641A89D1580012B2EB /* Icon-60@2x.png */,
+				044AB8651A89D1580012B2EB /* Icon-60@3x.png */,
+				044AB8661A89D1580012B2EB /* Icon-72.png */,
+				044AB8671A89D1580012B2EB /* Icon-72@2x.png */,
+				044AB8681A89D1580012B2EB /* Icon-76.png */,
+				044AB8691A89D1580012B2EB /* Icon-76@2x.png */,
+				044AB86A1A89D1580012B2EB /* Icon-Small-40.png */,
+				044AB86B1A89D1580012B2EB /* Icon-Small-40@2x.png */,
+				044AB86C1A89D1580012B2EB /* Icon-Small-40@3x.png */,
+				044AB86D1A89D1580012B2EB /* Icon-Small-50.png */,
+				044AB86E1A89D1580012B2EB /* Icon-Small-50@2x.png */,
+				044AB86F1A89D1580012B2EB /* Icon-Small.png */,
+				044AB8701A89D1580012B2EB /* Icon-Small@2x.png */,
+				044AB8711A89D1580012B2EB /* Icon-Small@3x.png */,
+				044AB8721A89D1580012B2EB /* Icon.png */,
+				044AB8731A89D1580012B2EB /* Icon@2x.png */,
+				044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */,
+			);
+			path = "App Icon [Squared]";
 			sourceTree = "<group>";
 		};
 		04918A6C19F9C62700136F9D /* Controllers */ = {
@@ -271,10 +463,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044AB8511A89CF5A0012B2EB /* Kindhat Launch image white 1536x2048.png in Resources */,
+				044AB85B1A89CF5A0012B2EB /* Kindhat Launch white hat on d 750x1334.png in Resources */,
+				044AB87C1A89D1580012B2EB /* Icon-Small-40.png in Resources */,
+				044AB84F1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 768x1024.png in Resources */,
+				044AB84A1A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.psd in Resources */,
+				044AB8851A89D1580012B2EB /* Icon@2x.png in Resources */,
+				044AB8761A89D1580012B2EB /* Icon-60@2x.png in Resources */,
+				044AB8581A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.psd in Resources */,
+				044AB87B1A89D1580012B2EB /* Icon-76@2x.png in Resources */,
+				044AB8811A89D1580012B2EB /* Icon-Small.png in Resources */,
+				044AB8771A89D1580012B2EB /* Icon-60@3x.png in Resources */,
+				044AB8801A89D1580012B2EB /* Icon-Small-50@2x.png in Resources */,
 				040DD67319E5027E00AFD82E /* Main.storyboard in Resources */,
+				044AB8831A89D1580012B2EB /* Icon-Small@3x.png in Resources */,
+				044AB8551A89CF5A0012B2EB /* Kindhat Launch image white 768x1024.png in Resources */,
+				044AB8821A89D1580012B2EB /* Icon-Small@2x.png in Resources */,
+				044AB87E1A89D1580012B2EB /* Icon-Small-40@3x.png in Resources */,
+				044AB85A1A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x960.png in Resources */,
+				044AB8791A89D1580012B2EB /* Icon-72@2x.png in Resources */,
+				044AB87D1A89D1580012B2EB /* Icon-Small-40@2x.png in Resources */,
+				044AB84D1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png in Resources */,
+				044AB8541A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png in Resources */,
+				044AB84E1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png in Resources */,
+				044AB8561A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png in Resources */,
+				044AB8841A89D1580012B2EB /* Icon.png in Resources */,
+				044AB87F1A89D1580012B2EB /* Icon-Small-50.png in Resources */,
+				044AB8601A89D0C20012B2EB /* Ghost Button.png in Resources */,
 				0495CEDD19F5ABEF0046FB4D /* Default-568h@2x.png in Resources */,
+				044AB87A1A89D1580012B2EB /* Icon-76.png in Resources */,
+				044AB84B1A89CF5A0012B2EB /* Kindhat Launch image green gradient 640x960.png in Resources */,
+				044AB85C1A89CF5A0012B2EB /* Kindhat Launch white hat on d 768x1024.png in Resources */,
+				044AB8861A89D1580012B2EB /* iTunesArtwork@2x.png in Resources */,
+				044AB8501A89CF5A0012B2EB /* Kindhat Launch image white 1242x2208.png in Resources */,
+				044AB8781A89D1580012B2EB /* Icon-72.png in Resources */,
+				044AB8571A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png in Resources */,
 				040DD67819E5027E00AFD82E /* LaunchScreen.xib in Resources */,
+				044AB8481A89CF5A0012B2EB /* kindhat century gothic white.png in Resources */,
+				044AB8521A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png in Resources */,
+				044AB8531A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png in Resources */,
 				040DD67519E5027E00AFD82E /* Images.xcassets in Resources */,
+				044AB8591A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png in Resources */,
+				044AB8491A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png in Resources */,
+				044AB84C1A89CF5A0012B2EB /* Kindhat logo arial.png in Resources */,
+				044AB8751A89D1580012B2EB /* Icon-60.png in Resources */,
+				044AB85F1A89D0C20012B2EB /* Blur background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +536,7 @@
 				043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
+				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
