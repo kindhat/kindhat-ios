@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface KHSettingsUITableViewController : UITableViewController
+@interface KHMeUIViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *nameUITextField;
 @property (strong, nonatomic) IBOutlet UITextField *emailUITextField;
+@property (strong, nonatomic) IBOutlet UITextField *streetUITextField;
 @property (strong, nonatomic) IBOutlet UITextField *postalCodeUITextField;
 @property (strong, nonatomic) IBOutlet UISwitch *termsAndConditionsUISwitch;
 @property (strong, nonatomic) IBOutlet UITextView *aboutYouUITextView;

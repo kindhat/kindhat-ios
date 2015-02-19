@@ -58,7 +58,7 @@
 		044AB8851A89D1580012B2EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8731A89D1580012B2EB /* Icon@2x.png */; };
 		044AB8861A89D1580012B2EB /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */; };
 		044AB8891A89E4040012B2EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044AB8881A89E4040012B2EB /* FacebookSDK.framework */; };
-		0459096E1A0448F0006764CB /* KHSettingsUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */; };
+		0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHMeUIViewController.m */; };
 		0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */; };
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
 		04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */; };
@@ -138,8 +138,8 @@
 		044AB8731A89D1580012B2EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		044AB8881A89E4040012B2EB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSettingsUITableViewController.m; sourceTree = "<group>"; };
-		0459096F1A04498C006764CB /* KHSettingsUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSettingsUITableViewController.h; sourceTree = "<group>"; };
+		0459096D1A0448F0006764CB /* KHMeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMeUIViewController.m; sourceTree = "<group>"; };
+		0459096F1A04498C006764CB /* KHMeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMeUIViewController.h; sourceTree = "<group>"; };
 		0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHExternalIdType.h; sourceTree = "<group>"; };
 		0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainUITabBarController.h; sourceTree = "<group>"; };
 		0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainUITabBarController.m; sourceTree = "<group>"; };
@@ -365,8 +365,8 @@
 				04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */,
 				0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */,
 				0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */,
-				0459096F1A04498C006764CB /* KHSettingsUITableViewController.h */,
-				0459096D1A0448F0006764CB /* KHSettingsUITableViewController.m */,
+				0459096F1A04498C006764CB /* KHMeUIViewController.h */,
+				0459096D1A0448F0006764CB /* KHMeUIViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -528,7 +528,7 @@
 				04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */,
 				04918A7719FADD5700136F9D /* KHBorrowUIViewController.m in Sources */,
 				0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */,
-				0459096E1A0448F0006764CB /* KHSettingsUITableViewController.m in Sources */,
+				0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */,
 				0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */,
 				040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */,
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,

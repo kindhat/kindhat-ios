@@ -14,6 +14,7 @@
 
 @property KHApiKey * identifier;
 @property NSString * name;
+@property NSString * street;
 @property NSString * postalCode;
 @property NSString * aboutMe;
 @property NSString * image;

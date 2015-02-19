@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import "KHSettingsUITableViewController.h"
+#import "KHMeUIViewController.h"
 #import "KHMainUITabBarController.h"
 #import "../Models/KHUser.h"
 #import "../Utility/KHController.h"
 
-@implementation KHSettingsUITableViewController
+@implementation KHMeUIViewController
 
 - (void)viewDidLoad
 {
@@ -35,6 +35,7 @@
     
     [khUser setName: [[self nameUITextField] text]];
     [khUser setEmail: [[self emailUITextField] text]];
+    [khUser setStreet: [[self streetUITextField] text]];
     [khUser setPostalCode: [[self postalCodeUITextField] text]];
     [khUser setTermsAndConditions: [NSNumber numberWithBool: [[self termsAndConditionsUISwitch] isOn]]];
     [khUser setAboutMe: [[self aboutYouUITextView] text]];

@@ -12,6 +12,7 @@
 
 @synthesize identifier;
 @synthesize name;
+@synthesize street;
 @synthesize postalCode;
 @synthesize aboutMe;
 @synthesize image;
@@ -28,6 +29,7 @@
     
     [self setIdentifier: khApiKey];
     [self setName: [jsonData objectForKey:@"name"]];
+    [self setStreet: [jsonData objectForKey:@"street"]];
     [self setPostalCode: [jsonData objectForKey:@"postalCode"]];
     [self setAboutMe: [jsonData objectForKey:@"aboutMe"]];
     [self setImage: [jsonData objectForKey:@"image"]];
@@ -48,6 +50,7 @@
     NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [self.identifier serialize], @"key",
                                   self.name, @"name",
+                                  self.street, @"street",
                                   self.postalCode, @"postalCode",
                                   self.aboutMe, @"aboutMe",
                                   //self.image, @"image",
@@ -62,6 +65,7 @@
 
 - (BOOL) requiredFieldsMet {
     return (([self name] != (id)[NSNull null] || [[self name] length] > 0 )
+            && ([self street] != (id)[NSNull null] || [[self street] length] > 0 )
             && ([self postalCode] != (id)[NSNull null] || [[self postalCode] length] > 0 )
             && ([self email] != (id)[NSNull null] || [[self email] length] > 0 )
             && [self termsAndConditions] > 0);
