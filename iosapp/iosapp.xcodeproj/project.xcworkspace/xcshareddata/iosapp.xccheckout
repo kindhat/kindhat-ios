@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>94AF5E40-CAA0-4626-B134-0686D241D7F2</string>
+=======
+	<string>C7398DA6-3B42-4380-8D5C-1F59227EECA2</string>
+>>>>>>> 9575406ba3f9aebdd88670d828c97371a032497d
 	<key>IDESourceControlProjectName</key>
 	<string>iosapp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>

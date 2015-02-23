@@ -10,7 +10,7 @@
 
 @implementation KHRestfulUrls
 
-static NSString *const userUrl = @"http://localhost:8888/_ah/api/userendpoint/v1/user";
+static NSString *const userUrl = @"http://1-dot-kindhat-service.appspot.com/_ah/api/userendpoint/v1/user";
 static NSString *const configurationUrl = @"http://localhost:8888/_ah/api/configurationendpoint/v1/user";
 
 - (NSString*) getConfiguration {
