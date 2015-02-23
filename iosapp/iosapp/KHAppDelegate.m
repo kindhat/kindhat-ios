@@ -9,6 +9,7 @@
 #import "KHAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "Controllers/KHLoginUIViewController.h"
+#import "Utility/KHConfiguration.h"
 
 @interface KHAppDelegate ()
 
@@ -21,6 +22,8 @@
     // Nib files require the type to have been loaded before they can do the wireup successfully.
     // http://stackoverflow.com/questions/1725881/unknown-class-myclass-in-interface-builder-file-error-at-runtime
     [FBLoginView class];
+    [KHConfiguration loadConfiguration];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

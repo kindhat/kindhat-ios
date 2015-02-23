@@ -10,6 +10,8 @@
 
 @interface KHConfiguration : NSObject
 
-- (NSString*) getConfiguration:(NSString*)configurationName;
++ (void) loadConfiguration;
+
++ (NSString*) getConfiguration:(NSString*)configurationName;
 
 @end

@@ -13,14 +13,18 @@
 
 NSDictionary *configuration;
 
-- (NSString*) getConfiguration:(NSString*)configurationName {
++ (void) loadConfiguration {
     
     if (configuration == nil) {
+                
+        configuration = [[NSDictionary alloc]initWithObjectsAndKeys:@"http://graph.facebook.com/%@/picture?type=square",@"kh.ios.facebookimageurl",nil];
+        
+        /*
         KHController *khController = [[KHController alloc]init];
-
+        
         [khController getConfiguration:^(NSURLResponse *response,
-                                          NSData *data,
-                                          NSError *error){
+                                         NSData *data,
+                                         NSError *error){
             if (data.length > 0 && error == nil)
             {
                 id configurationObjects = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
@@ -29,10 +33,14 @@ NSDictionary *configuration;
                      setValue:[configurationObject objectForKey:@"value"]
                      forKey:[configurationObject objectForKey:@"name"]];
                 }
-
+                
             }
         }];
+         */
     }
+}
+
++ (NSString*) getConfiguration:(NSString*)configurationName {
     
     return [configuration objectForKey:configurationName];
 }

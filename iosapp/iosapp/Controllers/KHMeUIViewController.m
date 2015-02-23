@@ -20,8 +20,16 @@
     KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
     KHUser* khUser = [khMainUITabBarController khUser];
     
-    [[self nameUITextField] setText: [khUser name]];
-    [[self emailUITextField] setText: [khUser email]];
+    [[self nameUILabel] setText: [khUser name]];
+    [[self emailUILabel] setText: [khUser email]];
+    
+    NSError *imageError ;
+    
+    
+    NSURL *url = [NSURL URLWithString: [khUser image]];
+    NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&imageError];
+    UIImage *image = [UIImage imageWithData:data];
+    [[self profileUIImageView] setImage:image];
 }
 
 
@@ -33,8 +41,6 @@
     KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
     KHUser* khUser = [khMainUITabBarController khUser];
     
-    [khUser setName: [[self nameUITextField] text]];
-    [khUser setEmail: [[self emailUITextField] text]];
     [khUser setStreet: [[self streetUITextField] text]];
     [khUser setPostalCode: [[self postalCodeUITextField] text]];
     [khUser setTermsAndConditions: [NSNumber numberWithBool: [[self termsAndConditionsUISwitch] isOn]]];

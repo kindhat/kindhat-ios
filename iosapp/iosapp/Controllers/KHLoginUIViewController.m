@@ -74,29 +74,25 @@
          else {
              
              KHUser *khUser = [[KHUser alloc]init];
-             
-             if (data.length == 0) {
-                 KHConfiguration *khConfiguration = [[KHConfiguration alloc]init];
+             NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:0
+                                                                        error:NULL];
+             [khUser deserialize: jsonData];
+
+             //we only want to default values if the profile
+             //has yet to be saved
+             if (![khUser requiredFieldsMet]) {
                  
                  [khUser setExternalId: [user objectID]];
                  [khUser setExternalIdType: Facebook];
                  [khUser setName: [user name]];
                  [khUser setImage:[NSString stringWithFormat:
-                               [khConfiguration getConfiguration:@"kh.ios.facebookimageurl"],
+                               [KHConfiguration getConfiguration:@"kh.ios.facebookimageurl"],
                                [user objectID]]];
                  [khUser setEmail: [user objectForKey: @"email"]];
 
              }
-             
-             else
-             {
 
-                 NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
-                                                                          options:0
-                                                                            error:NULL];
-                 [khUser deserialize: jsonData];
-                 
-             }
              [self setKhUser:khUser];
              [self performSegueWithIdentifier:@"showMainUITabBarController" sender:loginView];
          }
