@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>94AF5E40-CAA0-4626-B134-0686D241D7F2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosapp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F7DA0802CD09AA416B49A9628A5B981F38A124DF</key>
+		<string>https://github.com/kindhat/kindhat-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosapp/iosapp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F7DA0802CD09AA416B49A9628A5B981F38A124DF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kindhat/kindhat-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F7DA0802CD09AA416B49A9628A5B981F38A124DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F7DA0802CD09AA416B49A9628A5B981F38A124DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kindhat-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
