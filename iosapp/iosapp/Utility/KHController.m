@@ -17,80 +17,112 @@ NSString *const getMethod = @"GET";
 NSString *const postMethod = @"POST";
 NSString *const putMethod = @"PUT";
 
--(void) getConfiguration:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
-    
-    KHRestfulUrls *khRestfulUrls = [[KHRestfulUrls alloc] init];
-    
-    [self
-     callApi:[khRestfulUrls getConfiguration]
-     withMethod: getMethod
-     callHandler: handler];
+-(void) getItemAsync:(NSString*)url
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiAsync: url
+            withMethod: getMethod
+           callHandler: handler];
 }
 
--(void) getUserByExternalId:(NSString*)externalId
-             withExternalIdType:(KHExternalIdType *)externalIdType
-             callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
-    
-    KHRestfulUrls *khRestfulUrls = [[KHRestfulUrls alloc] init];
-    
-    [self
-     callApi:[khRestfulUrls getUserByExternalId:externalId withExternalIdType:externalIdType]
-     withMethod: getMethod
-     callHandler: handler];
+-(void) getItemSync:(NSString*)url
+        callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiSync: url
+           withMethod: getMethod
+          callHandler: handler];
 }
 
--(void) postUser:(KHUser*)khUser
-     callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
-    
-    KHRestfulUrls *khRestfulUrls = [[KHRestfulUrls alloc] init];
-    
-    [self
-     callApi:[khRestfulUrls postUser]
-     withMethod: postMethod
-     withData: [khUser serialize]
-     callHandler: handler];
-
+-(void) postItemAsync:(NSString*)url
+                 item: (NSData*) data
+          callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiAsync:url
+            withMethod: postMethod
+              withData: data
+           callHandler: handler];
 }
 
--(void) putUser:(KHUser*)khUser
-    callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
-    
-    KHRestfulUrls *khRestfulUrls = [[KHRestfulUrls alloc] init];
-    
-    [self
-     callApi:[khRestfulUrls putUser]
-     withMethod: putMethod
-     withData: [khUser serialize]
-     callHandler: handler];
-    
+-(void) postItemSync:(NSString*)url
+                item: (NSData*) data
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiSync:url
+           withMethod: postMethod
+             withData: data
+          callHandler: handler];
 }
 
-- (void) callApi:(NSString*)url
-            withMethod:(NSString*)method
-                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
+-(void) putItemAsync:(NSString*)url
+                item: (NSData*) data
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiAsync:url
+            withMethod: postMethod
+              withData: data
+           callHandler: handler];
+}
+
+-(void) putItemSync:(NSString*)url
+               item: (NSData*) data
+        callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler {
+    [self callApiSync:url
+           withMethod: postMethod
+             withData: data
+          callHandler: handler];
+}
+
+- (void) callApiAsync:(NSString*)url
+           withMethod:(NSString*)method
+          callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:method];
     [request setValue:contenTypeHeaderValue forHTTPHeaderField:contenTypeHeaderName];
-    [NSURLConnection sendAsynchronousRequest:
-       request
-       queue:[NSOperationQueue mainQueue]
-       completionHandler:handler];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:handler];
 }
 
-- (void) callApi:(NSString*)url
-             withMethod:(NSString*)method
-                withData:(NSData*)data
-                    callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
+- (void) callApiAsync:(NSString*)url
+           withMethod:(NSString*)method
+             withData:(NSData*)data
+          callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:method];
     [request setHTTPBody:data];
     [request setValue:contenTypeHeaderValue forHTTPHeaderField:contenTypeHeaderName];
-    [NSURLConnection sendAsynchronousRequest:
-     request
-     queue:[NSOperationQueue mainQueue]
-     completionHandler:handler];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:handler];
+}
+
+- (void) callApiSync:(NSString*)url
+          withMethod:(NSString*)method
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
+    [request setURL:[NSURL URLWithString:url]];
+    [request setHTTPMethod:method];
+    [request setValue:contenTypeHeaderValue forHTTPHeaderField:contenTypeHeaderName];
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest: request
+                                                 returningResponse: &response
+                                                             error: &error];
+    handler(response, responseData, error);
+}
+
+- (void) callApiSync:(NSString*)url
+          withMethod:(NSString*)method
+            withData:(NSData*)data
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
+    [request setURL:[NSURL URLWithString:url]];
+    [request setHTTPMethod:method];
+    [request setHTTPBody:data];
+    [request setValue:contenTypeHeaderValue forHTTPHeaderField:contenTypeHeaderName];
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest: request
+                                                 returningResponse: &response
+                                                             error: &error];
+    handler(response, responseData, error);
 }
 
 @end

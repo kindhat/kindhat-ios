@@ -11,37 +11,43 @@
 
 @implementation KHConfiguration
 
+static NSString *const configurationUrl = @"http://localhost:8888/_ah/api/configurationendpoint/v1/configuration";
+static NSString *const name = @"name";
+static NSString *const value = @"value";
+static NSString *const items = @"items";
+
 NSDictionary *configuration;
 
 + (void) loadConfiguration {
     
-    if (configuration == nil) {
-                
-        configuration = [[NSDictionary alloc]initWithObjectsAndKeys:@"http://graph.facebook.com/%@/picture?type=square",@"kh.ios.facebookimageurl",nil];
+    KHController *khController = [[KHController alloc]init];
         
-        /*
-        KHController *khController = [[KHController alloc]init];
-        
-        [khController getConfiguration:^(NSURLResponse *response,
-                                         NSData *data,
-                                         NSError *error){
-            if (data.length > 0 && error == nil)
-            {
-                id configurationObjects = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-                for (NSDictionary* configurationObject in configurationObjects) {
-                    [configuration
-                     setValue:[configurationObject objectForKey:@"value"]
-                     forKey:[configurationObject objectForKey:@"name"]];
-                }
-                
+    [khController getItemSync:configurationUrl
+                  callHandler:^(NSURLResponse *response,
+                                NSData *data,
+                                NSError *error){
+        if (data.length > 0 && error == nil)
+        {
+            id configurationItems = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:0
+                                                                        error:NULL];
+            
+            id configurationObjects = [configurationItems objectForKey: items];
+            
+            for (NSDictionary* configurationObject in configurationObjects) {
+                [configuration setValue:[configurationObject objectForKey:value]
+                                 forKey:[configurationObject objectForKey:name]];
             }
-        }];
-         */
-    }
+                
+        }
+    }];
 }
 
 + (NSString*) getConfiguration:(NSString*)configurationName {
-    
+    if(configuration == nil)
+    {
+        [self loadConfiguration];
+    }
     return [configuration objectForKey:configurationName];
 }
 

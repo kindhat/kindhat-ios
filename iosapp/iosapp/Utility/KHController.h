@@ -12,16 +12,27 @@
 
 @interface KHController : NSObject
 
--(void) getConfiguration:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+-(void) getItemAsync:(NSString*)url
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
 
--(void) getUserByExternalId:(NSString*)externalId
-         withExternalIdType:(KHExternalIdType *)externalIdType
-                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+-(void) getItemSync:(NSString*)url
+        callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
 
--(void) postUser:(KHUser*)khUser
-                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+-(void) postItemAsync:(NSString*)url
+                 item: (NSData*)data
+          callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
 
--(void) putUser:(KHUser*)khUser
-                callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+-(void) postItemSync:(NSString*)url
+                item: (NSData*)data
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+
+-(void) putItemAsync:(NSString*)url
+                item: (NSData*)data
+         callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+
+-(void) putItemSync:(NSString*)url
+               item: (NSData*)data
+        callHandler:(void (^)(NSURLResponse*, NSData*, NSError*))handler;
+
 @end
 
