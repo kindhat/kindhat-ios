@@ -66,6 +66,8 @@
 		04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 04930B451A1EF59D000BD42C /* KHApiKey.m */; };
 		0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495CEDA19F59D4D0046FB4D /* KHUser.m */; };
 		0495CEDD19F5ABEF0046FB4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */; };
+		DB3BB3F91A9C2A9700ABA516 /* BackgroundImageView2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */; };
+		DB3BB3FB1A9C30CB00ABA516 /* BackgroundImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3FA1A9C30CB00ABA516 /* BackgroundImage.xcassets */; };
 		DBC4A2D51A9BE908005C7139 /* Add user outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2C91A9BE908005C7139 /* Add user outline@2x.png */; };
 		DBC4A2D61A9BE908005C7139 /* Add users@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2CA1A9BE908005C7139 /* Add users@2x.png */; };
 		DBC4A2D71A9BE908005C7139 /* bell Filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2CB1A9BE908005C7139 /* bell Filled@2x.png */; };
@@ -78,6 +80,7 @@
 		DBC4A2DE1A9BE908005C7139 /* tree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2D21A9BE908005C7139 /* tree@2x.png */; };
 		DBC4A2DF1A9BE908005C7139 /* user filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2D31A9BE908005C7139 /* user filled@2x.png */; };
 		DBC4A2E01A9BE908005C7139 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2D41A9BE908005C7139 /* user@2x.png */; };
+		DBC5BB2E1A9C257B00EBC991 /* BackgroundImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC5BB2D1A9C257B00EBC991 /* BackgroundImageView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +168,8 @@
 		0495CED919F598920046FB4D /* KHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUser.h; sourceTree = "<group>"; };
 		0495CEDA19F59D4D0046FB4D /* KHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUser.m; sourceTree = "<group>"; };
 		0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundImageView2.png; path = "../../../kindhat images/BackgroundImageView2.png"; sourceTree = "<group>"; };
+		DB3BB3FA1A9C30CB00ABA516 /* BackgroundImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BackgroundImage.xcassets; sourceTree = "<group>"; };
 		DBC4A2C91A9BE908005C7139 /* Add user outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add user outline@2x.png"; sourceTree = "<group>"; };
 		DBC4A2CA1A9BE908005C7139 /* Add users@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add users@2x.png"; sourceTree = "<group>"; };
 		DBC4A2CB1A9BE908005C7139 /* bell Filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell Filled@2x.png"; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 		DBC4A2D21A9BE908005C7139 /* tree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree@2x.png"; sourceTree = "<group>"; };
 		DBC4A2D31A9BE908005C7139 /* user filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user filled@2x.png"; sourceTree = "<group>"; };
 		DBC4A2D41A9BE908005C7139 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		DBC5BB2D1A9C257B00EBC991 /* BackgroundImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundImageView.png; path = "../../../kindhat images/BackgroundImageView.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,7 @@
 				040DD66B19E5027E00AFD82E /* KHAppDelegate.h */,
 				040DD66C19E5027E00AFD82E /* KHAppDelegate.m */,
 				040DD67119E5027E00AFD82E /* Main.storyboard */,
+				DB3BB3FA1A9C30CB00ABA516 /* BackgroundImage.xcassets */,
 				040DD67419E5027E00AFD82E /* Images.xcassets */,
 				040DD67619E5027E00AFD82E /* LaunchScreen.xib */,
 				040DD66719E5027E00AFD82E /* Supporting Files */,
@@ -280,9 +287,11 @@
 		044AB82D1A89CF5A0012B2EB /* Kindhat ios images */ = {
 			isa = PBXGroup;
 			children = (
+				DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */,
 				DBC4A2C81A9BE908005C7139 /* tab icons */,
 				044AB85D1A89D0C20012B2EB /* Blur background.jpg */,
 				044AB85E1A89D0C20012B2EB /* Ghost Button.png */,
+				DBC5BB2D1A9C257B00EBC991 /* BackgroundImageView.png */,
 				044AB82E1A89CF5A0012B2EB /* kindhat century gothic white.png */,
 				044AB82F1A89CF5A0012B2EB /* Kindhat launch image */,
 			);
@@ -534,6 +543,7 @@
 				DBC4A2D81A9BE908005C7139 /* bell@2x.png in Resources */,
 				044AB8791A89D1580012B2EB /* Icon-72@2x.png in Resources */,
 				DBC4A2DE1A9BE908005C7139 /* tree@2x.png in Resources */,
+				DB3BB3F91A9C2A9700ABA516 /* BackgroundImageView2.png in Resources */,
 				044AB87D1A89D1580012B2EB /* Icon-Small-40@2x.png in Resources */,
 				044AB84D1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 1536x2048.png in Resources */,
 				044AB8541A89CF5A0012B2EB /* Kindhat Launch image white 750x1334.png in Resources */,
@@ -556,11 +566,13 @@
 				044AB8571A89CF5A0012B2EB /* Kindhat Launch white hat on d 1536x2048.png in Resources */,
 				040DD67819E5027E00AFD82E /* LaunchScreen.xib in Resources */,
 				044AB8481A89CF5A0012B2EB /* kindhat century gothic white.png in Resources */,
+				DBC5BB2E1A9C257B00EBC991 /* BackgroundImageView.png in Resources */,
 				044AB8521A89CF5A0012B2EB /* Kindhat Launch image white 640x1136.png in Resources */,
 				DBC4A2D51A9BE908005C7139 /* Add user outline@2x.png in Resources */,
 				044AB8531A89CF5A0012B2EB /* Kindhat Launch image white 640x960.png in Resources */,
 				040DD67519E5027E00AFD82E /* Images.xcassets in Resources */,
 				044AB8591A89CF5A0012B2EB /* Kindhat Launch white hat on d 640x1136.png in Resources */,
+				DB3BB3FB1A9C30CB00ABA516 /* BackgroundImage.xcassets in Resources */,
 				044AB8491A89CF5A0012B2EB /* Kindhat Launch image green gradient 1536x2048.png in Resources */,
 				044AB84C1A89CF5A0012B2EB /* Kindhat logo arial.png in Resources */,
 				044AB8751A89D1580012B2EB /* Icon-60.png in Resources */,
