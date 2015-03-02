@@ -68,6 +68,7 @@
 		0495CEDD19F5ABEF0046FB4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */; };
 		DB3BB3F91A9C2A9700ABA516 /* BackgroundImageView2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */; };
 		DB3BB3FB1A9C30CB00ABA516 /* BackgroundImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3FA1A9C30CB00ABA516 /* BackgroundImage.xcassets */; };
+		DB3BB3FE1A9CF51C00ABA516 /* Puppies in hats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3FD1A9CF51C00ABA516 /* Puppies in hats.jpg */; };
 		DBC4A2D51A9BE908005C7139 /* Add user outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2C91A9BE908005C7139 /* Add user outline@2x.png */; };
 		DBC4A2D61A9BE908005C7139 /* Add users@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2CA1A9BE908005C7139 /* Add users@2x.png */; };
 		DBC4A2D71A9BE908005C7139 /* bell Filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC4A2CB1A9BE908005C7139 /* bell Filled@2x.png */; };
@@ -170,6 +171,7 @@
 		0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundImageView2.png; path = "../../../kindhat images/BackgroundImageView2.png"; sourceTree = "<group>"; };
 		DB3BB3FA1A9C30CB00ABA516 /* BackgroundImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BackgroundImage.xcassets; sourceTree = "<group>"; };
+		DB3BB3FD1A9CF51C00ABA516 /* Puppies in hats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Puppies in hats.jpg"; path = "../../../../Kindhat ios images/Puppies in hats.jpg"; sourceTree = "<group>"; };
 		DBC4A2C91A9BE908005C7139 /* Add user outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add user outline@2x.png"; sourceTree = "<group>"; };
 		DBC4A2CA1A9BE908005C7139 /* Add users@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add users@2x.png"; sourceTree = "<group>"; };
 		DBC4A2CB1A9BE908005C7139 /* bell Filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell Filled@2x.png"; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		044AB82D1A89CF5A0012B2EB /* Kindhat ios images */ = {
 			isa = PBXGroup;
 			children = (
+				DB3BB3FD1A9CF51C00ABA516 /* Puppies in hats.jpg */,
 				DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */,
 				DBC4A2C81A9BE908005C7139 /* tab icons */,
 				044AB85D1A89D0C20012B2EB /* Blur background.jpg */,
@@ -550,6 +553,7 @@
 				044AB84E1A89CF5A0012B2EB /* Kindhat Launch image grey gradient 640x960.png in Resources */,
 				044AB8561A89CF5A0012B2EB /* Kindhat Launch white hat on d 1242x2208.png in Resources */,
 				DBC4A2D91A9BE908005C7139 /* hat filled@2x.png in Resources */,
+				DB3BB3FE1A9CF51C00ABA516 /* Puppies in hats.jpg in Resources */,
 				044AB8841A89D1580012B2EB /* Icon.png in Resources */,
 				044AB87F1A89D1580012B2EB /* Icon-Small-50.png in Resources */,
 				044AB8601A89D0C20012B2EB /* Ghost Button.png in Resources */,
