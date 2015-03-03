@@ -24,6 +24,10 @@
 
 @implementation KHLoginUIViewController
 
+static NSString *const _facebookImageUrlConfigurationName = @"kh.ios.facebookimageurl";
+static NSString *const _email = @"email";
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
         // Custom initialization
@@ -61,13 +65,15 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(NSDictionary<FBGraphUser>*)user
 {
-    KHController *controller = [[KHController alloc]init];
+    KHController *khController = [[KHController alloc]init];
     
-    [controller getUserByExternalId: [user objectID]
-                 withExternalIdType: Facebook
-                        callHandler:^(NSURLResponse *response,
-                                        NSData *data,
-                                            NSError *error){
+    NSString *userUrl = [NSString stringWithFormat:[KHConfiguration getConfiguration:[KHUser userUrlConfigurationName]],
+                         [user objectID],
+                         Facebook];
+    
+    [khController getItemAsync:userUrl
+                   callHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+    
          if (error != nil) {
              //need to figure out error handling
          }
@@ -87,9 +93,9 @@
                  [khUser setExternalIdType: Facebook];
                  [khUser setName: [user name]];
                  [khUser setImage:[NSString stringWithFormat:
-                               [KHConfiguration getConfiguration:@"kh.ios.facebookimageurl"],
+                               [KHConfiguration getConfiguration: _facebookImageUrlConfigurationName],
                                [user objectID]]];
-                 [khUser setEmail: [user objectForKey: @"email"]];
+                 [khUser setEmail: [user objectForKey: _email]];
 
              }
 

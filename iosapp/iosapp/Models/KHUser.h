@@ -12,6 +12,8 @@
 
 @interface KHUser : NSObject
 
++ (NSString*) userUrlConfigurationName;
+
 @property KHApiKey * identifier;
 @property NSString * name;
 @property NSString * street;

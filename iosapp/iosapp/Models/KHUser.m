@@ -23,6 +23,12 @@
 @synthesize requests;
 @synthesize responses;
 
+static NSString *const _userUrlConfigurationName = @"kh.ios.userurl";
+
++ (NSString*) userUrlConfigurationName {
+    return _userUrlConfigurationName;
+}
+
 - (void) deserialize:(NSDictionary *)jsonData{
     KHApiKey *khApiKey = [[KHApiKey alloc]init];
     [khApiKey deserialize:[jsonData objectForKey:@"id"]];
