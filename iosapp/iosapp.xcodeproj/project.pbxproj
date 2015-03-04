@@ -59,11 +59,15 @@
 		044AB8861A89D1580012B2EB /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AB8741A89D1580012B2EB /* iTunesArtwork@2x.png */; };
 		044AB8891A89E4040012B2EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044AB8881A89E4040012B2EB /* FacebookSDK.framework */; };
 		0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHMeUIViewController.m */; };
+		0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465B14D1AA63B1900482DD5 /* KHRequest.m */; };
 		0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */; };
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
 		04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */; };
-		04918A7719FADD5700136F9D /* KHBorrowUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A7619FADD5700136F9D /* KHBorrowUIViewController.m */; };
+		04918A7719FADD5700136F9D /* KHBorrowItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */; };
 		04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 04930B451A1EF59D000BD42C /* KHApiKey.m */; };
+		04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */; };
+		04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */; };
+		04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */; };
 		0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495CEDA19F59D4D0046FB4D /* KHUser.m */; };
 		0495CEDD19F5ABEF0046FB4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */; };
 		DB3BB3F91A9C2A9700ABA516 /* BackgroundImageView2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB3F81A9C2A9700ABA516 /* BackgroundImageView2.png */; };
@@ -156,16 +160,24 @@
 		044AB8881A89E4040012B2EB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		0459096D1A0448F0006764CB /* KHMeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMeUIViewController.m; sourceTree = "<group>"; };
 		0459096F1A04498C006764CB /* KHMeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMeUIViewController.h; sourceTree = "<group>"; };
+		0465B14C1AA63B1900482DD5 /* KHRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRequest.h; sourceTree = "<group>"; };
+		0465B14D1AA63B1900482DD5 /* KHRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRequest.m; sourceTree = "<group>"; };
 		0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHExternalIdType.h; sourceTree = "<group>"; };
 		0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainUITabBarController.h; sourceTree = "<group>"; };
 		0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainUITabBarController.m; sourceTree = "<group>"; };
 		0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHExternalIdType.m; sourceTree = "<group>"; };
 		04918A6E19FACDE900136F9D /* KHLoginUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginUIViewController.h; sourceTree = "<group>"; };
 		04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginUIViewController.m; sourceTree = "<group>"; };
-		04918A7519FADD5700136F9D /* KHBorrowUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowUIViewController.h; sourceTree = "<group>"; };
-		04918A7619FADD5700136F9D /* KHBorrowUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowUIViewController.m; sourceTree = "<group>"; };
+		04918A7519FADD5700136F9D /* KHBorrowItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowItemUIViewController.h; sourceTree = "<group>"; };
+		04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowItemUIViewController.m; sourceTree = "<group>"; };
 		04930B441A1EF39A000BD42C /* KHApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHApiKey.h; sourceTree = "<group>"; };
 		04930B451A1EF59D000BD42C /* KHApiKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHApiKey.m; sourceTree = "<group>"; };
+		04944CCA1AA79894009CDB95 /* KHBorrowDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowDateUIViewController.h; sourceTree = "<group>"; };
+		04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowDateUIViewController.m; sourceTree = "<group>"; };
+		04944CCD1AA79BB0009CDB95 /* KHReturnDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHReturnDateUIViewController.h; sourceTree = "<group>"; };
+		04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHReturnDateUIViewController.m; sourceTree = "<group>"; };
+		04944CD01AA79D23009CDB95 /* KHSendRequestUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSendRequestUIViewController.h; sourceTree = "<group>"; };
+		04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSendRequestUIViewController.m; sourceTree = "<group>"; };
 		0495CED919F598920046FB4D /* KHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUser.h; sourceTree = "<group>"; };
 		0495CEDA19F59D4D0046FB4D /* KHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUser.m; sourceTree = "<group>"; };
 		0495CEDC19F5ABEF0046FB4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -396,14 +408,20 @@
 		04918A6C19F9C62700136F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04918A7519FADD5700136F9D /* KHBorrowUIViewController.h */,
-				04918A7619FADD5700136F9D /* KHBorrowUIViewController.m */,
+				04918A7519FADD5700136F9D /* KHBorrowItemUIViewController.h */,
+				04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */,
 				04918A6E19FACDE900136F9D /* KHLoginUIViewController.h */,
 				04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */,
 				0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */,
 				0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */,
 				0459096F1A04498C006764CB /* KHMeUIViewController.h */,
 				0459096D1A0448F0006764CB /* KHMeUIViewController.m */,
+				04944CCA1AA79894009CDB95 /* KHBorrowDateUIViewController.h */,
+				04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */,
+				04944CCD1AA79BB0009CDB95 /* KHReturnDateUIViewController.h */,
+				04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */,
+				04944CD01AA79D23009CDB95 /* KHSendRequestUIViewController.h */,
+				04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +429,8 @@
 		0495CED819F597830046FB4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0465B14C1AA63B1900482DD5 /* KHRequest.h */,
+				0465B14D1AA63B1900482DD5 /* KHRequest.m */,
 				0495CED919F598920046FB4D /* KHUser.h */,
 				0495CEDA19F59D4D0046FB4D /* KHUser.m */,
 				04930B441A1EF39A000BD42C /* KHApiKey.h */,
@@ -599,15 +619,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */,
-				04918A7719FADD5700136F9D /* KHBorrowUIViewController.m in Sources */,
+				04918A7719FADD5700136F9D /* KHBorrowItemUIViewController.m in Sources */,
 				0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */,
 				0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */,
 				0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */,
 				040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */,
+				04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */,
+				04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */,
+				0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */,
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
 				043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
+				04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,
 			);

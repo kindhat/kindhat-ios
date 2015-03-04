@@ -11,7 +11,7 @@
         <!--Borrow Date-->
         <scene sceneID="FvZ-Ub-y8A">
             <objects>
-                <viewController title="Borrow Date" id="TPO-si-OoF" sceneMemberID="viewController">
+                <viewController title="Borrow Date" id="TPO-si-OoF" customClass="KHBorrowDateUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6aZ-RK-gs8"/>
                         <viewControllerLayoutGuide type="bottom" id="1jf-7m-r8M"/>
@@ -49,6 +49,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextClicked:" destination="TPO-si-OoF" eventType="touchUpInside" id="RM4-UA-C3y"/>
                                     <segue destination="w84-FD-VfN" kind="show" id="urT-5T-fp1"/>
                                 </connections>
                             </button>
@@ -70,6 +71,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1c7-KW-IQa"/>
+                    <connections>
+                        <outlet property="borrowDateUiDatePicker" destination="2RZ-ce-uOe" id="JiZ-UD-qoM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXg-WW-Kh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +82,7 @@
         <!--Borrow Item-->
         <scene sceneID="dXh-8L-9If">
             <objects>
-                <viewController title="Borrow Item" id="qYU-8g-jcs" sceneMemberID="viewController">
+                <viewController title="Borrow Item" id="qYU-8g-jcs" customClass="KHBorrowItemUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ubl-7Z-qij"/>
                         <viewControllerLayoutGuide type="bottom" id="4ym-yT-zZX"/>
@@ -119,6 +123,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextClicked:" destination="qYU-8g-jcs" eventType="touchUpInside" id="UBj-4L-0Xp"/>
                                     <segue destination="TPO-si-OoF" kind="show" id="0iU-JN-C1Q"/>
                                 </connections>
                             </button>
@@ -155,6 +160,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Borrow" image="hat.png" id="f5O-t8-FYW"/>
                     <navigationItem key="navigationItem" id="NJO-aA-zlR"/>
+                    <connections>
+                        <outlet property="itemUiTextField" destination="V05-Ej-BVm" id="WtN-y8-gLs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZX-OM-KNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,11 +303,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="fxy-6U-GDm"/>
-                                <exclude reference="vc2-Xe-Sj4"/>
-                                <exclude reference="xwl-fF-42c"/>
                                 <exclude reference="Bd9-lG-xjq"/>
                                 <exclude reference="Qqg-ni-Ijy"/>
+                                <exclude reference="vc2-Xe-Sj4"/>
+                                <exclude reference="xwl-fF-42c"/>
+                                <exclude reference="fxy-6U-GDm"/>
                                 <exclude reference="uAk-S2-Dhh"/>
                                 <exclude reference="ydh-je-X5Q"/>
                             </mask>
@@ -619,7 +627,7 @@
         <!--Return Date-->
         <scene sceneID="Dbc-E1-roO">
             <objects>
-                <viewController title="Return Date" id="w84-FD-VfN" sceneMemberID="viewController">
+                <viewController title="Return Date" id="w84-FD-VfN" customClass="KHReturnDateUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rr1-if-5fk"/>
                         <viewControllerLayoutGuide type="bottom" id="Jc2-v5-UKU"/>
@@ -663,6 +671,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="nextClicked:" destination="w84-FD-VfN" eventType="touchUpInside" id="DDp-rv-GvH"/>
                                     <segue destination="MpH-2a-peY" kind="show" id="Xfr-ua-asG"/>
                                 </connections>
                             </button>
@@ -691,10 +700,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="9WJ-8W-iTl"/>
-                                <exclude reference="ULj-wc-UTh"/>
                                 <exclude reference="yeg-wn-HEl"/>
                                 <exclude reference="4nd-OP-VL4"/>
+                                <exclude reference="9WJ-8W-iTl"/>
+                                <exclude reference="ULj-wc-UTh"/>
                                 <exclude reference="4N3-wc-ciO"/>
                                 <exclude reference="Hma-t7-zVV"/>
                                 <exclude reference="Lfe-DP-gxJ"/>
@@ -703,6 +712,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Return Date" id="mYp-YL-3xS"/>
+                    <connections>
+                        <outlet property="returnDateUiDatePicker" destination="bnv-Ie-I1R" id="5Ol-s7-GbJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fX4-St-rDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1045,6 +1057,9 @@
                                         <exclude reference="Eeh-Ov-fCT"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="T54-jD-0Ww" kind="show" id="lyO-0L-c5P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL7-5a-tJg">
                                 <rect key="frame" x="311" y="420" width="139" height="42"/>
@@ -1131,6 +1146,13 @@
                                 <exclude reference="UhX-G1-HCE"/>
                                 <exclude reference="nAk-iO-1cE"/>
                                 <exclude reference="yno-bB-Td6"/>
+                                <exclude reference="0pU-9W-2zW"/>
+                                <exclude reference="3Cf-st-8So"/>
+                                <exclude reference="CMT-Hs-Wp2"/>
+                                <exclude reference="UKh-IX-o74"/>
+                                <exclude reference="W1Q-XV-sQJ"/>
+                                <exclude reference="cYw-V3-yRG"/>
+                                <exclude reference="ikB-Fn-Jhd"/>
                                 <exclude reference="9xz-za-AHs"/>
                                 <exclude reference="ApD-7s-t5f"/>
                                 <exclude reference="GoZ-Z6-EE6"/>
@@ -1139,13 +1161,6 @@
                                 <exclude reference="hzl-gO-v4B"/>
                                 <exclude reference="smw-LR-L8H"/>
                                 <exclude reference="uYZ-sH-4EG"/>
-                                <exclude reference="0pU-9W-2zW"/>
-                                <exclude reference="3Cf-st-8So"/>
-                                <exclude reference="CMT-Hs-Wp2"/>
-                                <exclude reference="UKh-IX-o74"/>
-                                <exclude reference="W1Q-XV-sQJ"/>
-                                <exclude reference="cYw-V3-yRG"/>
-                                <exclude reference="ikB-Fn-Jhd"/>
                                 <exclude reference="cuQ-xR-jZy"/>
                             </mask>
                         </variation>
@@ -1161,7 +1176,7 @@
         <!--Send Request-->
         <scene sceneID="cJN-8o-z6P">
             <objects>
-                <viewController title="Send Request" id="quu-b1-9fq" sceneMemberID="viewController">
+                <viewController title="Send Request" id="quu-b1-9fq" customClass="KHSendRequestUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ajf-jq-gio"/>
                         <viewControllerLayoutGuide type="bottom" id="u3O-iT-QhR"/>
@@ -1189,6 +1204,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="sendRequestClicked:" destination="quu-b1-9fq" eventType="touchUpInside" id="iP5-Xq-WDb"/>
                                     <segue destination="oO4-EF-WFY" kind="presentation" id="fGk-c3-p8I"/>
                                 </connections>
                             </button>
@@ -1237,6 +1253,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Send Request" id="KvY-dZ-Tmj"/>
+                    <connections>
+                        <outlet property="messageUITextView" destination="I0O-vi-q2o" id="H1G-MO-lN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0L-q7-SbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1274,8 +1293,8 @@
         <image name="user.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YyO-d5-Z05"/>
-        <segue reference="Xfr-ua-asG"/>
         <segue reference="OBY-5W-fVJ"/>
+        <segue reference="Xfr-ua-asG"/>
+        <segue reference="vcI-Q1-K4Y"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,7 @@
 //
 
 #include <Foundation/Foundation.h>
-#include "KHApiKey.h"
+#import "KHApiKey.h"
 #include "../Utility/KHExternalIdType.h"
 
 @interface KHUser : NSObject
