@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "../Models/KHRequest.h"
 
 @interface KHBorrowItemUIViewController : UIViewController
-
-@property KHRequest * khRequest;
 
 @property (nonatomic, strong) IBOutlet UITextField *itemUiTextField;
 

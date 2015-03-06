@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Models/KHRequest.h"
 
 @interface KHSendRequestUIViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UITextView *messageUITextView;
+@property KHRequest *khRequest;
 
 @end

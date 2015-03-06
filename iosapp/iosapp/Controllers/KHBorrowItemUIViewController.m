@@ -9,28 +9,29 @@
 #import <Foundation/Foundation.h>
 #import "KHMainUITabBarController.h"
 #import "KHBorrowItemUIViewController.h"
+#import "KHBorrowDateUIViewController.h"
 #import "../Models/KHUser.h"
 
 @implementation KHBorrowItemUIViewController
 
-@synthesize khRequest;
-
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
+    [super viewDidLoad];    
 }
 
-- (IBAction)nextClicked:(id)sender
-{
-    
-    KHMainUITabBarController *khMainUITabBarController =
-    (KHMainUITabBarController*)[[self parentViewController] parentViewController];
-    
-    KHUser *khUser = [khMainUITabBarController khUser];
-    
-    [[self khRequest] setUserId: [khUser identifier]];
-    [[self khRequest] setItem: [[self itemUiTextField] text]];
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showBorrowDateController"]){
+        KHBorrowDateUIViewController *khBorrowDateUIViewController = (KHBorrowDateUIViewController *)segue.destinationViewController;
+
+        KHMainUITabBarController *khMainUITabBarController =
+        (KHMainUITabBarController*)[[self parentViewController] parentViewController];
+        
+        KHUser *khUser = [khMainUITabBarController khUser];
+        KHRequest *khRequest = [[KHRequest alloc]init];
+        [khRequest setUserId: [khUser identifier]];
+        [khRequest setItem: [[self itemUiTextField] text]];
+        [khBorrowDateUIViewController setKhRequest:khRequest];
+    }
 }
 
 @end

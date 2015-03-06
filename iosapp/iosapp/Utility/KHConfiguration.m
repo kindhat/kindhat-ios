@@ -16,7 +16,7 @@ static NSString *const name = @"name";
 static NSString *const value = @"value";
 static NSString *const items = @"items";
 
-NSDictionary *configuration;
+NSMutableDictionary *configuration;
 
 + (void) loadConfiguration {
     
@@ -28,6 +28,8 @@ NSDictionary *configuration;
                                 NSError *error){
         if (data.length > 0 && error == nil)
         {
+            configuration = [[NSMutableDictionary alloc] init];
+            
             id configurationItems = [NSJSONSerialization JSONObjectWithData:data
                                                                       options:0
                                                                         error:NULL];

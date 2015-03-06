@@ -24,13 +24,15 @@
     [[self nameUILabel] setText: [khUser name]];
     [[self emailUILabel] setText: [khUser email]];
     
-    NSError *imageError ;
-    
-    
-    NSURL *url = [NSURL URLWithString: [khUser image]];
-    NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&imageError];
-    UIImage *image = [UIImage imageWithData:data];
-    [[self profileUIImageView] setImage:image];
+    //we don't want the NSData dataWithContentsOfUrl operation to error if the image string is empty
+    if([[khUser image] length] > 0)
+    {
+        NSError *imageError ;
+        NSURL *url = [NSURL URLWithString: [khUser image]];
+        NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&imageError];
+        UIImage *image = [UIImage imageWithData:data];
+        [[self profileUIImageView] setImage:image];
+    }
 }
 
 
@@ -41,9 +43,7 @@
     //we need to PUT
     KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
     KHUser* khUser = [khMainUITabBarController khUser];
-    NSString *userUrl = [NSString stringWithFormat:[KHConfiguration getConfiguration:[KHUser userUrlConfigurationName]],
-                         [khUser externalId],
-                         [khUser externalIdType]];
+    NSString *userUrl = [KHConfiguration getConfiguration:[KHUser userUrlConfigurationName]];
     
     [khUser setStreet: [[self streetUITextField] text]];
     [khUser setPostalCode: [[self postalCodeUITextField] text]];

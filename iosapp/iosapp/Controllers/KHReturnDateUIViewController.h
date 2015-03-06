@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Models/KHRequest.h"
 
 @interface KHReturnDateUIViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIDatePicker *returnDateUiDatePicker;
+
+@property KHRequest *khRequest;
 
 @end

@@ -49,14 +49,20 @@ static NSString *const _requestUrlConfigurationName = @"kh.ios.requesturl";
 }
 
 - (NSData*) serialize {
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS"];
+    
+    KHApiKey *identifierKHApiKey = [[KHApiKey alloc]init];
+    [identifierKHApiKey deserialize:nil];
+    
     NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  [self.identifier serialize], @"key",
+                                  [identifierKHApiKey serialize], @"id",
                                   [self.userId serialize], @"userId",
                                   self.item, @"item",
-                                  self.category, @"category",
-                                  self.use, @"use",
-                                  self.borrowDate, @"borrowDate",
-                                  self.returnDate, @"returnDate",
+                                  //self.category, @"category",
+                                  //self.use, @"use",
+                                  [dateFormat stringFromDate: self.borrowDate], @"borrowDate",
+                                  [dateFormat stringFromDate: self.returnDate], @"returnDate",
                                   self.message, @"message",
                                   nil];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsDictionary

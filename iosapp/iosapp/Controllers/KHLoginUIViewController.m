@@ -67,9 +67,9 @@ static NSString *const _email = @"email";
 {
     KHController *khController = [[KHController alloc]init];
     
-    NSString *userUrl = [NSString stringWithFormat:[KHConfiguration getConfiguration:[KHUser userUrlConfigurationName]],
+    NSString *userUrl = [NSString stringWithFormat:[KHConfiguration getConfiguration:[KHUser getUserUrlConfigurationName]],
                          [user objectID],
-                         Facebook];
+                         KHExternalIdTypeToString[Facebook]];
     
     [khController getItemAsync:userUrl
                    callHandler:^(NSURLResponse *response, NSData *data, NSError *error) {

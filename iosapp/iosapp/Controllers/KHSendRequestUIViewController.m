@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "KHSendRequestUIViewController.h"
-#import "KHBorrowItemUIViewController.h"
-#import "../Models/KHRequest.h"
 #import "../Utility/KHConfiguration.h"
 #import "../Utility/KHController.h"
 
 @implementation KHSendRequestUIViewController
+
+@synthesize khRequest;
 
 - (void)viewDidLoad
 {
@@ -22,18 +22,12 @@
 
 - (IBAction)sendRequestClicked:(id)sender
 {
-    KHBorrowItemUIViewController *khBorrowItemUIViewController =
-    (KHBorrowItemUIViewController*)[[self parentViewController] parentViewController];
-    
-    KHRequest *khRequest = [khBorrowItemUIViewController khRequest];
-    [khRequest setMessage:[[self messageUITextView] text]];
-    
     NSString *requestUrl = [KHConfiguration getConfiguration:[KHRequest requestUrlConfigurationName]];
     
     KHController *khController = [[KHController alloc] init];
     
     [khController postItemAsync:requestUrl
-                           item:[khRequest serialize]
+                           item:[[self khRequest] serialize]
                     callHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                             [self handleCall:response
                                     withData:data

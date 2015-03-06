@@ -24,9 +24,14 @@
 @synthesize responses;
 
 static NSString *const _userUrlConfigurationName = @"kh.ios.userurl";
+static NSString *const _getUserUrlConfigurationName = @"kh.ios.getuserurl";
 
 + (NSString*) userUrlConfigurationName {
     return _userUrlConfigurationName;
+}
+
++ (NSString*) getUserUrlConfigurationName {
+    return _getUserUrlConfigurationName;
 }
 
 - (void) deserialize:(NSDictionary *)jsonData{
@@ -59,13 +64,15 @@ static NSString *const _userUrlConfigurationName = @"kh.ios.userurl";
                                   self.street, @"street",
                                   self.postalCode, @"postalCode",
                                   self.aboutMe, @"aboutMe",
-                                  //self.image, @"image",
+                                  self.image, @"image",
                                   self.email, @"email",
                                   [NSNumber numberWithBool: self.termsAndConditions], @"termsAndConditions",
                                   [NSNumber numberWithInt: self.externalIdType], @"externalIdType",
                                   self.externalId, @"externalId",
                                   nil];
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsDictionary options:NSJSONWritingPrettyPrinted error:nil];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsDictionary
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:nil];
     return jsonData;
 }
 

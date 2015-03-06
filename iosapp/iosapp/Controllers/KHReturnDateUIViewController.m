@@ -8,24 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "KHReturnDateUIViewController.h"
-#import "KHBorrowItemUIViewController.h"
-#import "../Models/KHRequest.h"
+#import "KHBorrowMessageUIViewController.h"
 
 @implementation KHReturnDateUIViewController
+
+@synthesize khRequest;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
 
-- (IBAction)nextClicked:(id)sender
-{
-    KHBorrowItemUIViewController *khBorrowItemUIViewController =
-    (KHBorrowItemUIViewController*)[[self parentViewController] parentViewController];
-    
-    KHRequest *khRequest = [khBorrowItemUIViewController khRequest];
-    [khRequest setReturnDate:[[self returnDateUiDatePicker] date]];
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showBorrowMessageController"]){
+        KHBorrowMessageUIViewController *khBorrowMessageUIViewController = (KHBorrowMessageUIViewController *)segue.destinationViewController;
+        [[self khRequest] setReturnDate:[[self returnDateUiDatePicker] date]];
+        [khBorrowMessageUIViewController setKhRequest:[self khRequest]];
+    }
 }
-
 
 @end

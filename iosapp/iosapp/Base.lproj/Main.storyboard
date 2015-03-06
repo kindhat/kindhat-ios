@@ -49,8 +49,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextClicked:" destination="TPO-si-OoF" eventType="touchUpInside" id="RM4-UA-C3y"/>
-                                    <segue destination="w84-FD-VfN" kind="show" id="urT-5T-fp1"/>
+                                    <segue destination="w84-FD-VfN" kind="show" identifier="showReturnDateController" id="urT-5T-fp1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,8 +122,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextClicked:" destination="qYU-8g-jcs" eventType="touchUpInside" id="UBj-4L-0Xp"/>
-                                    <segue destination="TPO-si-OoF" kind="show" id="0iU-JN-C1Q"/>
+                                    <segue destination="TPO-si-OoF" kind="show" identifier="showBorrowDateController" id="0iU-JN-C1Q"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EdQ-c3-3SN">
@@ -171,7 +169,7 @@
         <!--Message-->
         <scene sceneID="bbZ-gV-cpV">
             <objects>
-                <viewController title="Message" id="MpH-2a-peY" sceneMemberID="viewController">
+                <viewController title="Message" id="MpH-2a-peY" customClass="KHBorrowMessageUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wNa-7y-0b1"/>
                         <viewControllerLayoutGuide type="bottom" id="WLo-ud-I7N"/>
@@ -209,7 +207,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="quu-b1-9fq" kind="show" id="xO1-rK-rR4"/>
+                                    <segue destination="quu-b1-9fq" kind="show" identifier="showSendRequestController" id="xO1-rK-rR4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,6 +229,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V29-bT-KbY"/>
+                    <connections>
+                        <outlet property="messageUITextView" destination="YeU-7l-uaW" id="EPL-eW-Kc2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJd-Z0-9EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,7 +343,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.99818638390000003" green="0.99818638390000003" blue="0.99818638390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="LQy-Is-u8e" kind="push" id="YyO-d5-Z05"/>
+                                    <segue destination="LQy-Is-u8e" kind="show" id="YyO-d5-Z05"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What task would you like assistance with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bU7-qC-6Qe">
@@ -671,8 +672,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="nextClicked:" destination="w84-FD-VfN" eventType="touchUpInside" id="DDp-rv-GvH"/>
-                                    <segue destination="MpH-2a-peY" kind="show" id="Xfr-ua-asG"/>
+                                    <segue destination="MpH-2a-peY" kind="show" identifier="showBorrowMessageController" id="Xfr-ua-asG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1253,9 +1253,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Send Request" id="KvY-dZ-Tmj"/>
-                    <connections>
-                        <outlet property="messageUITextView" destination="I0O-vi-q2o" id="H1G-MO-lN3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0L-q7-SbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1295,6 +1292,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="OBY-5W-fVJ"/>
         <segue reference="Xfr-ua-asG"/>
-        <segue reference="vcI-Q1-K4Y"/>
+        <segue reference="YyO-d5-Z05"/>
     </inferredMetricsTieBreakers>
 </document>
