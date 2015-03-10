@@ -15,7 +15,7 @@
 @synthesize identifier;
 @synthesize kind;
 @synthesize name;
-@synthesize namespaceProperty;
+@synthesize appIdNamespace;
 @synthesize parent;
 
 - (void) deserialize:(NSDictionary *)jsonData{
@@ -29,7 +29,11 @@
     
     [self setKind: [jsonData objectForKey:@"kind"]];
     [self setName: [jsonData objectForKey:@"name"]];
-    [self setNamespaceProperty: [jsonData objectForKey:@"namespace"]];
+    
+    KHApiAppIdNamespace *khApiAppIdNamespace = [[KHApiAppIdNamespace alloc]init];
+    [khApiAppIdNamespace deserialize: [jsonData objectForKey:@"appIdNamespace"]];
+    [khApiAppIdNamespace setAppId: self.appId];
+    [self setAppIdNamespace: khApiAppIdNamespace];
     
     //parse parent if it exists
     NSDictionary *nsDictionaryParent = [jsonData objectForKey:@"parent"];
@@ -47,24 +51,24 @@
 - (NSDictionary*) serializeKey:(KHApiKey*)khApiKey {
     if(khApiKey.parent != nil){
         NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      self.appId, @"appId",
+                                      (self.appId != nil) ? self.appId : @"", @"appId",
                                       [NSNumber numberWithBool: self.complete], @"complete",
                                       [NSNumber numberWithLongLong: self.identifier], @"id",
-                                      self.kind, @"kind",
-                                      self.name, @"name",
-                                      self.namespaceProperty, @"namespace",
+                                      (self.kind != nil) ? self.kind : @"", @"kind",
+                                      (self.name != nil) ? self.name : @"", @"name",
+                                      [self.appIdNamespace serialize], @"appIdNamespace",
                                       [self serializeKey:khApiKey.parent], @"parent",
                                       nil];
         return nsDictionary;
     }
     else {
         NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      self.appId, @"appId",
+                                      (self.appId != nil) ? self.appId : @"", @"appId",
                                       [NSNumber numberWithBool: self.complete], @"complete",
                                       [NSNumber numberWithLongLong: self.identifier], @"id",
-                                      self.kind, @"kind",
-                                      self.name, @"name",
-                                      self.namespaceProperty, @"namespace",
+                                      (self.kind != nil) ? self.kind : @"", @"kind",
+                                      (self.name != nil) ? self.name : @"", @"name",
+                                      [self.appIdNamespace serialize], @"appIdNamespace",
                                       nil];
         return nsDictionary;
     }

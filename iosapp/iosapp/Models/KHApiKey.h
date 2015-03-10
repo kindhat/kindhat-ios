@@ -7,6 +7,7 @@
 //
 
 #include <Foundation/Foundation.h>
+#include "KHApiAppIdNamespace.h"
 
 @interface KHApiKey : NSObject
 
@@ -19,8 +20,7 @@
 @property NSString *kind;
 @property NSString *name;
 
-// Remapped to 'namespaceProperty' to avoid language reserved word 'namespace'.
-@property NSString *namespaceProperty;
+@property KHApiAppIdNamespace *appIdNamespace;
 
 @property KHApiKey *parent;
 

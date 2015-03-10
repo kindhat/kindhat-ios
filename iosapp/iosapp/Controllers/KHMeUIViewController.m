@@ -51,7 +51,7 @@
     [khUser setAboutMe: [[self aboutYouUITextView] text]];
     KHController *khController = [[KHController alloc] init];
     
-    if([[khUser identifier]identifier] == 0) //kindhat is unaware of this user
+    if([khUser identifier] == 0) //kindhat is unaware of this user
     {
         [khController postItemAsync:userUrl
                                item:[khUser serialize]

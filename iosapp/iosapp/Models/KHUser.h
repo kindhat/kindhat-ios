@@ -15,7 +15,7 @@
 + (NSString*) userUrlConfigurationName;
 + (NSString*) getUserUrlConfigurationName;
 
-@property KHApiKey * identifier;
+@property long identifier;
 @property NSString * name;
 @property NSString * street;
 @property NSString * postalCode;

@@ -35,10 +35,10 @@ static NSString *const _getUserUrlConfigurationName = @"kh.ios.getuserurl";
 }
 
 - (void) deserialize:(NSDictionary *)jsonData{
-    KHApiKey *khApiKey = [[KHApiKey alloc]init];
-    [khApiKey deserialize:[jsonData objectForKey:@"id"]];
+
+    NSNumber *nsNumberIdentifier = [jsonData objectForKey:@"id"];
+    [self setIdentifier: [nsNumberIdentifier longLongValue]];
     
-    [self setIdentifier: khApiKey];
     [self setName: [jsonData objectForKey:@"name"]];
     [self setStreet: [jsonData objectForKey:@"street"]];
     [self setPostalCode: [jsonData objectForKey:@"postalCode"]];
@@ -58,19 +58,28 @@ static NSString *const _getUserUrlConfigurationName = @"kh.ios.getuserurl";
 }
 
 - (NSData*) serialize {
-    NSDictionary *nsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  [self.identifier serialize], @"key",
-                                  self.name, @"name",
-                                  self.street, @"street",
-                                  self.postalCode, @"postalCode",
-                                  self.aboutMe, @"aboutMe",
-                                  self.image, @"image",
-                                  self.email, @"email",
+    NSMutableDictionary *nsMutableDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                  (self.name != nil) ? self.name : @"", @"name",
+                                  (self.street != nil) ? self.street : @"", @"street",
+                                  (self.postalCode != nil) ? self.postalCode : @"", @"postalCode",
+                                  (self.aboutMe != nil) ? self.aboutMe : @"", @"aboutMe",
+                                  (self.image != nil) ? self.image : @"", @"image",
+                                  (self.email != nil) ? self.email : @"", @"email",
                                   [NSNumber numberWithBool: self.termsAndConditions], @"termsAndConditions",
                                   [NSNumber numberWithInt: self.externalIdType], @"externalIdType",
-                                  self.externalId, @"externalId",
+                                  (self.externalId != nil) ? self.externalId : @"", @"externalId",
                                   nil];
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsDictionary
+    
+    //we only want to serialize id if it actually exists
+    //this is the case when creating a new (POST) item
+    //if id is set and it is zero, the googl app engine
+    //back end will throw an excpetion that id cannot = 0
+    if(self.identifier != 0) {
+        [nsMutableDictionary setObject:[NSNumber numberWithLongLong: self.identifier]
+                                forKey:@"id"];
+    }
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nsMutableDictionary
                                                        options:NSJSONWritingPrettyPrinted
                                                          error:nil];
     return jsonData;

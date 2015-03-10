@@ -11,8 +11,8 @@
 
 + (NSString*) requestUrlConfigurationName;
 
-@property KHApiKey * identifier;
-@property KHApiKey * userId;
+@property long identifier;
+@property long userId;
 @property NSString * item;
 @property NSString * category;
 @property NSString * use;
