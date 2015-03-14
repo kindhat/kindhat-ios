@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Models/KHUser.h"
 
 @interface KHBorrowItemUIViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UITextField *itemUiTextField;
+
+@property KHUser *khUser;
 
 @end

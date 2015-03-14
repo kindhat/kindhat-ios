@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "../Models/KHRequest.h"
+#import "../Models/KHUser.h"
 
 @interface KHBorrowMessageUIViewController : UIViewController
+
+@property KHUser *khUser;
 
 @property KHRequest *khRequest;
 

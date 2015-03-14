@@ -24,6 +24,7 @@
         KHSendRequestUIViewController *khSendRequestUIViewController = (KHSendRequestUIViewController *)segue.destinationViewController;
         [[self khRequest] setMessage:[[self messageUITextView] text]];
         [khSendRequestUIViewController setKhRequest:[self khRequest]];
+        [khSendRequestUIViewController setKhUser:[self khUser]];
     }
 }
 

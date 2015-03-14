@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "../Models/KHRequest.h"
+#import "../Models/KHUser.h"
 
 @interface KHBorrowDateUIViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIDatePicker *borrowDateUiDatePicker;
+
+@property KHUser *khUser;
 
 @property KHRequest *khRequest;
 

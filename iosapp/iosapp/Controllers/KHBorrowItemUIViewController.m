@@ -21,16 +21,14 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showBorrowDateController"]){
-        KHBorrowDateUIViewController *khBorrowDateUIViewController = (KHBorrowDateUIViewController *)segue.destinationViewController;
-
-        KHMainUITabBarController *khMainUITabBarController =
-        (KHMainUITabBarController*)[[self parentViewController] parentViewController];
+        KHBorrowDateUIViewController *khBorrowDateUIViewController =
+        (KHBorrowDateUIViewController *)segue.destinationViewController;
         
-        KHUser *khUser = [khMainUITabBarController khUser];
         KHRequest *khRequest = [[KHRequest alloc]init];
-        [khRequest setUserId: [khUser identifier]];
+        [khRequest setUserId: [[self khUser] identifier]];
         [khRequest setItem: [[self itemUiTextField] text]];
         [khBorrowDateUIViewController setKhRequest:khRequest];
+        [khBorrowDateUIViewController setKhUser: [self khUser]];
     }
 }
 

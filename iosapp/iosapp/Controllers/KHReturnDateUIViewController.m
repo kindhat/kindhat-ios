@@ -24,6 +24,7 @@
         KHBorrowMessageUIViewController *khBorrowMessageUIViewController = (KHBorrowMessageUIViewController *)segue.destinationViewController;
         [[self khRequest] setReturnDate:[[self returnDateUiDatePicker] date]];
         [khBorrowMessageUIViewController setKhRequest:[self khRequest]];
+        [khBorrowMessageUIViewController setKhUser:[self khUser]];
     }
 }
 

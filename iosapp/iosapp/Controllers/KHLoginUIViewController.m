@@ -54,7 +54,7 @@ static NSString *const _email = @"email";
             //in addition we want to lock down all other tabs until they've
             //completed all required fields
             
-            [khMainUITabBarController setSelectedIndex:3];
+            [khMainUITabBarController setSelectedIndex:0];
             
         }
         [khMainUITabBarController setDelegate: khMainUITabBarController];

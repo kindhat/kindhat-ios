@@ -13,11 +13,26 @@
 
 @implementation KHSendRequestUIViewController
 
+static NSString *const borrowMessageName = @"kh.ios.borrowmessage";
+static NSString *const borrowDateMessageName = @"kh.ios.borrowdatemessage";
+static NSString *const serviceMessageName = @"kh.ios.servicemessage";
+
 @synthesize khRequest;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *message = [NSString stringWithFormat:[KHConfiguration getConfiguration:borrowMessageName],
+                         [[self khUser] name],
+                         [[self khRequest] item]];
+    
+    NSString *dateMessage = [NSString stringWithFormat:[KHConfiguration getConfiguration:borrowDateMessageName],
+                             [[self khUser] name],
+                             [[self khRequest] item]];
+    
+    [[self messageUILabel] setText:message];
+    [[self dateUILabel] setText:dateMessage];
 }
 
 - (IBAction)sendRequestClicked:(id)sender

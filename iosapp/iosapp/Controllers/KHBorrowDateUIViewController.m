@@ -24,6 +24,7 @@
         KHReturnDateUIViewController *khReturnDateUIViewController = (KHReturnDateUIViewController *)segue.destinationViewController;        
         [[self khRequest] setBorrowDate:[[self borrowDateUiDatePicker] date]];
         [khReturnDateUIViewController setKhRequest:[self khRequest]];
+        [khReturnDateUIViewController setKhUser: [self khUser]];
     }
 }
 
