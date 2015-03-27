@@ -11,7 +11,6 @@
 		040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD66C19E5027E00AFD82E /* KHAppDelegate.m */; };
 		040DD67319E5027E00AFD82E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67119E5027E00AFD82E /* Main.storyboard */; };
 		040DD67519E5027E00AFD82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67419E5027E00AFD82E /* Images.xcassets */; };
-		040DD67819E5027E00AFD82E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67619E5027E00AFD82E /* LaunchScreen.xib */; };
 		040DD68419E5027F00AFD82E /* iosappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD68319E5027F00AFD82E /* iosappTests.m */; };
 		043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C119E994090047FEDF /* KHRestfulUrls.m */; };
 		043354C519E999CA0047FEDF /* KHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C419E999CA0047FEDF /* KHController.m */; };
@@ -72,6 +71,11 @@
 		04944D481AAEADA4009CDB95 /* user filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944D1E1AAEADA4009CDB95 /* user filled@2x.png */; };
 		04944D491AAEADA4009CDB95 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944D1F1AAEADA4009CDB95 /* user@2x.png */; };
 		0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495CEDA19F59D4D0046FB4D /* KHUser.m */; };
+		04F9904F1AC5E70600B8C7BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */; };
+		04F990541AC5E73800B8C7BB /* black translucent.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990501AC5E73800B8C7BB /* black translucent.png */; };
+		04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990511AC5E73800B8C7BB /* black translucent80.png */; };
+		04F990561AC5E73800B8C7BB /* green pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990521AC5E73800B8C7BB /* green pixel.png */; };
+		04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990531AC5E73800B8C7BB /* orange pixel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +96,6 @@
 		040DD66C19E5027E00AFD82E /* KHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHAppDelegate.m; sourceTree = "<group>"; };
 		040DD67219E5027E00AFD82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040DD67419E5027E00AFD82E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		040DD67719E5027E00AFD82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		040DD67D19E5027F00AFD82E /* iosappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DD68219E5027F00AFD82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040DD68319E5027F00AFD82E /* iosappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosappTests.m; sourceTree = "<group>"; };
@@ -171,6 +174,11 @@
 		04944D1F1AAEADA4009CDB95 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 		0495CED919F598920046FB4D /* KHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUser.h; sourceTree = "<group>"; };
 		0495CEDA19F59D4D0046FB4D /* KHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUser.m; sourceTree = "<group>"; };
+		04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		04F990501AC5E73800B8C7BB /* black translucent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black translucent.png"; sourceTree = "<group>"; };
+		04F990511AC5E73800B8C7BB /* black translucent80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black translucent80.png"; sourceTree = "<group>"; };
+		04F990521AC5E73800B8C7BB /* green pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green pixel.png"; sourceTree = "<group>"; };
+		04F990531AC5E73800B8C7BB /* orange pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange pixel.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +230,7 @@
 				040DD66C19E5027E00AFD82E /* KHAppDelegate.m */,
 				040DD67119E5027E00AFD82E /* Main.storyboard */,
 				040DD67419E5027E00AFD82E /* Images.xcassets */,
-				040DD67619E5027E00AFD82E /* LaunchScreen.xib */,
+				04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */,
 				040DD66719E5027E00AFD82E /* Supporting Files */,
 			);
 			path = iosapp;
@@ -306,6 +314,10 @@
 		04944CF21AAEADA4009CDB95 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				04F990501AC5E73800B8C7BB /* black translucent.png */,
+				04F990511AC5E73800B8C7BB /* black translucent80.png */,
+				04F990521AC5E73800B8C7BB /* green pixel.png */,
+				04F990531AC5E73800B8C7BB /* orange pixel.png */,
 				04944CF31AAEADA4009CDB95 /* background image 1536x2048.png */,
 				04944CF41AAEADA4009CDB95 /* background image 750x1334.png */,
 				04944CF51AAEADA4009CDB95 /* blur background.jpg */,
@@ -474,14 +486,16 @@
 				04944D301AAEADA4009CDB95 /* Icon-Small-50@2x.png in Resources */,
 				04944D261AAEADA4009CDB95 /* Icon-60@2x.png in Resources */,
 				04944D201AAEADA4009CDB95 /* background image 1536x2048.png in Resources */,
+				04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */,
+				04F990561AC5E73800B8C7BB /* green pixel.png in Resources */,
 				04944D2A1AAEADA4009CDB95 /* Icon-76.png in Resources */,
 				04944D2E1AAEADA4009CDB95 /* Icon-Small-40@3x.png in Resources */,
 				04944D2C1AAEADA4009CDB95 /* Icon-Small-40.png in Resources */,
+				04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */,
 				04944D371AAEADA4009CDB95 /* launch image 1242x2208.png in Resources */,
 				04944D311AAEADA4009CDB95 /* Icon-Small.png in Resources */,
 				04944D411AAEADA4009CDB95 /* bell@2x.png in Resources */,
 				04944D421AAEADA4009CDB95 /* hat filled@2x.png in Resources */,
-				040DD67819E5027E00AFD82E /* LaunchScreen.xib in Resources */,
 				04944D451AAEADA4009CDB95 /* heart@2x.png in Resources */,
 				04944D2D1AAEADA4009CDB95 /* Icon-Small-40@2x.png in Resources */,
 				04944D3E1AAEADA4009CDB95 /* add user outline@2x.png in Resources */,
@@ -495,6 +509,7 @@
 				04944D441AAEADA4009CDB95 /* heart filled@2x.png in Resources */,
 				04944D341AAEADA4009CDB95 /* Icon.png in Resources */,
 				04944D281AAEADA4009CDB95 /* Icon-72.png in Resources */,
+				04F9904F1AC5E70600B8C7BB /* LaunchScreen.xib in Resources */,
 				040DD67519E5027E00AFD82E /* Images.xcassets in Resources */,
 				04944D251AAEADA4009CDB95 /* Icon-60.png in Resources */,
 				04944D221AAEADA4009CDB95 /* blur background.jpg in Resources */,
@@ -507,6 +522,7 @@
 				04944D271AAEADA4009CDB95 /* Icon-60@3x.png in Resources */,
 				04944D331AAEADA4009CDB95 /* Icon-Small@3x.png in Resources */,
 				04944D3F1AAEADA4009CDB95 /* add users@2x.png in Resources */,
+				04F990541AC5E73800B8C7BB /* black translucent.png in Resources */,
 				04944D2B1AAEADA4009CDB95 /* Icon-76@2x.png in Resources */,
 				04944D361AAEADA4009CDB95 /* iTunesArtwork@2x.png in Resources */,
 				04944D291AAEADA4009CDB95 /* Icon-72@2x.png in Resources */,
@@ -577,14 +593,6 @@
 				040DD67219E5027E00AFD82E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		040DD67619E5027E00AFD82E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040DD67719E5027E00AFD82E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
