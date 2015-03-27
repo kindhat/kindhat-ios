@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7zx-Rr-LWX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7zx-Rr-LWX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -1625,17 +1625,17 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Dpv-5K-Xnk"/>
-                                <exclude reference="B1m-i6-v9P"/>
-                                <exclude reference="tUE-bG-UqI"/>
-                                <exclude reference="ywJ-wo-joc"/>
-                                <exclude reference="41E-oy-v04"/>
                                 <exclude reference="DMX-5l-7up"/>
                                 <exclude reference="Mnh-JG-IkO"/>
                                 <exclude reference="W54-Rs-5zU"/>
                                 <exclude reference="coK-Af-DRt"/>
                                 <exclude reference="s6n-93-pTc"/>
                                 <exclude reference="sKg-sz-fSP"/>
+                                <exclude reference="B1m-i6-v9P"/>
+                                <exclude reference="tUE-bG-UqI"/>
+                                <exclude reference="ywJ-wo-joc"/>
+                                <exclude reference="Dpv-5K-Xnk"/>
+                                <exclude reference="41E-oy-v04"/>
                             </mask>
                         </variation>
                     </view>
