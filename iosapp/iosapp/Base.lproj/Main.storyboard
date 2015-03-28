@@ -2178,7 +2178,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnA-td-Ps0">
                                 <rect key="frame" x="0.0" y="64" width="600" height="787"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aep-C1-GPf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aep-C1-GPf">
                                 <rect key="frame" x="169" y="64" width="300" height="900"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puppies in hats.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-vk-zmW">
@@ -3296,8 +3296,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Kkz-BT-nel"/>
+        <segue reference="rSm-7w-uql"/>
         <segue reference="XwR-aN-llo"/>
-        <segue reference="YyO-d5-Z05"/>
         <segue reference="DeK-md-QEt"/>
+        <segue reference="YyO-d5-Z05"/>
     </inferredMetricsTieBreakers>
 </document>
