@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KHAddressVerificationUITableViewController : UITableView
+@interface KHAddressVerificationUITableViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic,strong) NSArray *addresses;
+
+@property (nonatomic, strong) IBOutlet UITableView *uiTableView;
 
 @end

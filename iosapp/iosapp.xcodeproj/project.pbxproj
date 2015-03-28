@@ -82,9 +82,9 @@
 		04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */; };
 		04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */; };
 		04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */; };
-		04F990701AC66FE000B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9906F1AC66FE000B8C7BB /* KHAddressVerificationUITableViewController.m */; };
-		04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCellController.m */; };
+		04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */; };
 		04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */; };
+		04F9907A1AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */; };
 		DB4C24361AC663310039495E /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4C24351AC663310039495E /* Address.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -201,12 +201,12 @@
 		04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingCoordinate.m; sourceTree = "<group>"; };
 		04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingViewport.h; sourceTree = "<group>"; };
 		04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingViewport.m; sourceTree = "<group>"; };
-		04F9906E1AC66F6F00B8C7BB /* KHAddressVerificationUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewController.h; sourceTree = "<group>"; };
-		04F9906F1AC66FE000B8C7BB /* KHAddressVerificationUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewController.m; sourceTree = "<group>"; };
-		04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewCellController.h; sourceTree = "<group>"; };
-		04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewCellController.m; sourceTree = "<group>"; };
+		04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewCell.h; sourceTree = "<group>"; };
+		04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewCell.m; sourceTree = "<group>"; };
 		04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLinkedStoryboard.h; sourceTree = "<group>"; };
 		04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLinkedStoryboard.m; sourceTree = "<group>"; };
+		04F990781AC70FCE00B8C7BB /* KHAddressVerificationUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewController.h; sourceTree = "<group>"; };
+		04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewController.m; sourceTree = "<group>"; };
 		DB4C24351AC663310039495E /* Address.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Address.storyboard; path = Utility/Address.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -447,10 +447,10 @@
 		04F9906B1AC66EE400B8C7BB /* Address Verification */ = {
 			isa = PBXGroup;
 			children = (
-				04F9906E1AC66F6F00B8C7BB /* KHAddressVerificationUITableViewController.h */,
-				04F9906F1AC66FE000B8C7BB /* KHAddressVerificationUITableViewController.m */,
-				04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCellController.h */,
-				04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCellController.m */,
+				04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCell.h */,
+				04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */,
+				04F990781AC70FCE00B8C7BB /* KHAddressVerificationUITableViewController.h */,
+				04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */,
 			);
 			name = "Address Verification";
 			sourceTree = "<group>";
@@ -619,14 +619,13 @@
 				0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */,
 				040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */,
 				04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */,
-				04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCellController.m in Sources */,
+				04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m in Sources */,
 				04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */,
 				04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */,
 				0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */,
 				04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */,
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,
 				04F9905D1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m in Sources */,
-				04F990701AC66FE000B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */,
 				04944CF01AAA5990009CDB95 /* KHApiAppIdNamespace.m in Sources */,
 				04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
@@ -636,6 +635,7 @@
 				04F990601AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
 				04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */,
+				04F9907A1AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */,
 				04944CED1AA91012009CDB95 /* KHBorrowMessageUIViewController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,

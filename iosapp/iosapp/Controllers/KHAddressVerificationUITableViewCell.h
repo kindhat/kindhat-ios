@@ -1,5 +1,5 @@
 //
-//  KHAddressVerificationUITableViewCellController
+//  KHAddressVerificationUITableViewCell
 //  iosapp
 //
 //  Created by Mac on 3/5/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KHAddressVerificationUITableViewCellController : UITableViewCell
+@interface KHAddressVerificationUITableViewCell : UITableViewCell
 
 @property (nonatomic, strong) IBOutlet UITextField *streetTextField;
 @property (nonatomic, strong) IBOutlet UITextField *cityTextField;

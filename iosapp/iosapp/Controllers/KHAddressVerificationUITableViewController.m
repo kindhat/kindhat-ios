@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "KHAddressVerificationUITableViewController.h"
-#import "KHAddressVerificationUITableViewCellController.h"
+#import "KHAddressVerificationUITableViewCell.h"
 #import "../Models/KHGoogleGeoCodingAddressResult.h"
 
 @implementation KHAddressVerificationUITableViewController
 
 @synthesize addresses;
+
 
 static NSString *const cellIdentifier = @"AddressVerificationUITableCell";
 static NSString *const addressPartsSeparator = @",";
@@ -32,7 +33,7 @@ static NSString *const addressPartsSeparator = @",";
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KHAddressVerificationUITableViewCellController *cell = (KHAddressVerificationUITableViewCellController *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    KHAddressVerificationUITableViewCell *cell = (KHAddressVerificationUITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     KHGoogleGeoCodingAddressResult *khGoogleGeoCodingAddressResult = [[self addresses] objectAtIndex:indexPath.row];
     

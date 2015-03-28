@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     
-    KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
+    KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[[self parentViewController]parentViewController];
     KHUser* khUser = [khMainUITabBarController khUser];
     
     [[self nameUITextField] setText: [khUser name]];
