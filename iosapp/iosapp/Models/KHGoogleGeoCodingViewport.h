@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#include <Foundation/Foundation.h>
 #import "KHGoogleGeoCodingCoordinate.h"
 
 
