@@ -3295,10 +3295,9 @@
         <image name="user.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DeK-md-QEt"/>
-        <segue reference="vcI-Q1-K4Y"/>
-        <segue reference="lyO-0L-c5P"/>
-        <segue reference="rSm-7w-uql"/>
+        <segue reference="Kkz-BT-nel"/>
         <segue reference="XwR-aN-llo"/>
+        <segue reference="YyO-d5-Z05"/>
+        <segue reference="DeK-md-QEt"/>
     </inferredMetricsTieBreakers>
 </document>
