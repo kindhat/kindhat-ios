@@ -82,6 +82,7 @@
 		04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */; };
 		04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */; };
 		04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */; };
+		DB4C24361AC663310039495E /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4C24351AC663310039495E /* Address.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingCoordinate.m; sourceTree = "<group>"; };
 		04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingViewport.h; sourceTree = "<group>"; };
 		04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingViewport.m; sourceTree = "<group>"; };
+		DB4C24351AC663310039495E /* Address.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Address.storyboard; path = Utility/Address.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				040DD66C19E5027E00AFD82E /* KHAppDelegate.m */,
 				040DD67119E5027E00AFD82E /* Main.storyboard */,
 				040DD67419E5027E00AFD82E /* Images.xcassets */,
+				DB4C24351AC663310039495E /* Address.storyboard */,
 				04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */,
 				040DD66719E5027E00AFD82E /* Supporting Files */,
 			);
@@ -520,6 +523,7 @@
 				04F990561AC5E73800B8C7BB /* green pixel.png in Resources */,
 				04944D2A1AAEADA4009CDB95 /* Icon-76.png in Resources */,
 				04944D2E1AAEADA4009CDB95 /* Icon-Small-40@3x.png in Resources */,
+				DB4C24361AC663310039495E /* Address.storyboard in Resources */,
 				04944D2C1AAEADA4009CDB95 /* Icon-Small-40.png in Resources */,
 				04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */,
 				04944D371AAEADA4009CDB95 /* launch image 1242x2208.png in Resources */,
