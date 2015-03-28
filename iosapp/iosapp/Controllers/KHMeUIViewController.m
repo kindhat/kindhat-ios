@@ -21,8 +21,8 @@
     KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController*)[self parentViewController];
     KHUser* khUser = [khMainUITabBarController khUser];
     
-    [[self nameUILabel] setText: [khUser name]];
-    [[self emailUILabel] setText: [khUser email]];
+    [[self nameUITextField] setText: [khUser name]];
+    [[self emailUITextField] setText: [khUser email]];
     
     //we don't want the NSData dataWithContentsOfUrl operation to error if the image string is empty
     if([[khUser image] length] > 0)
@@ -34,7 +34,6 @@
         [[self profileUIImageView] setImage:image];
     }
 }
-
 
 - (IBAction)settingsSaved:(id)sender
 {

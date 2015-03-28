@@ -11,9 +11,10 @@
 
 @interface KHMeUIViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *uiScrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *profileUIImageView;
-@property (strong, nonatomic) IBOutlet UILabel *nameUILabel;
-@property (strong, nonatomic) IBOutlet UILabel *emailUILabel;
+@property (strong, nonatomic) IBOutlet UITextField *nameUITextField;
+@property (strong, nonatomic) IBOutlet UITextField *emailUITextField;
 @property (strong, nonatomic) IBOutlet UITextField *streetUITextField;
 @property (strong, nonatomic) IBOutlet UITextField *postalCodeUITextField;
 @property (strong, nonatomic) IBOutlet UISwitch *termsAndConditionsUISwitch;
