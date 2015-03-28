@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#include <Foundation/Foundation.h>
-#include "KHGoogleGeoCodingCoordinate.h"
+#import <Foundation/Foundation.h>
+#import "KHGoogleGeoCodingCoordinate.h"
 
 
 @interface KHGoogleGeoCodingViewport : NSObject

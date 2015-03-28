@@ -21,4 +21,6 @@
 @property (strong, nonatomic) IBOutlet UITextView *aboutYouUITextView;
 @property (strong, nonatomic) IBOutlet UIButton *saveUIButton;
 
+@property NSArray* addresses;
+
 @end

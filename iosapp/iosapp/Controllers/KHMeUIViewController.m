@@ -8,6 +8,7 @@
 
 #import "KHMeUIViewController.h"
 #import "KHMainUITabBarController.h"
+#import "KHAddressVerificationUITableViewController.h"
 #import "../Models/KHUser.h"
 #import "../Models/KHGoogleGeoCodingAddressResults.h"
 #import "../Utility/KHController.h"
@@ -45,7 +46,8 @@
     //if the address lookup results are not one we need to take action
     if([[khGoogleGeoCodingAddressResults results]count]>1)
     {
-        
+        [self setAddresses:[khGoogleGeoCodingAddressResults results]];
+        [self performSegueWithIdentifier:@"@Address" sender:sender];
     }
     else if([[khGoogleGeoCodingAddressResults results]count]<1)
     {
@@ -150,5 +152,11 @@ withMainUITabBarController:(KHMainUITabBarController*) khMainUITabBarController
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"@Address"]) {
+        KHAddressVerificationUITableViewController *khAddressVerificationUITableViewController = segue.destinationViewController;
+        [khAddressVerificationUITableViewController setAddresses: [self addresses]];        
+    }
+}
 
 @end

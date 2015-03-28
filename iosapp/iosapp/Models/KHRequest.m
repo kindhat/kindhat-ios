@@ -17,7 +17,7 @@
 @synthesize returnDate;
 @synthesize message;
 
-static NSString *const _requestUrlConfigurationName = @"kh.ios.requesturl";
+static NSString *const _requestUrlConfigurationName = @"kh.requesturl";
 
 + (NSString*) requestUrlConfigurationName {
     return _requestUrlConfigurationName;
