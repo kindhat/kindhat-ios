@@ -23,8 +23,9 @@
 @synthesize requests;
 @synthesize responses;
 
-static NSString *const _userUrlConfigurationName = @"kh.ios.userurl";
-static NSString *const _getUserUrlConfigurationName = @"kh.ios.getuserurl";
+static NSString *const _userUrlConfigurationName = @"kh.userurl";
+static NSString *const _getUserUrlConfigurationName = @"kh.getuserurl";
+static NSString *const _googleGeocodingUrlName = @"kh.google.geocoding.url";
 
 + (NSString*) userUrlConfigurationName {
     return _userUrlConfigurationName;
@@ -32,6 +33,10 @@ static NSString *const _getUserUrlConfigurationName = @"kh.ios.getuserurl";
 
 + (NSString*) getUserUrlConfigurationName {
     return _getUserUrlConfigurationName;
+}
+
++ (NSString*) googleGeocodingUrlName {
+    return _googleGeocodingUrlName;
 }
 
 - (void) deserialize:(NSDictionary *)jsonData{

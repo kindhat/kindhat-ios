@@ -10,6 +10,8 @@
 
 @interface KHConfiguration : NSObject
 
++ (NSString*) googleApiKey;
+
 + (void) loadConfiguration;
 
 + (NSString*) getConfiguration:(NSString*)configurationName;

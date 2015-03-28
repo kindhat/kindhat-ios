@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Kindhat. All rights reserved.
 //
 
-#include <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
 
 @interface KHGoogleGeoCodingAddressComponent : NSObject
 

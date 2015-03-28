@@ -24,9 +24,8 @@
 
 @implementation KHLoginUIViewController
 
-static NSString *const _facebookImageUrlConfigurationName = @"kh.ios.facebookimageurl";
+static NSString *const _facebookImageUrlConfigurationName = @"kh.facebookimageurl";
 static NSString *const _email = @"email";
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
