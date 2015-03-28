@@ -14,6 +14,7 @@
 
 + (NSString*) userUrlConfigurationName;
 + (NSString*) getUserUrlConfigurationName;
++ (NSString*) googleGeocodingUrlName;
 
 @property long identifier;
 @property NSString * name;

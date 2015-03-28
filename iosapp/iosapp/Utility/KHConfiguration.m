@@ -12,11 +12,16 @@
 @implementation KHConfiguration
 
 static NSString *const configurationUrl = @"https://kindhat-service.appspot.com/_ah/api/configurationendpoint/v1/configuration";
+static NSString *const googleApiKeyName = @"kh.google.api.key";
 static NSString *const name = @"name";
 static NSString *const value = @"value";
 static NSString *const items = @"items";
 
 NSMutableDictionary *configuration;
+
++ (NSString*) googleApiKey {
+    return googleApiKeyName;
+}
 
 + (void) loadConfiguration {
     

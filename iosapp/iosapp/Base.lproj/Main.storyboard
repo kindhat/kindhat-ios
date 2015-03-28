@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7zx-Rr-LWX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7zx-Rr-LWX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -2178,7 +2178,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnA-td-Ps0">
                                 <rect key="frame" x="0.0" y="64" width="600" height="787"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aep-C1-GPf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aep-C1-GPf">
                                 <rect key="frame" x="169" y="64" width="300" height="900"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puppies in hats.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-vk-zmW">
@@ -3296,6 +3296,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Kkz-BT-nel"/>
+        <segue reference="rSm-7w-uql"/>
         <segue reference="XwR-aN-llo"/>
         <segue reference="YyO-d5-Z05"/>
         <segue reference="DeK-md-QEt"/>
