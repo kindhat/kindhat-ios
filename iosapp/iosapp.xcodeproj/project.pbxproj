@@ -76,6 +76,12 @@
 		04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990511AC5E73800B8C7BB /* black translucent80.png */; };
 		04F990561AC5E73800B8C7BB /* green pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990521AC5E73800B8C7BB /* green pixel.png */; };
 		04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990531AC5E73800B8C7BB /* orange pixel.png */; };
+		04F9905A1AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */; };
+		04F9905D1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */; };
+		04F990601AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */; };
+		04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */; };
+		04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */; };
+		04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +185,18 @@
 		04F990511AC5E73800B8C7BB /* black translucent80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black translucent80.png"; sourceTree = "<group>"; };
 		04F990521AC5E73800B8C7BB /* green pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green pixel.png"; sourceTree = "<group>"; };
 		04F990531AC5E73800B8C7BB /* orange pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange pixel.png"; sourceTree = "<group>"; };
+		04F990581AC6127700B8C7BB /* KHGoogleGeoCodingAddressResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressResults.h; sourceTree = "<group>"; };
+		04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressResults.m; sourceTree = "<group>"; };
+		04F9905B1AC613A800B8C7BB /* KHGoogleGeoCodingAddressResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressResult.h; sourceTree = "<group>"; };
+		04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressResult.m; sourceTree = "<group>"; };
+		04F9905E1AC618DB00B8C7BB /* KHGoogleGeoCodingAddressComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressComponent.h; sourceTree = "<group>"; };
+		04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressComponent.m; sourceTree = "<group>"; };
+		04F990611AC61C1300B8C7BB /* KHGoogleGeoCodingGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingGeometry.h; sourceTree = "<group>"; };
+		04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingGeometry.m; sourceTree = "<group>"; };
+		04F990641AC61D3900B8C7BB /* KHGoogleGeoCodingCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingCoordinate.h; sourceTree = "<group>"; };
+		04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingCoordinate.m; sourceTree = "<group>"; };
+		04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingViewport.h; sourceTree = "<group>"; };
+		04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingViewport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +414,18 @@
 				04930B451A1EF59D000BD42C /* KHApiKey.m */,
 				04944CEE1AAA5813009CDB95 /* KHApiAppIdNamespace.h */,
 				04944CEF1AAA5990009CDB95 /* KHApiAppIdNamespace.m */,
+				04F990581AC6127700B8C7BB /* KHGoogleGeoCodingAddressResults.h */,
+				04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */,
+				04F9905B1AC613A800B8C7BB /* KHGoogleGeoCodingAddressResult.h */,
+				04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */,
+				04F9905E1AC618DB00B8C7BB /* KHGoogleGeoCodingAddressComponent.h */,
+				04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */,
+				04F990611AC61C1300B8C7BB /* KHGoogleGeoCodingGeometry.h */,
+				04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */,
+				04F990641AC61D3900B8C7BB /* KHGoogleGeoCodingCoordinate.h */,
+				04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */,
+				04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */,
+				04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -556,10 +586,16 @@
 				04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */,
 				04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */,
 				0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */,
+				04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */,
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,
+				04F9905D1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m in Sources */,
 				04944CF01AAA5990009CDB95 /* KHApiAppIdNamespace.m in Sources */,
+				04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
+				04F9905A1AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m in Sources */,
+				04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */,
 				043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */,
+				04F990601AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
 				04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */,
 				04944CED1AA91012009CDB95 /* KHBorrowMessageUIViewController.m in Sources */,
