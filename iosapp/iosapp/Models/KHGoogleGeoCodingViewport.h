@@ -7,7 +7,7 @@
 //
 
 #include <Foundation/Foundation.h>
-#include "KHGoogleGeoCodingCoordinate.h"
+#import "KHGoogleGeoCodingCoordinate.h"
 
 
 @interface KHGoogleGeoCodingViewport : NSObject
