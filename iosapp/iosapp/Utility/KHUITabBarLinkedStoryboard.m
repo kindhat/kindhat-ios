@@ -1,15 +1,14 @@
 //
-//  KHLinkedStoryboard.m
+//  KHUITabBarLinkedStoryboard.m
 //  iosapp
 //
 //  Created by Mac on 3/28/15.
 //  Copyright (c) 2015 Kindhat. All rights reserved.
 //
 
-#import "KHLinkedStoryboard.h"
-#import "../Me/Controllers/KHMeUIViewController.h"
+#import "KHUITabBarLinkedStoryboard.h"
 
-@implementation KHLinkedStoryboard
+@implementation KHUITabBarLinkedStoryboard
 
 + (UIViewController *)sceneNamed:(NSString *)identifier
 {
@@ -38,14 +37,13 @@
 {
     return [super initWithIdentifier:identifier
                               source:source
-                         destination:[KHLinkedStoryboard sceneNamed:identifier]];
+                         destination:[KHUITabBarLinkedStoryboard sceneNamed:identifier]];
 }
 
 - (void)perform
 {
-    UIViewController *source = (UIViewController *)self.sourceViewController;
-    [source.navigationController pushViewController:self.destinationViewController
-                                           animated:YES];
+    UITabBarController *source = (UITabBarController *)self.sourceViewController;
+    [source setSelectedViewController:self.destinationViewController];
 }
 
 @end

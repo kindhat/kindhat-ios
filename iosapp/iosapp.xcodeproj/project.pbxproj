@@ -9,24 +9,31 @@
 /* Begin PBXBuildFile section */
 		040DD66A19E5027E00AFD82E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD66919E5027E00AFD82E /* main.m */; };
 		040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD66C19E5027E00AFD82E /* KHAppDelegate.m */; };
-		040DD67319E5027E00AFD82E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67119E5027E00AFD82E /* Main.storyboard */; };
 		040DD67519E5027E00AFD82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67419E5027E00AFD82E /* Images.xcassets */; };
 		040DD68419E5027F00AFD82E /* iosappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD68319E5027F00AFD82E /* iosappTests.m */; };
-		043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C119E994090047FEDF /* KHRestfulUrls.m */; };
 		043354C519E999CA0047FEDF /* KHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354C419E999CA0047FEDF /* KHController.m */; };
 		044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB82B1A87F1F00012B2EB /* KHConfiguration.m */; };
 		044AB8891A89E4040012B2EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044AB8881A89E4040012B2EB /* FacebookSDK.framework */; };
-		0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459096D1A0448F0006764CB /* KHMeUIViewController.m */; };
 		0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465B14D1AA63B1900482DD5 /* KHRequest.m */; };
-		0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */; };
+		047292101ACA0B740012A30A /* KHBorrowDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047292061ACA0B740012A30A /* KHBorrowDateUIViewController.m */; };
+		047292111ACA0B740012A30A /* KHBorrowItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047292081ACA0B740012A30A /* KHBorrowItemUIViewController.m */; };
+		047292121ACA0B740012A30A /* KHBorrowMessageUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472920A1ACA0B740012A30A /* KHBorrowMessageUIViewController.m */; };
+		047292131ACA0B740012A30A /* KHReturnDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472920C1ACA0B740012A30A /* KHReturnDateUIViewController.m */; };
+		047292141ACA0B740012A30A /* KHSendRequestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472920E1ACA0B740012A30A /* KHSendRequestUIViewController.m */; };
+		047292171ACA0B990012A30A /* KHMeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047292161ACA0B990012A30A /* KHMeUIViewController.m */; };
+		0472921A1ACA0BAB0012A30A /* KHLoginUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047292191ACA0BAB0012A30A /* KHLoginUIViewController.m */; };
+		0472930A1ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047293071ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.m */; };
+		0472930B1ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047293091ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m */; };
+		0472930D1ACA0CAC0012A30A /* Borrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472930C1ACA0CAC0012A30A /* Borrow.storyboard */; };
+		0472930F1ACA0CE00012A30A /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472930E1ACA0CE00012A30A /* Me.storyboard */; };
+		047293111ACA0CF60012A30A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047293101ACA0CF60012A30A /* Login.storyboard */; };
+		047293131ACB3E340012A30A /* Share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047293121ACB3E340012A30A /* Share.storyboard */; };
+		047293151ACB40050012A30A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047293141ACB40050012A30A /* Dashboard.storyboard */; };
+		0472931A1ACB40ED0012A30A /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047293191ACB40ED0012A30A /* More.storyboard */; };
+		0472931D1ACB554B0012A30A /* KHMainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472931C1ACB554B0012A30A /* KHMainUITabBarController.m */; };
+		047293201ACF0D8F0012A30A /* KHUITabBarLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472931F1ACF0D8F0012A30A /* KHUITabBarLinkedStoryboard.m */; };
 		0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */; };
-		04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */; };
-		04918A7719FADD5700136F9D /* KHBorrowItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */; };
 		04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 04930B451A1EF59D000BD42C /* KHApiKey.m */; };
-		04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */; };
-		04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */; };
-		04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */; };
-		04944CED1AA91012009CDB95 /* KHBorrowMessageUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CEC1AA91012009CDB95 /* KHBorrowMessageUIViewController.m */; };
 		04944CF01AAA5990009CDB95 /* KHApiAppIdNamespace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04944CEF1AAA5990009CDB95 /* KHApiAppIdNamespace.m */; };
 		04944D201AAEADA4009CDB95 /* background image 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944CF31AAEADA4009CDB95 /* background image 1536x2048.png */; };
 		04944D211AAEADA4009CDB95 /* background image 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944CF41AAEADA4009CDB95 /* background image 750x1334.png */; };
@@ -71,21 +78,14 @@
 		04944D481AAEADA4009CDB95 /* user filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944D1E1AAEADA4009CDB95 /* user filled@2x.png */; };
 		04944D491AAEADA4009CDB95 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944D1F1AAEADA4009CDB95 /* user@2x.png */; };
 		0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495CEDA19F59D4D0046FB4D /* KHUser.m */; };
+		04A5130A1AD84A12001AE83A /* KHAddressResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A513071AD84A12001AE83A /* KHAddressResult.m */; };
+		04A5130B1AD84A12001AE83A /* KHAddressResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A513091AD84A12001AE83A /* KHAddressResults.m */; };
 		04F9904F1AC5E70600B8C7BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */; };
 		04F990541AC5E73800B8C7BB /* black translucent.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990501AC5E73800B8C7BB /* black translucent.png */; };
 		04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990511AC5E73800B8C7BB /* black translucent80.png */; };
 		04F990561AC5E73800B8C7BB /* green pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990521AC5E73800B8C7BB /* green pixel.png */; };
 		04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990531AC5E73800B8C7BB /* orange pixel.png */; };
-		04F9905A1AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */; };
-		04F9905D1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */; };
-		04F990601AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */; };
-		04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */; };
-		04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */; };
-		04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */; };
-		04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */; };
 		04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */; };
-		04F9907A1AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */; };
-		DB4C24361AC663310039495E /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4C24351AC663310039495E /* Address.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,40 +104,49 @@
 		040DD66919E5027E00AFD82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		040DD66B19E5027E00AFD82E /* KHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHAppDelegate.h; sourceTree = "<group>"; };
 		040DD66C19E5027E00AFD82E /* KHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHAppDelegate.m; sourceTree = "<group>"; };
-		040DD67219E5027E00AFD82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040DD67419E5027E00AFD82E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		040DD67D19E5027F00AFD82E /* iosappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DD68219E5027F00AFD82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040DD68319E5027F00AFD82E /* iosappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosappTests.m; sourceTree = "<group>"; };
-		043354C119E994090047FEDF /* KHRestfulUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRestfulUrls.m; sourceTree = "<group>"; };
-		043354C319E994280047FEDF /* KHRestfulUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRestfulUrls.h; sourceTree = "<group>"; };
 		043354C419E999CA0047FEDF /* KHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHController.m; sourceTree = "<group>"; };
 		043354C619E9A01D0047FEDF /* KHController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHController.h; sourceTree = "<group>"; };
 		044AB82A1A87F1660012B2EB /* KHConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHConfiguration.h; sourceTree = "<group>"; };
 		044AB82B1A87F1F00012B2EB /* KHConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHConfiguration.m; sourceTree = "<group>"; };
 		044AB8881A89E4040012B2EB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		0459096D1A0448F0006764CB /* KHMeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMeUIViewController.m; sourceTree = "<group>"; };
-		0459096F1A04498C006764CB /* KHMeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMeUIViewController.h; sourceTree = "<group>"; };
 		0465B14C1AA63B1900482DD5 /* KHRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRequest.h; sourceTree = "<group>"; };
 		0465B14D1AA63B1900482DD5 /* KHRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRequest.m; sourceTree = "<group>"; };
+		047292051ACA0B740012A30A /* KHBorrowDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowDateUIViewController.h; sourceTree = "<group>"; };
+		047292061ACA0B740012A30A /* KHBorrowDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowDateUIViewController.m; sourceTree = "<group>"; };
+		047292071ACA0B740012A30A /* KHBorrowItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowItemUIViewController.h; sourceTree = "<group>"; };
+		047292081ACA0B740012A30A /* KHBorrowItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowItemUIViewController.m; sourceTree = "<group>"; };
+		047292091ACA0B740012A30A /* KHBorrowMessageUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowMessageUIViewController.h; sourceTree = "<group>"; };
+		0472920A1ACA0B740012A30A /* KHBorrowMessageUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowMessageUIViewController.m; sourceTree = "<group>"; };
+		0472920B1ACA0B740012A30A /* KHReturnDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHReturnDateUIViewController.h; sourceTree = "<group>"; };
+		0472920C1ACA0B740012A30A /* KHReturnDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHReturnDateUIViewController.m; sourceTree = "<group>"; };
+		0472920D1ACA0B740012A30A /* KHSendRequestUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSendRequestUIViewController.h; sourceTree = "<group>"; };
+		0472920E1ACA0B740012A30A /* KHSendRequestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSendRequestUIViewController.m; sourceTree = "<group>"; };
+		047292151ACA0B990012A30A /* KHMeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMeUIViewController.h; sourceTree = "<group>"; };
+		047292161ACA0B990012A30A /* KHMeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMeUIViewController.m; sourceTree = "<group>"; };
+		047292181ACA0BAB0012A30A /* KHLoginUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginUIViewController.h; sourceTree = "<group>"; };
+		047292191ACA0BAB0012A30A /* KHLoginUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginUIViewController.m; sourceTree = "<group>"; };
+		047293061ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewCell.h; sourceTree = "<group>"; };
+		047293071ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewCell.m; sourceTree = "<group>"; };
+		047293081ACA0C4D0012A30A /* KHAddressVerificationUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUIViewController.h; sourceTree = "<group>"; };
+		047293091ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUIViewController.m; sourceTree = "<group>"; };
+		0472930C1ACA0CAC0012A30A /* Borrow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Borrow.storyboard; sourceTree = "<group>"; };
+		0472930E1ACA0CE00012A30A /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		047293101ACA0CF60012A30A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		047293121ACB3E340012A30A /* Share.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Share.storyboard; sourceTree = "<group>"; };
+		047293141ACB40050012A30A /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		047293191ACB40ED0012A30A /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		0472931B1ACB554B0012A30A /* KHMainUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainUITabBarController.h; sourceTree = "<group>"; };
+		0472931C1ACB554B0012A30A /* KHMainUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainUITabBarController.m; sourceTree = "<group>"; };
+		0472931E1ACF0D870012A30A /* KHUITabBarLinkedStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUITabBarLinkedStoryboard.h; sourceTree = "<group>"; };
+		0472931F1ACF0D8F0012A30A /* KHUITabBarLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUITabBarLinkedStoryboard.m; sourceTree = "<group>"; };
 		0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHExternalIdType.h; sourceTree = "<group>"; };
-		0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainUITabBarController.h; sourceTree = "<group>"; };
-		0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainUITabBarController.m; sourceTree = "<group>"; };
 		0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHExternalIdType.m; sourceTree = "<group>"; };
-		04918A6E19FACDE900136F9D /* KHLoginUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginUIViewController.h; sourceTree = "<group>"; };
-		04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginUIViewController.m; sourceTree = "<group>"; };
-		04918A7519FADD5700136F9D /* KHBorrowItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowItemUIViewController.h; sourceTree = "<group>"; };
-		04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowItemUIViewController.m; sourceTree = "<group>"; };
 		04930B441A1EF39A000BD42C /* KHApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHApiKey.h; sourceTree = "<group>"; };
 		04930B451A1EF59D000BD42C /* KHApiKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHApiKey.m; sourceTree = "<group>"; };
-		04944CCA1AA79894009CDB95 /* KHBorrowDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowDateUIViewController.h; sourceTree = "<group>"; };
-		04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowDateUIViewController.m; sourceTree = "<group>"; };
-		04944CCD1AA79BB0009CDB95 /* KHReturnDateUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHReturnDateUIViewController.h; sourceTree = "<group>"; };
-		04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHReturnDateUIViewController.m; sourceTree = "<group>"; };
-		04944CD01AA79D23009CDB95 /* KHSendRequestUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSendRequestUIViewController.h; sourceTree = "<group>"; };
-		04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSendRequestUIViewController.m; sourceTree = "<group>"; };
-		04944CEB1AA90FFB009CDB95 /* KHBorrowMessageUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBorrowMessageUIViewController.h; sourceTree = "<group>"; };
-		04944CEC1AA91012009CDB95 /* KHBorrowMessageUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBorrowMessageUIViewController.m; sourceTree = "<group>"; };
 		04944CEE1AAA5813009CDB95 /* KHApiAppIdNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHApiAppIdNamespace.h; sourceTree = "<group>"; };
 		04944CEF1AAA5990009CDB95 /* KHApiAppIdNamespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHApiAppIdNamespace.m; sourceTree = "<group>"; };
 		04944CF31AAEADA4009CDB95 /* background image 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background image 1536x2048.png"; sourceTree = "<group>"; };
@@ -184,30 +193,17 @@
 		04944D1F1AAEADA4009CDB95 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 		0495CED919F598920046FB4D /* KHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUser.h; sourceTree = "<group>"; };
 		0495CEDA19F59D4D0046FB4D /* KHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUser.m; sourceTree = "<group>"; };
+		04A513061AD84A12001AE83A /* KHAddressResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressResult.h; sourceTree = "<group>"; };
+		04A513071AD84A12001AE83A /* KHAddressResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressResult.m; sourceTree = "<group>"; };
+		04A513081AD84A12001AE83A /* KHAddressResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressResults.h; sourceTree = "<group>"; };
+		04A513091AD84A12001AE83A /* KHAddressResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressResults.m; sourceTree = "<group>"; };
 		04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		04F990501AC5E73800B8C7BB /* black translucent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black translucent.png"; sourceTree = "<group>"; };
 		04F990511AC5E73800B8C7BB /* black translucent80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black translucent80.png"; sourceTree = "<group>"; };
 		04F990521AC5E73800B8C7BB /* green pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green pixel.png"; sourceTree = "<group>"; };
 		04F990531AC5E73800B8C7BB /* orange pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange pixel.png"; sourceTree = "<group>"; };
-		04F990581AC6127700B8C7BB /* KHGoogleGeoCodingAddressResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressResults.h; sourceTree = "<group>"; };
-		04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressResults.m; sourceTree = "<group>"; };
-		04F9905B1AC613A800B8C7BB /* KHGoogleGeoCodingAddressResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressResult.h; sourceTree = "<group>"; };
-		04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressResult.m; sourceTree = "<group>"; };
-		04F9905E1AC618DB00B8C7BB /* KHGoogleGeoCodingAddressComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingAddressComponent.h; sourceTree = "<group>"; };
-		04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingAddressComponent.m; sourceTree = "<group>"; };
-		04F990611AC61C1300B8C7BB /* KHGoogleGeoCodingGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingGeometry.h; sourceTree = "<group>"; };
-		04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingGeometry.m; sourceTree = "<group>"; };
-		04F990641AC61D3900B8C7BB /* KHGoogleGeoCodingCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingCoordinate.h; sourceTree = "<group>"; };
-		04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingCoordinate.m; sourceTree = "<group>"; };
-		04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHGoogleGeoCodingViewport.h; sourceTree = "<group>"; };
-		04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHGoogleGeoCodingViewport.m; sourceTree = "<group>"; };
-		04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewCell.h; sourceTree = "<group>"; };
-		04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewCell.m; sourceTree = "<group>"; };
 		04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLinkedStoryboard.h; sourceTree = "<group>"; };
 		04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLinkedStoryboard.m; sourceTree = "<group>"; };
-		04F990781AC70FCE00B8C7BB /* KHAddressVerificationUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHAddressVerificationUITableViewController.h; sourceTree = "<group>"; };
-		04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAddressVerificationUITableViewController.m; sourceTree = "<group>"; };
-		DB4C24351AC663310039495E /* Address.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Address.storyboard; path = Utility/Address.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,15 +247,18 @@
 		040DD66619E5027E00AFD82E /* iosapp */ = {
 			isa = PBXGroup;
 			children = (
+				047293161ACB40A50012A30A /* More */,
+				047292031ACA0B740012A30A /* Borrow */,
+				047292001ACA069C0012A30A /* Dashboard */,
+				047291FD1ACA06760012A30A /* Share */,
+				047291F71ACA02730012A30A /* Me */,
+				047291F41AC9F5B60012A30A /* Login */,
 				04944CF11AAEADA4009CDB95 /* Images */,
 				0495CED819F597830046FB4D /* Models */,
-				04918A6C19F9C62700136F9D /* Controllers */,
 				043354C019E9921E0047FEDF /* Utility */,
 				040DD66B19E5027E00AFD82E /* KHAppDelegate.h */,
 				040DD66C19E5027E00AFD82E /* KHAppDelegate.m */,
-				040DD67119E5027E00AFD82E /* Main.storyboard */,
 				040DD67419E5027E00AFD82E /* Images.xcassets */,
-				DB4C24351AC663310039495E /* Address.storyboard */,
 				04F9904E1AC5E70600B8C7BB /* LaunchScreen.xib */,
 				040DD66719E5027E00AFD82E /* Supporting Files */,
 			);
@@ -295,9 +294,10 @@
 		043354C019E9921E0047FEDF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				04F990741AC689BC00B8C7BB /* Linked Storyboard */,
-				043354C319E994280047FEDF /* KHRestfulUrls.h */,
-				043354C119E994090047FEDF /* KHRestfulUrls.m */,
+				0472931F1ACF0D8F0012A30A /* KHUITabBarLinkedStoryboard.m */,
+				0472931E1ACF0D870012A30A /* KHUITabBarLinkedStoryboard.h */,
+				04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */,
+				04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */,
 				043354C619E9A01D0047FEDF /* KHController.h */,
 				043354C419E999CA0047FEDF /* KHController.m */,
 				0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */,
@@ -308,28 +308,169 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		04918A6C19F9C62700136F9D /* Controllers */ = {
+		047291F41AC9F5B60012A30A /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				04F9906B1AC66EE400B8C7BB /* Address Verification */,
-				04918A7519FADD5700136F9D /* KHBorrowItemUIViewController.h */,
-				04918A7619FADD5700136F9D /* KHBorrowItemUIViewController.m */,
-				04918A6E19FACDE900136F9D /* KHLoginUIViewController.h */,
-				04918A6F19FACDE900136F9D /* KHLoginUIViewController.m */,
-				0481CB2C19FC197E002E7A4F /* KHMainUITabBarController.h */,
-				0481CB2D19FD5462002E7A4F /* KHMainUITabBarController.m */,
-				0459096F1A04498C006764CB /* KHMeUIViewController.h */,
-				0459096D1A0448F0006764CB /* KHMeUIViewController.m */,
-				04944CCA1AA79894009CDB95 /* KHBorrowDateUIViewController.h */,
-				04944CCB1AA798B8009CDB95 /* KHBorrowDateUIViewController.m */,
-				04944CCD1AA79BB0009CDB95 /* KHReturnDateUIViewController.h */,
-				04944CCE1AA79BDC009CDB95 /* KHReturnDateUIViewController.m */,
-				04944CD01AA79D23009CDB95 /* KHSendRequestUIViewController.h */,
-				04944CD11AA79D3E009CDB95 /* KHSendRequestUIViewController.m */,
-				04944CEB1AA90FFB009CDB95 /* KHBorrowMessageUIViewController.h */,
-				04944CEC1AA91012009CDB95 /* KHBorrowMessageUIViewController.m */,
+				047291F61ACA024B0012A30A /* Storyboard */,
+				047291F51ACA02100012A30A /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		047291F51ACA02100012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0472931B1ACB554B0012A30A /* KHMainUITabBarController.h */,
+				0472931C1ACB554B0012A30A /* KHMainUITabBarController.m */,
+				047292181ACA0BAB0012A30A /* KHLoginUIViewController.h */,
+				047292191ACA0BAB0012A30A /* KHLoginUIViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		047291F61ACA024B0012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				047293101ACA0CF60012A30A /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		047291F71ACA02730012A30A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				04A513051AD849A7001AE83A /* Models */,
+				047291F81ACA02850012A30A /* Storyboard */,
+				047291F91ACA029E0012A30A /* Controllers */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		047291F81ACA02850012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0472930E1ACA0CE00012A30A /* Me.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		047291F91ACA029E0012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				047293061ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.h */,
+				047293071ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.m */,
+				047293081ACA0C4D0012A30A /* KHAddressVerificationUIViewController.h */,
+				047293091ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m */,
+				047292151ACA0B990012A30A /* KHMeUIViewController.h */,
+				047292161ACA0B990012A30A /* KHMeUIViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		047291FD1ACA06760012A30A /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				047291FF1ACA068D0012A30A /* Storyboard */,
+				047291FE1ACA06820012A30A /* Controllers */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		047291FE1ACA06820012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		047291FF1ACA068D0012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				047293121ACB3E340012A30A /* Share.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		047292001ACA069C0012A30A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				047292021ACA073A0012A30A /* Storyboard */,
+				047292011ACA072B0012A30A /* Controllers */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		047292011ACA072B0012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		047292021ACA073A0012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				047293141ACB40050012A30A /* Dashboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		047292031ACA0B740012A30A /* Borrow */ = {
+			isa = PBXGroup;
+			children = (
+				0472920F1ACA0B740012A30A /* Storyboard */,
+				047292041ACA0B740012A30A /* Controllers */,
+			);
+			path = Borrow;
+			sourceTree = "<group>";
+		};
+		047292041ACA0B740012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				047292051ACA0B740012A30A /* KHBorrowDateUIViewController.h */,
+				047292061ACA0B740012A30A /* KHBorrowDateUIViewController.m */,
+				047292071ACA0B740012A30A /* KHBorrowItemUIViewController.h */,
+				047292081ACA0B740012A30A /* KHBorrowItemUIViewController.m */,
+				047292091ACA0B740012A30A /* KHBorrowMessageUIViewController.h */,
+				0472920A1ACA0B740012A30A /* KHBorrowMessageUIViewController.m */,
+				0472920B1ACA0B740012A30A /* KHReturnDateUIViewController.h */,
+				0472920C1ACA0B740012A30A /* KHReturnDateUIViewController.m */,
+				0472920D1ACA0B740012A30A /* KHSendRequestUIViewController.h */,
+				0472920E1ACA0B740012A30A /* KHSendRequestUIViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0472920F1ACA0B740012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0472930C1ACA0CAC0012A30A /* Borrow.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		047293161ACB40A50012A30A /* More */ = {
+			isa = PBXGroup;
+			children = (
+				047293181ACB40E10012A30A /* Storyboard */,
+				047293171ACB40B40012A30A /* Controllers */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		047293171ACB40B40012A30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		047293181ACB40E10012A30A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				047293191ACB40ED0012A30A /* More.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		04944CF11AAEADA4009CDB95 /* Images */ = {
@@ -428,40 +569,19 @@
 				04930B451A1EF59D000BD42C /* KHApiKey.m */,
 				04944CEE1AAA5813009CDB95 /* KHApiAppIdNamespace.h */,
 				04944CEF1AAA5990009CDB95 /* KHApiAppIdNamespace.m */,
-				04F990581AC6127700B8C7BB /* KHGoogleGeoCodingAddressResults.h */,
-				04F990591AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m */,
-				04F9905B1AC613A800B8C7BB /* KHGoogleGeoCodingAddressResult.h */,
-				04F9905C1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m */,
-				04F9905E1AC618DB00B8C7BB /* KHGoogleGeoCodingAddressComponent.h */,
-				04F9905F1AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m */,
-				04F990611AC61C1300B8C7BB /* KHGoogleGeoCodingGeometry.h */,
-				04F990621AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m */,
-				04F990641AC61D3900B8C7BB /* KHGoogleGeoCodingCoordinate.h */,
-				04F990651AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m */,
-				04F990671AC6214300B8C7BB /* KHGoogleGeoCodingViewport.h */,
-				04F990681AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		04F9906B1AC66EE400B8C7BB /* Address Verification */ = {
+		04A513051AD849A7001AE83A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04F990711AC6722300B8C7BB /* KHAddressVerificationUITableViewCell.h */,
-				04F990721AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m */,
-				04F990781AC70FCE00B8C7BB /* KHAddressVerificationUITableViewController.h */,
-				04F990791AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m */,
+				04A513061AD84A12001AE83A /* KHAddressResult.h */,
+				04A513071AD84A12001AE83A /* KHAddressResult.m */,
+				04A513081AD84A12001AE83A /* KHAddressResults.h */,
+				04A513091AD84A12001AE83A /* KHAddressResults.m */,
 			);
-			name = "Address Verification";
-			sourceTree = "<group>";
-		};
-		04F990741AC689BC00B8C7BB /* Linked Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */,
-				04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */,
-			);
-			name = "Linked Storyboard";
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +666,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04944D2F1AAEADA4009CDB95 /* Icon-Small-50.png in Resources */,
-				040DD67319E5027E00AFD82E /* Main.storyboard in Resources */,
 				04944D301AAEADA4009CDB95 /* Icon-Small-50@2x.png in Resources */,
 				04944D261AAEADA4009CDB95 /* Icon-60@2x.png in Resources */,
 				04944D201AAEADA4009CDB95 /* background image 1536x2048.png in Resources */,
@@ -554,10 +673,11 @@
 				04F990561AC5E73800B8C7BB /* green pixel.png in Resources */,
 				04944D2A1AAEADA4009CDB95 /* Icon-76.png in Resources */,
 				04944D2E1AAEADA4009CDB95 /* Icon-Small-40@3x.png in Resources */,
-				DB4C24361AC663310039495E /* Address.storyboard in Resources */,
+				0472931A1ACB40ED0012A30A /* More.storyboard in Resources */,
 				04944D2C1AAEADA4009CDB95 /* Icon-Small-40.png in Resources */,
 				04F990551AC5E73800B8C7BB /* black translucent80.png in Resources */,
 				04944D371AAEADA4009CDB95 /* launch image 1242x2208.png in Resources */,
+				0472930D1ACA0CAC0012A30A /* Borrow.storyboard in Resources */,
 				04944D311AAEADA4009CDB95 /* Icon-Small.png in Resources */,
 				04944D411AAEADA4009CDB95 /* bell@2x.png in Resources */,
 				04944D421AAEADA4009CDB95 /* hat filled@2x.png in Resources */,
@@ -573,12 +693,14 @@
 				04944D431AAEADA4009CDB95 /* hat@2x.png in Resources */,
 				04944D441AAEADA4009CDB95 /* heart filled@2x.png in Resources */,
 				04944D341AAEADA4009CDB95 /* Icon.png in Resources */,
+				047293111ACA0CF60012A30A /* Login.storyboard in Resources */,
 				04944D281AAEADA4009CDB95 /* Icon-72.png in Resources */,
 				04F9904F1AC5E70600B8C7BB /* LaunchScreen.xib in Resources */,
 				040DD67519E5027E00AFD82E /* Images.xcassets in Resources */,
 				04944D251AAEADA4009CDB95 /* Icon-60.png in Resources */,
 				04944D221AAEADA4009CDB95 /* blur background.jpg in Resources */,
 				04944D231AAEADA4009CDB95 /* ghost button.png in Resources */,
+				047293151ACB40050012A30A /* Dashboard.storyboard in Resources */,
 				04944D241AAEADA4009CDB95 /* puppies in hats.jpg in Resources */,
 				04944D3B1AAEADA4009CDB95 /* launch image 750x1334.png in Resources */,
 				04944D471AAEADA4009CDB95 /* tree@2x.png in Resources */,
@@ -593,7 +715,9 @@
 				04944D291AAEADA4009CDB95 /* Icon-72@2x.png in Resources */,
 				04944D321AAEADA4009CDB95 /* Icon-Small@2x.png in Resources */,
 				04944D491AAEADA4009CDB95 /* user@2x.png in Resources */,
+				047293131ACB3E340012A30A /* Share.storyboard in Resources */,
 				04944D401AAEADA4009CDB95 /* bell filled@2x.png in Resources */,
+				0472930F1ACA0CE00012A30A /* Me.storyboard in Resources */,
 				04944D391AAEADA4009CDB95 /* launch image 640x136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,31 +736,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04918A7019FACDE900136F9D /* KHLoginUIViewController.m in Sources */,
-				04918A7719FADD5700136F9D /* KHBorrowItemUIViewController.m in Sources */,
 				0495CEDB19F59D4D0046FB4D /* KHUser.m in Sources */,
-				0459096E1A0448F0006764CB /* KHMeUIViewController.m in Sources */,
-				0481CB2E19FD5462002E7A4F /* KHMainUITabBarController.m in Sources */,
 				040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */,
-				04944CCF1AA79BDC009CDB95 /* KHReturnDateUIViewController.m in Sources */,
-				04F990731AC6723600B8C7BB /* KHAddressVerificationUITableViewCell.m in Sources */,
+				047292101ACA0B740012A30A /* KHBorrowDateUIViewController.m in Sources */,
 				04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */,
-				04944CCC1AA798B8009CDB95 /* KHBorrowDateUIViewController.m in Sources */,
+				0472930A1ACA0C4D0012A30A /* KHAddressVerificationUITableViewCell.m in Sources */,
 				0465B14E1AA63B1900482DD5 /* KHRequest.m in Sources */,
-				04F990631AC61CDE00B8C7BB /* KHGoogleGeoCodingGeometry.m in Sources */,
 				040DD66A19E5027E00AFD82E /* main.m in Sources */,
-				04F9905D1AC6166900B8C7BB /* KHGoogleGeoCodingAddressResult.m in Sources */,
 				04944CF01AAA5990009CDB95 /* KHApiAppIdNamespace.m in Sources */,
-				04F990691AC6219E00B8C7BB /* KHGoogleGeoCodingViewport.m in Sources */,
+				047293201ACF0D8F0012A30A /* KHUITabBarLinkedStoryboard.m in Sources */,
+				047292131ACA0B740012A30A /* KHReturnDateUIViewController.m in Sources */,
+				04A5130A1AD84A12001AE83A /* KHAddressResult.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
-				04F9905A1AC6133500B8C7BB /* KHGoogleGeoCodingAddressResults.m in Sources */,
-				04F990661AC61DD900B8C7BB /* KHGoogleGeoCodingCoordinate.m in Sources */,
-				043354C219E994090047FEDF /* KHRestfulUrls.m in Sources */,
-				04F990601AC6193C00B8C7BB /* KHGoogleGeoCodingAddressComponent.m in Sources */,
+				04A5130B1AD84A12001AE83A /* KHAddressResults.m in Sources */,
+				047292111ACA0B740012A30A /* KHBorrowItemUIViewController.m in Sources */,
+				047292171ACA0B990012A30A /* KHMeUIViewController.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
-				04944CD21AA79D3E009CDB95 /* KHSendRequestUIViewController.m in Sources */,
-				04F9907A1AC7100900B8C7BB /* KHAddressVerificationUITableViewController.m in Sources */,
-				04944CED1AA91012009CDB95 /* KHBorrowMessageUIViewController.m in Sources */,
+				047292121ACA0B740012A30A /* KHBorrowMessageUIViewController.m in Sources */,
+				0472921A1ACA0BAB0012A30A /* KHLoginUIViewController.m in Sources */,
+				0472930B1ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m in Sources */,
+				047292141ACA0B740012A30A /* KHSendRequestUIViewController.m in Sources */,
+				0472931D1ACB554B0012A30A /* KHMainUITabBarController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,
 			);
@@ -659,17 +779,6 @@
 			targetProxy = 040DD67E19E5027F00AFD82E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		040DD67119E5027E00AFD82E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040DD67219E5027E00AFD82E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		040DD68519E5027F00AFD82E /* Debug */ = {

@@ -1,5 +1,5 @@
 //
-//  KHGoogleGeoCodingCoordinate
+//  KHAddressResults
 //  iosapp
 //
 //  Created by Mac on 10/20/14.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KHAddressResults.h"
 
-@interface KHGoogleGeoCodingCoordinate : NSObject
+@interface KHAddressResults : NSObject
 
-@property double latitude;
-@property double longitude;
+@property NSArray * addresses;
 
 - (void) deserialize: (NSDictionary*) jsonData;
 

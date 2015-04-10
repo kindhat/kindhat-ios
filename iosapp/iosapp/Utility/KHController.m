@@ -7,7 +7,6 @@
 //
 
 #import "KHController.h"
-#import "KHRestfulUrls.h"
 
 @implementation KHController
 

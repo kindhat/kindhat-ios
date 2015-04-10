@@ -25,7 +25,7 @@
 
 static NSString *const _userUrlConfigurationName = @"kh.userurl";
 static NSString *const _getUserUrlConfigurationName = @"kh.getuserurl";
-static NSString *const _googleGeocodingUrlName = @"kh.google.geocoding.url";
+static NSString *const _addressLookUpUrlName = @"kh.address.lookup.url";
 
 + (NSString*) userUrlConfigurationName {
     return _userUrlConfigurationName;
@@ -35,8 +35,8 @@ static NSString *const _googleGeocodingUrlName = @"kh.google.geocoding.url";
     return _getUserUrlConfigurationName;
 }
 
-+ (NSString*) googleGeocodingUrlName {
-    return _googleGeocodingUrlName;
++ (NSString*) addressLookUpUrlName {
+    return _addressLookUpUrlName;
 }
 
 - (void) deserialize:(NSDictionary *)jsonData{
