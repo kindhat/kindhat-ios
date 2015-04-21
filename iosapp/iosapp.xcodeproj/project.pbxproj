@@ -88,6 +88,10 @@
 		04F990561AC5E73800B8C7BB /* green pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990521AC5E73800B8C7BB /* green pixel.png */; };
 		04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990531AC5E73800B8C7BB /* orange pixel.png */; };
 		04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */; };
+		DBFAC7021AE6CDE200368ED9 /* KHBorrowNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC7011AE6CDE200368ED9 /* KHBorrowNavigationController.m */; };
+		DBFAC7051AE6E49200368ED9 /* ShareUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC7041AE6E49200368ED9 /* ShareUINavigationController.m */; };
+		DBFAC7081AE6EA4800368ED9 /* DashboardUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC7071AE6EA4800368ED9 /* DashboardUINavigationController.m */; };
+		DBFAC70B1AE6ED8300368ED9 /* MoreUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC70A1AE6ED8300368ED9 /* MoreUINavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +214,14 @@
 		04F990531AC5E73800B8C7BB /* orange pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange pixel.png"; sourceTree = "<group>"; };
 		04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLinkedStoryboard.h; sourceTree = "<group>"; };
 		04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLinkedStoryboard.m; sourceTree = "<group>"; };
+		DBFAC7001AE6CDE200368ED9 /* KHBorrowNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHBorrowNavigationController.h; path = iosapp/Borrow/Controllers/KHBorrowNavigationController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC7011AE6CDE200368ED9 /* KHBorrowNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHBorrowNavigationController.m; path = iosapp/Borrow/Controllers/KHBorrowNavigationController.m; sourceTree = SOURCE_ROOT; };
+		DBFAC7031AE6E49200368ED9 /* ShareUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareUINavigationController.h; path = iosapp/Share/Controllers/ShareUINavigationController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC7041AE6E49200368ED9 /* ShareUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareUINavigationController.m; path = iosapp/Share/Controllers/ShareUINavigationController.m; sourceTree = SOURCE_ROOT; };
+		DBFAC7061AE6EA4800368ED9 /* DashboardUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashboardUINavigationController.h; path = iosapp/Dashboard/Controllers/DashboardUINavigationController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC7071AE6EA4800368ED9 /* DashboardUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashboardUINavigationController.m; path = iosapp/Dashboard/Controllers/DashboardUINavigationController.m; sourceTree = SOURCE_ROOT; };
+		DBFAC7091AE6ED8300368ED9 /* MoreUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreUINavigationController.h; path = iosapp/More/Controllers/MoreUINavigationController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC70A1AE6ED8300368ED9 /* MoreUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreUINavigationController.m; path = iosapp/More/Controllers/MoreUINavigationController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +398,8 @@
 		047291FE1ACA06820012A30A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBFAC7031AE6E49200368ED9 /* ShareUINavigationController.h */,
+				DBFAC7041AE6E49200368ED9 /* ShareUINavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -410,6 +424,8 @@
 		047292011ACA072B0012A30A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBFAC7061AE6EA4800368ED9 /* DashboardUINavigationController.h */,
+				DBFAC7071AE6EA4800368ED9 /* DashboardUINavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -440,6 +456,8 @@
 				047292081ACA0B740012A30A /* KHBorrowItemUIViewController.m */,
 				047292091ACA0B740012A30A /* KHBorrowMessageUIViewController.h */,
 				0472920A1ACA0B740012A30A /* KHBorrowMessageUIViewController.m */,
+				DBFAC7001AE6CDE200368ED9 /* KHBorrowNavigationController.h */,
+				DBFAC7011AE6CDE200368ED9 /* KHBorrowNavigationController.m */,
 				0472920B1ACA0B740012A30A /* KHReturnDateUIViewController.h */,
 				0472920C1ACA0B740012A30A /* KHReturnDateUIViewController.m */,
 				0472920D1ACA0B740012A30A /* KHSendRequestUIViewController.h */,
@@ -476,6 +494,8 @@
 			isa = PBXGroup;
 			children = (
 				047293191ACB40ED0012A30A /* More.storyboard */,
+				DBFAC7091AE6ED8300368ED9 /* MoreUINavigationController.h */,
+				DBFAC70A1AE6ED8300368ED9 /* MoreUINavigationController.m */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -764,6 +784,7 @@
 				04944CF01AAA5990009CDB95 /* KHApiAppIdNamespace.m in Sources */,
 				047292131ACA0B740012A30A /* KHReturnDateUIViewController.m in Sources */,
 				0435B7F21ADCCA6A00482C4E /* KHLiterals.m in Sources */,
+				DBFAC70B1AE6ED8300368ED9 /* MoreUINavigationController.m in Sources */,
 				04A5130A1AD84A12001AE83A /* KHAddressResult.m in Sources */,
 				0481CB301A03152C002E7A4F /* KHExternalIdType.m in Sources */,
 				04A5130B1AD84A12001AE83A /* KHAddressResults.m in Sources */,
@@ -773,9 +794,12 @@
 				047292121ACA0B740012A30A /* KHBorrowMessageUIViewController.m in Sources */,
 				049DED491AE6026A00321854 /* KHStoryboardUITabBarController.m in Sources */,
 				0472921A1ACA0BAB0012A30A /* KHLoginUIViewController.m in Sources */,
+				DBFAC7021AE6CDE200368ED9 /* KHBorrowNavigationController.m in Sources */,
 				0472930B1ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m in Sources */,
 				047292141ACA0B740012A30A /* KHSendRequestUIViewController.m in Sources */,
+				DBFAC7081AE6EA4800368ED9 /* DashboardUINavigationController.m in Sources */,
 				0472931D1ACB554B0012A30A /* KHMainUITabBarController.m in Sources */,
+				DBFAC7051AE6E49200368ED9 /* ShareUINavigationController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,
 				049DED461AE5FEC000321854 /* KHStoryboards.m in Sources */,

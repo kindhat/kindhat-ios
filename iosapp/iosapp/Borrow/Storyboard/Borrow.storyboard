@@ -24,7 +24,7 @@
                             </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-tV-uPQ">
                                 <rect key="frame" x="0.0" y="219" width="600" height="162"/>
-                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445123677.338714">
                                     <!--2015-02-08 21:27:57 +0000-->
                                 </date>
@@ -90,17 +90,17 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="aWF-gP-6kQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="aWF-gP-6kQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What would you like to borrow?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbx-Ur-nxn">
-                                <rect key="frame" x="16" y="234" width="568" height="42"/>
+                                <rect key="frame" x="16" y="234" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ladder, Tent, Drill, ect..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-YZ-cbt">
-                                <rect key="frame" x="16" y="281" width="568" height="2"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ladder, Tent, Drill, ect..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-YZ-cbt">
+                                <rect key="frame" x="16" y="260" width="568" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ntU-Gc-sHU"/>
@@ -109,7 +109,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF2-sQ-Xqe">
-                                <rect key="frame" x="231" y="341" width="139" height="14"/>
+                                <rect key="frame" x="231" y="320" width="139" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="5rp-VA-BdH"/>
                                     <constraint firstAttribute="height" constant="42" id="ubN-PH-4rX"/>
@@ -122,7 +122,7 @@
                                     <segue destination="lUz-PW-3gX" kind="show" identifier="showBorrowDateController" id="W1D-Qc-p5Q"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xQ2-3A-DzL">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xQ2-3A-DzL">
                                 <rect key="frame" x="54" y="132" width="492" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="sHt-OP-1ie"/>
@@ -163,9 +163,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Borrow" image="hat.png" id="EWY-7R-Jfb"/>
+                    <tabBarItem key="tabBarItem" title="Borrow" image="hat.png" id="vbt-XN-MCI"/>
                     <navigationItem key="navigationItem" title="Borrow Request" id="erK-hE-RJp">
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="ykg-iy-9dp"/>
+                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="Uqt-EB-BuI"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -200,14 +200,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KMY-Yd-h5C">
-                                <rect key="frame" x="16" y="152" width="568" height="244"/>
+                            <textView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMY-Yd-h5C">
+                                <rect key="frame" x="16" y="152" width="568" height="195"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxS-7o-hpo">
-                                <rect key="frame" x="231" y="454" width="139" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxS-7o-hpo">
+                                <rect key="frame" x="231" y="405" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="D8a-0L-lnR"/>
                                     <constraint firstAttribute="height" constant="42" id="tlA-Jm-nnd"/>
@@ -259,23 +259,23 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-Yd-K57">
-                                <rect key="frame" x="-936" y="-44" width="1536" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-Yd-K57">
+                                <rect key="frame" x="0.0" y="-724" width="600" height="2048"/>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="va2-dT-9vO">
-                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="va2-dT-9vO">
+                                <rect key="frame" x="140" y="219" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445128212.05004197">
                                     <!--2015-02-08 22:43:32 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="When do you need your favor?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="F22-bw-gG2">
-                                <rect key="frame" x="182" y="119" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When do you need your favor?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="F22-bw-gG2">
+                                <rect key="frame" x="182" y="168" width="236" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-ut-EtJ">
-                                <rect key="frame" x="231" y="455" width="139" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-ut-EtJ">
+                                <rect key="frame" x="231" y="406" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="90f-7J-tJ2"/>
                                     <constraint firstAttribute="height" constant="42" id="xmL-Ni-vgF"/>
@@ -355,8 +355,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-b6-q0F">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-b6-q0F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What favor can we help with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1vP-YH-26t">
                                 <rect key="frame" x="16" y="226" width="568" height="17"/>
@@ -440,15 +440,18 @@
         <!--Borrow Navigation Controller-->
         <scene sceneID="HMK-Gd-KqM">
             <objects>
-                <navigationController title="Borrow Navigation Controller" hidesBarsWhenKeyboardAppears="YES" id="Bfs-l1-4tM" sceneMemberID="viewController">
+                <navigationController title="Borrow Navigation Controller" extendedLayoutIncludesOpaqueBars="YES" hidesBarsWhenKeyboardAppears="YES" id="Bfs-l1-4tM" customClass="KHBorrowNavigationController" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="orange pixel.png" id="Ytj-4C-EGb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ytj-4C-EGb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -471,8 +474,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="yYX-5Z-RXs">
-                                <rect key="frame" x="0.0" y="-62" width="600" height="662"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="yYX-5Z-RXs">
+                                <rect key="frame" x="0.0" y="-62" width="600" height="613"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When will you return this item?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD0-be-kHt">
                                 <rect key="frame" x="182" y="169" width="236" height="21"/>
@@ -730,8 +733,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="3b6-Ki-U3x">
                                 <rect key="frame" x="0.0" y="-49" width="600" height="713"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-qK-bG0">
-                                <rect key="frame" x="231" y="524" width="139" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-qK-bG0">
+                                <rect key="frame" x="231" y="475" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="Nk2-gX-8gd"/>
                                     <constraint firstAttribute="height" constant="42" id="Xkq-4i-kDX"/>
@@ -744,8 +747,8 @@
                                     <segue destination="0IY-kl-d4T" kind="presentation" id="QIn-sY-Lnh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Dynamic label for date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-MQ-WKb">
-                                <rect key="frame" x="201" y="275" width="199" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic label for date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-MQ-WKb">
+                                <rect key="frame" x="201" y="96" width="199" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="sVm-LG-Cds"/>
                                     <constraint firstAttribute="height" constant="20" id="xZT-FU-Jzs"/>
@@ -754,8 +757,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="would like &quot;some help with/to borrow&quot;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFS-YC-fhI">
-                                <rect key="frame" x="122" y="184" width="357" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="would like &quot;some help with/to borrow&quot;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFS-YC-fhI">
+                                <rect key="frame" x="16" y="205" width="568" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="uIh-4z-rkE"/>
                                 </constraints>
@@ -768,20 +771,20 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-NF-dxt">
-                                <rect key="frame" x="259" y="128" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-NF-dxt">
+                                <rect key="frame" x="16" y="154" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Item/Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHz-oe-VEq">
-                                <rect key="frame" x="216" y="222" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item/Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHz-oe-VEq">
+                                <rect key="frame" x="16" y="252" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="on" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-yf-FLM">
-                                <rect key="frame" x="259" y="246" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-yf-FLM">
+                                <rect key="frame" x="16" y="276" width="568" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -806,6 +809,7 @@
                             <constraint firstItem="3b6-Ki-U3x" firstAttribute="leading" secondItem="KOT-yv-N4Q" secondAttribute="leading" id="X51-1V-Mpz"/>
                             <constraint firstItem="UFS-YC-fhI" firstAttribute="leading" secondItem="KOT-yv-N4Q" secondAttribute="leadingMargin" constant="54" id="blA-Jo-j2w"/>
                             <constraint firstAttribute="centerX" secondItem="z8U-MQ-WKb" secondAttribute="centerX" id="frA-ml-Lrc"/>
+                            <constraint firstItem="z8U-MQ-WKb" firstAttribute="top" secondItem="UIC-zr-9CM" secondAttribute="bottom" constant="32" id="gvZ-Ui-QQi"/>
                             <constraint firstItem="z8U-MQ-WKb" firstAttribute="top" secondItem="UFS-YC-fhI" secondAttribute="bottom" constant="8" symbolic="YES" id="jDD-Re-xeK"/>
                             <constraint firstAttribute="centerX" secondItem="3b6-Ki-U3x" secondAttribute="centerX" id="lLc-Za-vTJ"/>
                             <constraint firstItem="ITj-yf-FLM" firstAttribute="leading" secondItem="KOT-yv-N4Q" secondAttribute="leadingMargin" id="mEI-8U-VYD"/>
@@ -853,7 +857,6 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="ghost button.png" width="293" height="80"/>
         <image name="hat.png" width="32" height="32"/>
-        <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
