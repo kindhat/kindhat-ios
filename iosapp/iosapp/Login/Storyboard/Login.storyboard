@@ -85,26 +85,6 @@
             </objects>
             <point key="canvasLocation" x="1273" y="-1160"/>
         </scene>
-        <!--Borrow-->
-        <scene sceneID="yVU-IB-GyZ">
-            <objects>
-                <viewController title="Borrow" id="HET-uk-nQi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RkO-eK-nYM"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qrw-XL-vnl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="75E-IW-SwC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Borrow" image="hat.png" id="0LM-CI-UYK"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1hU-CD-Lje" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-679" y="396"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Esd-7f-B3A">
             <objects>
@@ -115,104 +95,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="HET-uk-nQi" kind="custom" identifier="@Borrow" customClass="KHUITabBarLinkedStoryboard" id="3RS-6c-jyV"/>
-                        <segue destination="PLd-MB-Ddm" kind="custom" identifier="@Share" customClass="KHUITabBarLinkedStoryboard" id="CjV-s5-Mvp"/>
-                        <segue destination="nGT-R1-70a" kind="custom" identifier="@Dashboard" customClass="KHUITabBarLinkedStoryboard" id="7eX-Mg-4Ny"/>
-                        <segue destination="zQy-8K-dt8" kind="custom" identifier="@Charity" customClass="KHUITabBarLinkedStoryboard" id="Gal-AJ-XkD"/>
-                        <segue destination="0IP-Zy-ICo" kind="custom" identifier="@More" customClass="KHUITabBarLinkedStoryboard" id="KEf-Ik-J4a"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fj-60-5Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="350" y="-472"/>
         </scene>
-        <!--Share-->
-        <scene sceneID="Gpa-LW-s5Q">
-            <objects>
-                <viewController title="Share" id="PLd-MB-Ddm" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZFS-tb-Unc"/>
-                        <viewControllerLayoutGuide type="bottom" id="yAz-33-wtg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Sbf-XQ-PFO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Share" image="heart.png" id="P6H-qW-s61"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="csg-hh-1mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-31" y="396"/>
-        </scene>
-        <!--Dashboard-->
-        <scene sceneID="E78-sm-n6z">
-            <objects>
-                <viewController title="Dashboard" id="nGT-R1-70a" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eek-Cg-foj"/>
-                        <viewControllerLayoutGuide type="bottom" id="E2N-ES-bLE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JhO-0e-hZO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="bell.png" id="aLi-kh-umS"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Is-MX-YMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="649" y="396"/>
-        </scene>
-        <!--Charity-->
-        <scene sceneID="i3D-9i-Lcg">
-            <objects>
-                <viewController title="Charity" id="zQy-8K-dt8" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HYz-nm-P0g"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Em-4h-Npj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lwc-ax-sby">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Charity" image="tree.png" id="zkY-S5-yJY"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vfD-gP-SWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1349" y="388"/>
-        </scene>
-        <!--More-->
-        <scene sceneID="eDD-7P-hqN">
-            <objects>
-                <viewController title="More" id="0IP-Zy-ICo" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="x6l-tc-4Wc"/>
-                        <viewControllerLayoutGuide type="bottom" id="W7j-dm-gXq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8k6-1k-VTy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="More" id="b57-EG-Aa8"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fQs-l5-LO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1966" y="388"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="bell.png" width="28" height="32"/>
-        <image name="hat.png" width="32" height="32"/>
-        <image name="heart.png" width="32" height="28"/>
         <image name="launch image 1536x2048.png" width="1536" height="2048"/>
-        <image name="tree.png" width="22" height="32"/>
     </resources>
 </document>

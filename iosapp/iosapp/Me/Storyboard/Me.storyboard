@@ -186,11 +186,30 @@
                         <outlet property="termsAndConditionsUISwitch" destination="NVg-Fb-fbb" id="RQ6-dv-xkD"/>
                         <outlet property="uiScrollView" destination="v7H-Pn-YSQ" id="hmz-JX-M8p"/>
                         <segue destination="3O0-Ny-4bW" kind="show" identifier="address" id="ouY-Bc-p7W"/>
+                        <segue destination="rta-Z0-DzJ" kind="custom" identifier="@Borrow" customClass="KHUITabBarLinkedStoryboard" id="6V8-57-cX0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fO-sl-lLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1586" y="220"/>
+        </scene>
+        <!--Borrow-->
+        <scene sceneID="cfz-fq-WBS">
+            <objects>
+                <viewController title="Borrow" id="rta-Z0-DzJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZJl-fd-jzt"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ov-En-BMh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F0R-Gr-Wgo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4T-ur-E31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="1018"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWE-Yn-vrt">

@@ -7,22 +7,27 @@
 //
 
 #import "KHMainUITabBarController.h"
-#import "../../Borrow/Controllers/KHBorrowItemUIViewController.h"
+#import "../../StoryboardUtility/KHStoryboards.h"
 
 @implementation KHMainUITabBarController
 
-static NSString *const borrowSegueName = @"@Borrow";
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setDelegate:self];
+    
+    NSArray * tabs = [NSArray arrayWithObjects:
+                      [KHStoryboards borrowStoryboard],
+                      [KHStoryboards shareStoryboard],
+                      [KHStoryboards dashboardStoryboard],
+                      [KHStoryboards moreStoryboard],
+                      nil];
+    
+    [self setTabBarControllerWithStoryboards:tabs];
+}
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController
 shouldSelectViewController:(UIViewController *)viewController{
     return [[self khUser] requiredFieldsMet];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:borrowSegueName]) {
-        KHBorrowItemUIViewController *khBorrowItemUIViewController = segue.destinationViewController;
-        [khBorrowItemUIViewController setKhUser: [self khUser]];
-    }
 }
 
 @end

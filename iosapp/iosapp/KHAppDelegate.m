@@ -8,7 +8,7 @@
 
 #import "KHAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "Controllers/KHLoginUIViewController.h"
+#import "StoryboardUtility/KHStoryboards.h"
 #import "Utility/KHConfiguration.h"
 
 @interface KHAppDelegate ()
