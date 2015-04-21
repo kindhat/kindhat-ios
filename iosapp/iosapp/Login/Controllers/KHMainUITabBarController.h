@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "../../Utility/KHExternalIdType.h"
+#import "../../StoryboardUtility/KHStoryboardUITabBarController.h"
 #import "../../Models/KHUser.h"
 
-@interface KHMainUITabBarController : UITabBarController<UITabBarControllerDelegate>
+@interface KHMainUITabBarController : KHStoryboardUITabBarController
 
 @property(strong, nonatomic) KHUser* khUser;
 

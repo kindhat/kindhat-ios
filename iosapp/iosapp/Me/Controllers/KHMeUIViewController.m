@@ -12,6 +12,7 @@
 #import "../Models/KHAddressResults.h"
 #import "../../Utility/KHController.h"
 #import "../../Utility/KHConfiguration.h"
+#import "../../Utility/KHLiterals.h"
 
 @implementation KHMeUIViewController
 
@@ -70,9 +71,13 @@ static NSString *const borrowSegueName = @"@Borrow";
     
     NSString *addressLookUpUrl = [KHConfiguration getConfiguration:[KHUser addressLookUpUrlName]];
     
+    NSString *streetFormatted = [street stringByReplacingOccurrencesOfString:[KHLiterals spaceString] withString:[KHLiterals plusString]];
+    
+    NSString *postalCodeFormatted = [postalCode stringByReplacingOccurrencesOfString:[KHLiterals spaceString] withString:[KHLiterals plusString]];
+    
     NSString *addressLookUpUrlUrlFormatted = [NSString stringWithFormat:addressLookUpUrl,
-                                              street,
-                                              postalCode];
+                                              streetFormatted,
+                                              postalCodeFormatted];
     
     [khController getItemSync:addressLookUpUrlUrlFormatted
                     callHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
