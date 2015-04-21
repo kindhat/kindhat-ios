@@ -11,7 +11,7 @@
 
 @implementation KHConfiguration
 
-static NSString *const configurationUrl = @"http://localhost:8888/_ah/api/configurationendpoint/v1/configuration";
+static NSString *const configurationUrl = @"https://kindhat-service.appspot.com/_ah/api/configurationendpoint/v1/configuration";
 static NSString *const name = @"name";
 static NSString *const value = @"value";
 static NSString *const items = @"items";
