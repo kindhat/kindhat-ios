@@ -15,6 +15,8 @@
     [super viewDidLoad];
     [self setDelegate:self];
     
+    [super viewDidLoad];
+    
     NSArray * tabs = [NSArray arrayWithObjects:
                       [KHStoryboards borrowStoryboard],
                       [KHStoryboards shareStoryboard],
