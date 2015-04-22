@@ -320,11 +320,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Doh-iH-ynd"/>
+                                <exclude reference="GxI-g2-a4q"/>
                                 <exclude reference="H5J-l2-uVo"/>
                                 <exclude reference="lIS-YV-jvB"/>
                                 <exclude reference="zEp-wy-h8y"/>
-                                <exclude reference="Doh-iH-ynd"/>
-                                <exclude reference="GxI-g2-a4q"/>
                                 <exclude reference="j9Y-0d-Tp7"/>
                                 <exclude reference="ec7-0t-2d0"/>
                                 <exclude reference="zL5-NV-aRl"/>

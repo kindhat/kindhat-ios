@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SeI-xl-ZDU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SeI-xl-ZDU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +14,14 @@
                         <viewControllerLayoutGuide type="bottom" id="xoy-Oa-nr4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VlH-ec-U0E">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Pn-YSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-0Z-FbA">
-                                        <rect key="frame" x="0.0" y="0.0" width="599" height="601"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="599" height="537"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgR-mK-Bnj">
                                         <rect key="frame" x="150" y="0.0" width="300" height="1000"/>
@@ -233,7 +233,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvv-bu-4Z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="228"/>
+            <point key="canvasLocation" x="2508" y="-196"/>
         </scene>
         <!--Select Your Address-->
         <scene sceneID="P6D-Te-fby">
@@ -313,11 +313,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="uiTableView" destination="qsP-cr-70w" id="aZ9-TM-eX1"/>
+                        <segue destination="SeI-xl-ZDU" kind="show" identifier="AddressSelected" id="J4l-Zo-pTs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsR-24-eFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286" y="252"/>
+            <point key="canvasLocation" x="3450" y="340"/>
         </scene>
     </scenes>
     <resources>

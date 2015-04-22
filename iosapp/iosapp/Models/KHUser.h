@@ -20,6 +20,8 @@
 @property NSString * name;
 @property NSString * street;
 @property NSString * postalCode;
+@property double longitude;
+@property double latitude;
 @property NSString * aboutMe;
 @property NSString * image;
 @property NSString * email;

@@ -15,6 +15,8 @@
 @property NSString * city;
 @property NSString * state;
 @property NSString * postalCode;
+@property double longitude;
+@property double latitude;
 
 - (void) deserialize: (NSDictionary*) jsonData;
 

@@ -47,6 +47,13 @@ static NSString *const _addressLookUpUrlName = @"kh.address.lookup.url";
     [self setName: [jsonData objectForKey:@"name"]];
     [self setStreet: [jsonData objectForKey:@"street"]];
     [self setPostalCode: [jsonData objectForKey:@"postalCode"]];
+    
+    NSNumber *nsNumberLongitude = [jsonData objectForKey:@"longitude"];
+    [self setLongitude: [nsNumberLongitude doubleValue]];
+    
+    NSNumber *nsNumberLatitude = [jsonData objectForKey:@"latitude"];
+    [self setLatitude: [nsNumberLatitude doubleValue]];
+    
     [self setAboutMe: [jsonData objectForKey:@"aboutMe"]];
     [self setImage: [jsonData objectForKey:@"image"]];
     [self setEmail: [jsonData objectForKey:@"email"]];
@@ -67,6 +74,8 @@ static NSString *const _addressLookUpUrlName = @"kh.address.lookup.url";
                                   (self.name != nil) ? self.name : @"", @"name",
                                   (self.street != nil) ? self.street : @"", @"street",
                                   (self.postalCode != nil) ? self.postalCode : @"", @"postalCode",
+                                  [NSNumber numberWithDouble: self.latitude], @"latitude",
+                                  [NSNumber numberWithDouble: self.longitude], @"longitude",
                                   (self.aboutMe != nil) ? self.aboutMe : @"", @"aboutMe",
                                   (self.image != nil) ? self.image : @"", @"image",
                                   (self.email != nil) ? self.email : @"", @"email",

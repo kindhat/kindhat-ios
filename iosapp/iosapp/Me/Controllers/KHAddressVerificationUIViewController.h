@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../../Models/KHUser.h"
+
 
 @interface KHAddressVerificationUIViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property KHUser* khUser;
 @property (nonatomic,strong) NSArray *addresses;
-
 @property (nonatomic, strong) IBOutlet UITableView *uiTableView;
 
 @end
