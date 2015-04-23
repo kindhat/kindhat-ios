@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C3i-YT-Dra">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C3i-YT-Dra">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="AEu-mG-Ps1">
             <objects>
-                <navigationController navigationBarHidden="YES" id="C3i-YT-Dra" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="crossDissolve" navigationBarHidden="YES" id="C3i-YT-Dra" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X3x-Oy-Gll">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,7 +24,7 @@
         <!--LoginUI View Controller-->
         <scene sceneID="h6Z-dJ-7pI">
             <objects>
-                <viewController storyboardIdentifier="loginUIViewController" id="vgK-BA-lcc" customClass="KHLoginUIViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginUIViewController" modalTransitionStyle="crossDissolve" id="vgK-BA-lcc" customClass="KHLoginUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Niv-16-Rgg"/>
                         <viewControllerLayoutGuide type="bottom" id="Q4r-WC-Qdc"/>
@@ -70,7 +70,7 @@
         <!--View Controller-->
         <scene sceneID="cd0-yC-Pfr">
             <objects>
-                <viewController id="UDe-Bb-Tgl" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="UDe-Bb-Tgl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9fO-cg-Vaz"/>
                         <viewControllerLayoutGuide type="bottom" id="zTB-7q-BNa"/>
@@ -88,10 +88,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Esd-7f-B3A">
             <objects>
-                <tabBarController title="Tab Bar Controller" automaticallyAdjustsScrollViewInsets="NO" id="Uhc-gN-EsI" customClass="KHMainUITabBarController" sceneMemberID="viewController">
+                <tabBarController title="Tab Bar Controller" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="Uhc-gN-EsI" customClass="KHMainUITabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="jlf-Nr-c7k">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="jlf-Nr-c7k">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

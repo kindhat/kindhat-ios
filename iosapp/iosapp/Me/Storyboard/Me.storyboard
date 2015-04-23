@@ -8,7 +8,7 @@
         <!--Me-->
         <scene sceneID="dgz-gx-c3W">
             <objects>
-                <viewController title="Me" id="SeI-xl-ZDU" customClass="KHMeUIViewController" sceneMemberID="viewController">
+                <viewController title="Me" modalTransitionStyle="crossDissolve" id="SeI-xl-ZDU" customClass="KHMeUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wsy-2w-MEa"/>
                         <viewControllerLayoutGuide type="bottom" id="xoy-Oa-nr4"/>
@@ -196,7 +196,7 @@
         <!--Borrow-->
         <scene sceneID="cfz-fq-WBS">
             <objects>
-                <viewController title="Borrow" id="rta-Z0-DzJ" sceneMemberID="viewController">
+                <viewController title="Borrow" modalTransitionStyle="crossDissolve" id="rta-Z0-DzJ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZJl-fd-jzt"/>
                         <viewControllerLayoutGuide type="bottom" id="8Ov-En-BMh"/>
@@ -214,7 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="iWE-Yn-vrt">
             <objects>
-                <navigationController id="3O0-Ny-4bW" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="crossDissolve" id="3O0-Ny-4bW" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="lXj-uZ-x8K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,7 +238,7 @@
         <!--Select Your Address-->
         <scene sceneID="P6D-Te-fby">
             <objects>
-                <viewController title="Select Your Address" id="Yau-JO-pIn" customClass="KHAddressVerificationUIViewController" sceneMemberID="viewController">
+                <viewController title="Select Your Address" modalTransitionStyle="crossDissolve" id="Yau-JO-pIn" customClass="KHAddressVerificationUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="emN-67-NUS"/>
                         <viewControllerLayoutGuide type="bottom" id="API-rj-fgg"/>
