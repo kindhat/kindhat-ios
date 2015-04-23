@@ -92,6 +92,7 @@
 		04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F990531AC5E73800B8C7BB /* orange pixel.png */; };
 		04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */; };
 		DBFAC70E1AE895EB00368ED9 /* KHUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */; };
+		DBFAC7141AE9AC7900368ED9 /* KHSettingUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC7131AE9AC7900368ED9 /* KHSettingUITableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,8 @@
 		04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLinkedStoryboard.m; sourceTree = "<group>"; };
 		DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHUINavigationController.h; path = iosapp/Utility/KHUINavigationController.h; sourceTree = SOURCE_ROOT; };
 		DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHUINavigationController.m; path = iosapp/Utility/KHUINavigationController.m; sourceTree = SOURCE_ROOT; };
+		DBFAC7121AE9AC7900368ED9 /* KHSettingUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHSettingUITableViewController.h; path = iosapp/More/Controllers/KHSettingUITableViewController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC7131AE9AC7900368ED9 /* KHSettingUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHSettingUITableViewController.m; path = iosapp/More/Controllers/KHSettingUITableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +488,8 @@
 			isa = PBXGroup;
 			children = (
 				0458FF9E1AE8BEFB00A1A539 /* KHMoreUIViewController.h */,
+				DBFAC7121AE9AC7900368ED9 /* KHSettingUITableViewController.h */,
+				DBFAC7131AE9AC7900368ED9 /* KHSettingUITableViewController.m */,
 				0458FF9F1AE8BF4100A1A539 /* KHMoreUIViewController.m */,
 			);
 			path = Controllers;
@@ -798,6 +803,7 @@
 				0472930B1ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m in Sources */,
 				047292141ACA0B740012A30A /* KHSendRequestUIViewController.m in Sources */,
 				0472931D1ACB554B0012A30A /* KHMainUITabBarController.m in Sources */,
+				DBFAC7141AE9AC7900368ED9 /* KHSettingUITableViewController.m in Sources */,
 				DBFAC70E1AE895EB00368ED9 /* KHUINavigationController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,
 				044AB82C1A87F1F00012B2EB /* KHConfiguration.m in Sources */,
