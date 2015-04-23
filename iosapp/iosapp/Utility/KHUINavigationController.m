@@ -1,18 +1,18 @@
 //
-//  KHBorrowUINavigationController.m
+//  KHUINavigationController.m
 //  iosapp
 //
-//  Created by Webb on 4/21/15.
+//  Created by Webb on 4/22/15.
 //  Copyright (c) 2015 Kindhat. All rights reserved.
 //
 
-#import "KHBorrowNavigationController.h"
+#import "KHUINavigationController.h"
 
-@interface KHBorrowNavigationController ()
+@interface KHUINavigationController ()
 
 @end
 
-@implementation KHBorrowNavigationController
+@implementation KHUINavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +21,7 @@
                              forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
     self.navigationBar.translucent = YES;
-       
+    
     // Do any additional setup after loading the view.
 }
 

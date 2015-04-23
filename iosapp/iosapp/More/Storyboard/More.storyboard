@@ -135,7 +135,7 @@
         <!--More-->
         <scene sceneID="ZOu-8Q-BPr">
             <objects>
-                <navigationController title="More" id="uZm-iv-KBl" customClass="MoreUINavigationController" sceneMemberID="viewController">
+                <navigationController title="More" id="uZm-iv-KBl" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2q5-XS-AzT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
