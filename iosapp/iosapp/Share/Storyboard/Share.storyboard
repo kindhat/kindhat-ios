@@ -8,7 +8,7 @@
         <!--Share Navigation Controller-->
         <scene sceneID="tzz-Sv-NlW">
             <objects>
-                <navigationController title="Share Navigation Controller" id="ugE-F1-2xo" customClass="ShareUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Share Navigation Controller" id="ugE-F1-2xo" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Share" image="heart.png" id="frn-pp-d6n"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VsZ-qF-mhH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

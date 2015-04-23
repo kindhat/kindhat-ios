@@ -171,7 +171,7 @@
         <!--Notifications Navigation Controller-->
         <scene sceneID="bYR-bb-Fzf">
             <objects>
-                <navigationController title="Notifications Navigation Controller" id="8Cn-k9-NRQ" customClass="DashboardUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Notifications Navigation Controller" id="8Cn-k9-NRQ" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5Mg-wS-T3x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gGq-kU-lMQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
