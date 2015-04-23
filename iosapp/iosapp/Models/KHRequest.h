@@ -6,6 +6,7 @@
 
 #include <Foundation/Foundation.h>
 #import "KHApiKey.h"
+#import "KHRequestType.h"
 
 @interface KHRequest : NSObject
 
@@ -14,8 +15,8 @@
 @property long identifier;
 @property long userId;
 @property NSString * item;
+@property KHRequestType requestType;
 @property NSString * category;
-@property NSString * use;
 @property NSDate * borrowDate;
 @property NSDate * returnDate;
 @property NSString * message;

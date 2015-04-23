@@ -72,11 +72,17 @@ static NSString *cityStatePostalCodeFormat = @"%@ %@, %@";
     
 }
 
+/*
+ This is a test to see if since we get a reference to a KHUser, perhaps
+ we can just set the values in the cell tap event, segue back to the me view
+ and the user's information will be updated??? Perhaps...
+ 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:addressSelectedSegueIdentifier]) {
         KHMeUIViewController *khMeUIViewController = segue.destinationViewController;
         [khMeUIViewController setKhUser: [self khUser]];
     }
 }
+ */
 
 @end
