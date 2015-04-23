@@ -44,8 +44,7 @@
 - (void)perform
 {
     UIViewController *source = (UIViewController *)self.sourceViewController;
-    [source.navigationController pushViewController:self.destinationViewController
-                                           animated:YES];
+    [source.navigationController presentViewController:self.destinationViewController animated:YES completion:nil];
 }
 
 @end

@@ -11,8 +11,8 @@
 @synthesize identifier;
 @synthesize userId;
 @synthesize item;
+@synthesize requestType;
 @synthesize category;
-@synthesize use;
 @synthesize borrowDate;
 @synthesize returnDate;
 @synthesize message;
@@ -30,20 +30,22 @@ static NSString *const _requestUrlConfigurationName = @"kh.requesturl";
     NSNumber *nsNumberIdentifier = [jsonData objectForKey:@"id"];
     [self setIdentifier: [nsNumberIdentifier longLongValue]];
     
-    NSNumber *nsNumberUserId = [jsonData objectForKey:@"userId"];
-    [self setUserId: [nsNumberUserId longLongValue]];
-    
     [self setItem:[[jsonData objectForKey:@"item"] stringValue]];
     [self setCategory:[[jsonData objectForKey:@"category"] stringValue]];
+        
+    NSNumber *nsRequestType = [jsonData objectForKey:@"requestType"];
+    [self setRequestType: [nsRequestType intValue]];
     
     NSString *borrowDateString = [[jsonData objectForKey:@"borrowDate"] stringValue];
     [self setBorrowDate:[dateFormat dateFromString:borrowDateString]];
     
     NSString *returnDateString = [[jsonData objectForKey:@"returnDate"] stringValue];
     [self setReturnDate:[dateFormat dateFromString:returnDateString]];
-    
-    [self setUse:[[jsonData objectForKey:@"use"] stringValue]];
+
     [self setMessage:[[jsonData objectForKey:@"message"] stringValue]];
+    
+    NSNumber *nsNumberUserId = [jsonData objectForKey:@"userId"];
+    [self setUserId: [nsNumberUserId longLongValue]];
 }
 
 - (NSData*) serialize {
@@ -54,7 +56,7 @@ static NSString *const _requestUrlConfigurationName = @"kh.requesturl";
                                   [NSNumber numberWithLongLong: self.userId], @"userId",
                                   (self.item != nil) ? self.item : @"", @"item",
                                   (self.category != nil) ? self.category : @"", @"category",
-                                  (self.use != nil) ? self.use : @"", @"use",
+                                  [NSNumber numberWithInt: self.requestType], @"requestType",
                                   (self.borrowDate != nil) ? [dateFormat stringFromDate: self.borrowDate] : @"", @"borrowDate",
                                   (self.returnDate != nil) ? [dateFormat stringFromDate: self.returnDate] : @"", @"returnDate",
                                   (self.message != nil) ? self.message : @"", @"message",
