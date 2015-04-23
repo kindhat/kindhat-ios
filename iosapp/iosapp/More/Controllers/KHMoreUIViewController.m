@@ -18,6 +18,10 @@ static NSString *const facebookUrl = @"https://facboook.com/";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:
+                                     [UIImage imageNamed:@"background image 1536x2048.png"]];
+    
     [[self loginView] setDelegate:self];
 }
 
