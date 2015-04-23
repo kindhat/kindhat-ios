@@ -8,12 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "KHMoreUIViewController.h"
-#import "../../Utility/KHClearCookies.h"
 
 @implementation KHMoreUIViewController
 
 static NSString *const loginSegueIdentifier = @"@Login";
-static NSString *const facebookUrl = @"https://facboook.com/";
 
 - (void)viewDidLoad
 {
@@ -23,8 +21,6 @@ static NSString *const facebookUrl = @"https://facboook.com/";
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
 {
-    KHClearCookies *khClearCookies = [[KHClearCookies alloc]init];
-    [khClearCookies clearCookies:facebookUrl];
     [self performSegueWithIdentifier:loginSegueIdentifier sender:nil];
 }
 
