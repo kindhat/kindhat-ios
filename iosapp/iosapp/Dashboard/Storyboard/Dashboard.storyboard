@@ -8,7 +8,7 @@
         <!--Notifications-->
         <scene sceneID="jJa-nD-FeK">
             <objects>
-                <viewController id="XaT-1y-dlp" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="XaT-1y-dlp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2HI-Vk-umk"/>
                         <viewControllerLayoutGuide type="bottom" id="nGN-Ny-Av0"/>
@@ -171,7 +171,7 @@
         <!--Notifications Navigation Controller-->
         <scene sceneID="bYR-bb-Fzf">
             <objects>
-                <navigationController title="Notifications Navigation Controller" id="8Cn-k9-NRQ" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Notifications Navigation Controller" modalTransitionStyle="crossDissolve" id="8Cn-k9-NRQ" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5Mg-wS-T3x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gGq-kU-lMQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -195,7 +195,7 @@
         <!--Messages-->
         <scene sceneID="Dwg-ND-tFI">
             <objects>
-                <viewController id="KtU-yu-tso" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="KtU-yu-tso" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Khm-Uh-eb4"/>
                         <viewControllerLayoutGuide type="bottom" id="1fN-0M-Vnh"/>
@@ -302,7 +302,7 @@
         <!--Notifications-->
         <scene sceneID="wMi-OY-0Za">
             <objects>
-                <viewController title="Notifications" id="TFW-nS-XUw" sceneMemberID="viewController">
+                <viewController title="Notifications" modalTransitionStyle="crossDissolve" id="TFW-nS-XUw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tHf-0q-nXK"/>
                         <viewControllerLayoutGuide type="bottom" id="RV9-Me-YiP"/>

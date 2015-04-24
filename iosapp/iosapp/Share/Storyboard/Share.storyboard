@@ -32,7 +32,7 @@
         <!--About Your Neighbor-->
         <scene sceneID="Wnu-yc-EXE">
             <objects>
-                <viewController id="5Oz-Ez-u8I" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="5Oz-Ez-u8I" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yra-VD-jcX"/>
                         <viewControllerLayoutGuide type="bottom" id="HlP-rE-FuE"/>
@@ -300,7 +300,7 @@
         <!--Share-->
         <scene sceneID="C3p-vD-w8d">
             <objects>
-                <viewController id="fRv-57-Vxp" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="fRv-57-Vxp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K6Y-hs-fTb"/>
                         <viewControllerLayoutGuide type="bottom" id="wfD-Vz-wyZ"/>
@@ -589,7 +589,7 @@
         <!--Details-->
         <scene sceneID="K9P-n0-dkt">
             <objects>
-                <viewController id="nSn-I5-WdL" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="nSn-I5-WdL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oaO-jh-sRk"/>
                         <viewControllerLayoutGuide type="bottom" id="vNO-QL-abn"/>
