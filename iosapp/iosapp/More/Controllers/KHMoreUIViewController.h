@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "../../CommonUI/KHBackgroundUITableViewController.h"
+#import "../../Models/KHUser.h"
 
-@interface KHMoreUIViewController : UITableViewController <FBLoginViewDelegate>
+@interface KHMoreUIViewController : KHBackgroundUITableViewController <FBLoginViewDelegate>
 
 @property (nonatomic, strong) IBOutlet FBLoginView *loginView;
+
+@property KHUser * khUser;
 
 @end

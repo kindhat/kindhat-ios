@@ -1,5 +1,5 @@
 //
-//  KHReturnDateUIViewController.h
+//  KHBorrowItemReturnDateUIViewController.h
 //  iosapp
 //
 //  Created by Mac on 3/4/15.
@@ -10,9 +10,9 @@
 #import "../../Models/KHRequest.h"
 #import "../../Models/KHUser.h"
 
-@interface KHReturnDateUIViewController : UIViewController
+@interface KHBorrowItemReturnDateUIViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UIDatePicker *returnDateUiDatePicker;
+@property (nonatomic, strong) IBOutlet UIDatePicker *returnDateUIDatePicker;
 
 @property KHUser *khUser;
 

@@ -51,7 +51,8 @@ static NSString *const showMainUITabBarControllerSegueName = @"showMainUITabBarC
         [khMainUITabBarController setKhUser: [self khUser]];
     }
     else if ([segue.identifier isEqualToString:meSegueName]) {
-        KHMeUIViewController *khMeUIViewController = (KHMeUIViewController*)segue.destinationViewController;
+        UINavigationController *uiNavigationController = (UINavigationController*)segue.destinationViewController;
+        KHMeUIViewController *khMeUIViewController = (KHMeUIViewController*)uiNavigationController.viewControllers[0];
         [khMeUIViewController setKhUser: [self khUser]];
     }
 }

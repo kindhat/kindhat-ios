@@ -10,6 +10,7 @@
 
 @interface KHLiterals : NSObject
 
++ (NSString *)emptyString;
 + (NSString *)spaceString;
 + (NSString *)plusString;
 

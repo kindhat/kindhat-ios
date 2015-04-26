@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../../CommonUI/KHBackgroundUITableViewController.h"
 
-@interface KHSettingUITableViewController : UITableViewController
+@interface KHSettingUITableViewController : KHBackgroundUITableViewController
 
 @end

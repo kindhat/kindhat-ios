@@ -10,14 +10,16 @@
 #import "KHAddressVerificationUIViewController.h"
 #import "../../Models/KHUser.h"
 #import "../Models/KHAddressResults.h"
+#import "../Models/KHAddressResult.h"
 #import "../../Utility/KHController.h"
 #import "../../Utility/KHConfiguration.h"
 #import "../../Utility/KHLiterals.h"
+#import "../../Login/Controllers/KHMainUITabBarController.h"
 
 @implementation KHMeUIViewController
 
 static NSString *const addressSegueName = @"address";
-static NSString *const borrowSegueName = @"@Borrow";
+static NSString *const mainUITabBarControllerSegueName = @"MainUITabBarController@Login";
 
 @synthesize khUser;
 @synthesize addresses;
@@ -59,6 +61,11 @@ static NSString *const borrowSegueName = @"@Borrow";
     }
     else
     {
+        KHAddressResult *khAddressResult = [[khAddressResults addresses] objectAtIndex:0];
+        [[self khUser] setStreet: [khAddressResult street]];
+        [[self khUser] setPostalCode: [khAddressResult postalCode]];
+        [[self khUser] setLongitude: [khAddressResult longitude]];
+        [[self khUser] setLatitude: [khAddressResult latitude]];
         [self saveProfile];
     }
 }
@@ -141,7 +148,7 @@ static NSString *const borrowSegueName = @"@Borrow";
     {
         if([[self khUser] requiredFieldsMet])
         {
-            [self performSegueWithIdentifier:borrowSegueName sender:self];
+            [self performSegueWithIdentifier:mainUITabBarControllerSegueName sender:self];
         }
     }
 }
@@ -152,8 +159,9 @@ static NSString *const borrowSegueName = @"@Borrow";
         KHAddressVerificationUIViewController *khAddressVerificationUIViewController = segue.destinationViewController;
         [khAddressVerificationUIViewController setAddresses: [self addresses]];
     }
-    else if([segue.identifier isEqualToString:borrowSegueName]) {
-        
+    else if([segue.identifier isEqualToString:mainUITabBarControllerSegueName]) {
+        KHMainUITabBarController *khMainUITabBarController = segue.destinationViewController;
+        [khMainUITabBarController setKhUser: [self khUser]];
     }
 }
 

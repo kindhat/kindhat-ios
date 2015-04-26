@@ -10,6 +10,11 @@
 
 @implementation KHStoryboardUITabBarController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setDelegate:self];
+}
+
 - (void)setTabBarControllerWithStoryboards:(NSArray *)tabs {
     
     NSMutableArray * instantiatedTabs = [NSMutableArray arrayWithCapacity:[tabs count]];

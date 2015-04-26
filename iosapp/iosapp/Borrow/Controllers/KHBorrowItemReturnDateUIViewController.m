@@ -1,5 +1,5 @@
 //
-//  KHReturnDateUIViewController.m
+//  KHBorrowItemReturnDateUIViewController.m
 //  iosapp
 //
 //  Created by Mac on 3/4/15.
@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KHReturnDateUIViewController.h"
+#import "KHBorrowItemReturnDateUIViewController.h"
 #import "KHBorrowMessageUIViewController.h"
 
-@implementation KHReturnDateUIViewController
+@implementation KHBorrowItemReturnDateUIViewController
 
 @synthesize khRequest;
+@synthesize khUser;
+
+static NSString *const borrowMessageSegueIdentifier = @"showBorrowMessageController";
 
 - (void)viewDidLoad
 {
@@ -20,9 +23,12 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"showBorrowMessageController"]){
+    if([segue.identifier isEqualToString:borrowMessageSegueIdentifier]){
+        
         KHBorrowMessageUIViewController *khBorrowMessageUIViewController = (KHBorrowMessageUIViewController *)segue.destinationViewController;
-        [[self khRequest] setReturnDate:[[self returnDateUiDatePicker] date]];
+        
+        [[self khRequest] setReturnDate:[[self returnDateUIDatePicker] date]];
+        
         [khBorrowMessageUIViewController setKhRequest:[self khRequest]];
         [khBorrowMessageUIViewController setKhUser:[self khUser]];
     }

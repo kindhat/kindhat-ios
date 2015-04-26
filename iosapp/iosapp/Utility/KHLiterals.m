@@ -11,8 +11,13 @@
 
 @implementation KHLiterals
 
+static NSString *const empty = @"";
 static NSString *const space = @" ";
 static NSString *const plus = @"+";
+
++ (NSString *)emptyString {
+    return empty;
+}
 
 + (NSString *)spaceString {
     return space;

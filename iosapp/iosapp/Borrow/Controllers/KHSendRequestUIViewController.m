@@ -10,29 +10,44 @@
 #import "KHSendRequestUIViewController.h"
 #import "../../Utility/KHConfiguration.h"
 #import "../../Utility/KHController.h"
+#import "../../Utility/KHLiterals.h"
 
 @implementation KHSendRequestUIViewController
 
-static NSString *const borrowMessageName = @"kh.ios.borrowmessage";
-static NSString *const borrowDateMessageName = @"kh.ios.borrowdatemessage";
-static NSString *const serviceMessageName = @"kh.ios.servicemessage";
-
 @synthesize khRequest;
+@synthesize khUser;
+
+static NSString *const borrowItemMessageName = @"kh.ios.borrowitemmessage";
+static NSString *const borrowServiceMessageName = @"kh.ios.borrowservicemessage";
+static NSString *const dateFormatString = @"MM/dd/yyyy";
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    NSString *message = [NSString stringWithFormat:[KHConfiguration getConfiguration:borrowMessageName],
-                         [[self khUser] name],
-                         [[self khRequest] item]];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:dateFormatString];
     
-    NSString *dateMessage = [NSString stringWithFormat:[KHConfiguration getConfiguration:borrowDateMessageName],
-                             [[self khUser] name],
-                             [[self khRequest] item]];
+    [[self userUILabel] setText: [[self khUser] name]];
+    [[self itemUILabel] setText: [[self khRequest] item]];
+    
+    NSString *message = [KHLiterals emptyString];
+    if([[self khRequest]requestType]==Item)
+    {
+        message = [KHConfiguration getConfiguration:borrowItemMessageName];
+        [[self toBeReturnedUILabel] setHidden:NO];
+        [[self returnDateUILabel] setHidden:NO];
+        [[self returnDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]returnDate]]];
+    }
+    else
+    {
+        message = [KHConfiguration getConfiguration:borrowServiceMessageName];
+        [[self toBeReturnedUILabel] setHidden:YES];
+        [[self returnDateUILabel] setHidden:YES];
+    }
     
     [[self messageUILabel] setText:message];
-    [[self dateUILabel] setText:dateMessage];
+    [[self borrowDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]borrowDate]]];
 }
 
 - (IBAction)sendRequestClicked:(id)sender

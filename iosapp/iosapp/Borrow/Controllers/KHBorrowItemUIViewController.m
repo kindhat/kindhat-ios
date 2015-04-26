@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KHMainUITabBarController.h"
 #import "KHBorrowItemUIViewController.h"
-#import "KHBorrowDateUIViewController.h"
+#import "KHBorrowItemDateUIViewController.h"
 #import "../../Models/KHUser.h"
 
 @implementation KHBorrowItemUIViewController
+
+static NSString *const borrowDateSegueIdentifier = @"showBorrowDateController";
 
 - (void)viewDidLoad
 {
@@ -20,15 +21,19 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"showBorrowDateController"]){
-        KHBorrowDateUIViewController *khBorrowDateUIViewController =
-        (KHBorrowDateUIViewController *)segue.destinationViewController;
+    
+    if([segue.identifier isEqualToString:borrowDateSegueIdentifier]){
+        
+        KHBorrowItemDateUIViewController *khBorrowItemDateUIViewController =
+        (KHBorrowItemDateUIViewController *)segue.destinationViewController;
         
         KHRequest *khRequest = [[KHRequest alloc]init];
         [khRequest setUserId: [[self khUser] identifier]];
-        [khRequest setItem: [[self itemUiTextField] text]];
-        [khBorrowDateUIViewController setKhRequest:khRequest];
-        [khBorrowDateUIViewController setKhUser: [self khUser]];
+        [khRequest setRequestType: Item];
+        [khRequest setItem: [[self itemUITextField] text]];
+        
+        [khBorrowItemDateUIViewController setKhRequest:khRequest];
+        [khBorrowItemDateUIViewController setKhUser: [self khUser]];
     }
 }
 

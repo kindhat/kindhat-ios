@@ -11,7 +11,7 @@
 
 @interface KHBorrowItemUIViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UITextField *itemUiTextField;
+@property (nonatomic, strong) IBOutlet UITextField *itemUITextField;
 
 @property KHUser *khUser;
 

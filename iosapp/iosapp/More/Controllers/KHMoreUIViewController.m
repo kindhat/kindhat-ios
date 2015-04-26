@@ -17,9 +17,6 @@ static NSString *const loginSegueIdentifier = @"@Login";
 {
     [super viewDidLoad];
     
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:
-                                     [UIImage imageNamed:@"background image 1536x2048.png"]];
-    
     [[self loginView] setDelegate:self];
 }
 

@@ -13,6 +13,9 @@
 @implementation KHBorrowMessageUIViewController
 
 @synthesize khRequest;
+@synthesize khUser;
+
+static NSString *const borrowRequestSegueIdentifier = @"showSendRequestController";
 
 - (void)viewDidLoad
 {
@@ -20,9 +23,13 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"showSendRequestController"]){
+    
+    if([segue.identifier isEqualToString:borrowRequestSegueIdentifier]){
+        
         KHSendRequestUIViewController *khSendRequestUIViewController = (KHSendRequestUIViewController *)segue.destinationViewController;
+        
         [[self khRequest] setMessage:[[self messageUITextView] text]];
+        
         [khSendRequestUIViewController setKhRequest:[self khRequest]];
         [khSendRequestUIViewController setKhUser:[self khUser]];
     }
