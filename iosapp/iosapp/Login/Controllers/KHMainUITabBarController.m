@@ -11,29 +11,10 @@
 #import "../../CommonUI/KHUserUIViewController.h"
 #import "../../More/Controllers/KHMoreUIViewController.h"
 
-
-@interface KHMainUITabBarController ()
-
-@property (nonatomic, retain) NSArray *setPropertyByIndexArray;
-
-@end
-
 @implementation KHMainUITabBarController
-
-
-static NSString *const setKHUserUIViewControllerMethodName = @"setKHUserUIViewController:";
-
-@synthesize setPropertyByIndexArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self setSetPropertyByIndexArray:[NSArray arrayWithObjects:
-                                      setKHUserUIViewControllerMethodName,
-                                      setKHUserUIViewControllerMethodName,
-                                      setKHUserUIViewControllerMethodName,
-                                      setKHUserUIViewControllerMethodName,
-                                      nil]];
     
     NSArray * tabs = [NSArray arrayWithObjects:
                       [KHStoryboards borrowStoryboard],
@@ -41,7 +22,26 @@ static NSString *const setKHUserUIViewControllerMethodName = @"setKHUserUIViewCo
                       [KHStoryboards dashboardStoryboard],
                       [KHStoryboards moreStoryboard],
                       nil];
+    [self initializeTabBarWithStoryboards:tabs];
     
+    NSArray * uiViewControllerInitializers = [NSArray arrayWithObjects:
+                                              setKHUserUIViewController,
+                                              setKHUserUIViewController,
+                                              setKHUserUIViewController,
+                                              setKHMoreUIViewController,
+                                              nil];
+    [self initializeUIViewControllers:uiViewControllerInitializers];
+}
+
+- (void) initializeUIViewControllers: (NSArray *)uiViewControllerInitializers{
+    [uiViewControllerInitializers enumerateObjectsUsingBlock:^(void (^ initializeUIViewController)(UIViewController *, KHUser *), NSUInteger idx, BOOL * stop) {
+        UINavigationController *uiNavigationController = (UINavigationController *)[[self viewControllers] objectAtIndex: idx];
+        UIViewController *setViewController = uiNavigationController.viewControllers[0];
+        initializeUIViewController(setViewController, [self khUser]);
+    }];
+}
+
+- (void) initializeTabBarWithStoryboards: (NSArray *)tabs {
     [self setTabBarControllerWithStoryboards:tabs];
 }
 
@@ -50,23 +50,16 @@ shouldSelectViewController:(UIViewController *)viewController{
     return [[self khUser] requiredFieldsMet];
 }
 
-- (void)tabBarController:(UITabBarController *)tabBarController
- didSelectViewController:(UIViewController *)viewController {
-    UINavigationController *uiNavigationController = (UINavigationController *)viewController;
-    UIViewController *setViewController = uiNavigationController.viewControllers[0];
-    //void (^setKHUserForViewController)(UIViewController *)
-    SEL setKHUserForViewController = NSSelectorFromString([self setPropertyByIndexArray][[self selectedIndex]]);
-    [self performSelector:setKHUserForViewController withObject:setViewController];
-}
-
-- (void)setKHUserUIViewController:(UIViewController *)viewController {
+void (^setKHUserUIViewController)(UIViewController *, KHUser *) =
+^(UIViewController *viewController, KHUser *khUser) {
     KHUserUIViewController *khUserUIViewController = (KHUserUIViewController *)viewController;
-    [khUserUIViewController setKhUser: [self khUser]];
-}
+    [khUserUIViewController setKhUser: khUser];
+};
 
-- (void)setKHMoreUIViewController:(UIViewController *)viewController {
+void (^setKHMoreUIViewController)(UIViewController *, KHUser *) =
+^(UIViewController *viewController, KHUser *khUser) {
     KHMoreUIViewController *khMoreUIViewController = (KHMoreUIViewController *)viewController;
-    [khMoreUIViewController setKhUser: [self khUser]];
-}
+    [khMoreUIViewController setKhUser: khUser];
+};
 
 @end
