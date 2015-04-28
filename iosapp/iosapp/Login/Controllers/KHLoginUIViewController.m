@@ -20,7 +20,7 @@
 #import "KHMainUITabBarController.h"
 #import "../../Me/Controllers/KHMeUIViewController.h"
 #import "../../Utility/KHController.h"
-#import "../../Utility/KHExternalIdType.h"
+#import "../../Models/KHExternalIdType.h"
 #import "../../Utility/KHConfiguration.h"
 
 @implementation KHLoginUIViewController

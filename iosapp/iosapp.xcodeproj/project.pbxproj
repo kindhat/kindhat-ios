@@ -232,8 +232,8 @@
 		04F990531AC5E73800B8C7BB /* orange pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange pixel.png"; sourceTree = "<group>"; };
 		04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLinkedStoryboard.h; sourceTree = "<group>"; };
 		04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLinkedStoryboard.m; sourceTree = "<group>"; };
-		DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHUINavigationController.h; path = iosapp/Utility/KHUINavigationController.h; sourceTree = SOURCE_ROOT; };
-		DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHUINavigationController.m; path = iosapp/Utility/KHUINavigationController.m; sourceTree = SOURCE_ROOT; };
+		DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHUINavigationController.h; path = iosapp/CommonUI/KHUINavigationController.h; sourceTree = SOURCE_ROOT; };
+		DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHUINavigationController.m; path = iosapp/CommonUI/KHUINavigationController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,14 +326,8 @@
 		043354C019E9921E0047FEDF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */,
-				04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */,
-				DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */,
-				DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */,
 				043354C619E9A01D0047FEDF /* KHController.h */,
 				043354C419E999CA0047FEDF /* KHController.m */,
-				0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */,
-				0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */,
 				044AB82A1A87F1660012B2EB /* KHConfiguration.h */,
 				044AB82B1A87F1F00012B2EB /* KHConfiguration.m */,
 				0435B7F01ADCC9BB00482C4E /* KHLiterals.h */,
@@ -595,6 +589,8 @@
 		0495CED819F597830046FB4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0481CB2B19FC17EE002E7A4F /* KHExternalIdType.h */,
+				0481CB2F1A03152C002E7A4F /* KHExternalIdType.m */,
 				0465B14C1AA63B1900482DD5 /* KHRequest.h */,
 				0465B14D1AA63B1900482DD5 /* KHRequest.m */,
 				0495CED919F598920046FB4D /* KHUser.h */,
@@ -634,6 +630,10 @@
 		04E0ADEA1AEAE1A60069DFED /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				04F990751AC689D500B8C7BB /* KHLinkedStoryboard.h */,
+				04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */,
+				DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */,
+				DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */,
 				04E0ADEB1AEAE1D60069DFED /* KHBackgroundUITableViewController.h */,
 				04E0ADEC1AEAE2720069DFED /* KHBackgroundUITableViewController.m */,
 				0409DD5C1AEC01AB0025897D /* KHUserUIViewController.h */,
