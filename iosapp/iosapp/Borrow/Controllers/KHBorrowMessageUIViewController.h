@@ -12,10 +12,10 @@
 
 @interface KHBorrowMessageUIViewController : UIViewController
 
-@property KHUser *khUser;
+@property (nonatomic, weak) IBOutlet UITextView *messageUITextView;
 
-@property KHRequest *khRequest;
+@property (nonatomic, weak) KHUser *khUser;
 
-@property (nonatomic, strong) IBOutlet UITextView *messageUITextView;
+@property (nonatomic, weak) KHRequest *khRequest;
 
 @end

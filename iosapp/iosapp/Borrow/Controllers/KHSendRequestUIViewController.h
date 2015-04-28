@@ -12,20 +12,20 @@
 
 @interface KHSendRequestUIViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UILabel *userUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *userUILabel;
 
-@property (nonatomic, strong) IBOutlet UILabel *messageUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *messageUILabel;
 
-@property (nonatomic, strong) IBOutlet UILabel *itemUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *itemUILabel;
 
-@property (nonatomic, strong) IBOutlet UILabel *borrowDateUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *borrowDateUILabel;
 
-@property (nonatomic, strong) IBOutlet UILabel *returnDateUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *returnDateUILabel;
 
-@property (nonatomic, strong) IBOutlet UILabel *toBeReturnedUILabel;
+@property (nonatomic, weak) IBOutlet UILabel *toBeReturnedUILabel;
 
-@property KHUser *khUser;
+@property (nonatomic, weak) KHUser *khUser;
 
-@property KHRequest *khRequest;
+@property (nonatomic, weak) KHRequest *khRequest;
 
 @end

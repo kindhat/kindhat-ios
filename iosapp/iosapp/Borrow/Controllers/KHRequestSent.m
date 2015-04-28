@@ -8,17 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "KHRequestSent.h"
+#import "Item/KHBorrowItemUIViewController.h"
 #import "../../Login/Controllers/KHMainUITabBarController.h"
+#import "../../Utility/KHLiterals.h"
 
 @implementation KHRequestSent
 
-static NSString *const mainUITabBarControllerSegueName = @"MainUITabBarController@Login";
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[self navigationController] setNavigationBarHidden:YES];
+}
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:mainUITabBarControllerSegueName]) {
-        KHMainUITabBarController *khMainUITabBarController = segue.destinationViewController;
-        [khMainUITabBarController setSelectedIndex:3];
-    }
+- (IBAction)doneButtonTapped:(id)sender
+{
+    KHBorrowItemUIViewController *khBorrowItemUIViewController = [[self navigationController] viewControllers][0];
+    [[khBorrowItemUIViewController  itemUITextField] setText:[KHLiterals emptyString]];
+    
+    KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController *)[[khBorrowItemUIViewController parentViewController]parentViewController];
+    [khMainUITabBarController setSelectedIndex:2];
+    
+    [[self navigationController] setNavigationBarHidden:NO];
+    [[self navigationController] popToRootViewControllerAnimated:true];
 }
 
 @end
