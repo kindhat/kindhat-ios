@@ -33,13 +33,13 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Pn-YSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Pn-YSQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="950"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-0Z-FbA">
-                                        <rect key="frame" x="-9" y="0.0" width="600" height="950"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-0Z-FbA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="950"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="600" id="cMh-2G-Gfq"/>
+                                            <constraint firstAttribute="width" constant="600" id="XVh-Vf-onE"/>
                                             <constraint firstAttribute="height" constant="950" id="hwj-iK-aYk"/>
                                         </constraints>
                                     </imageView>
@@ -178,7 +178,10 @@
                                 <constraints>
                                     <constraint firstItem="GgR-mK-Bnj" firstAttribute="top" secondItem="v7H-Pn-YSQ" secondAttribute="top" id="5iH-Gd-peV"/>
                                     <constraint firstAttribute="centerX" secondItem="GgR-mK-Bnj" secondAttribute="centerX" id="H0Y-bx-iD8"/>
+                                    <constraint firstAttribute="trailing" secondItem="eqb-0Z-FbA" secondAttribute="trailing" id="MUq-2k-bZq"/>
                                     <constraint firstAttribute="bottom" secondItem="eqb-0Z-FbA" secondAttribute="bottom" id="Po0-NL-ACC"/>
+                                    <constraint firstItem="eqb-0Z-FbA" firstAttribute="leading" secondItem="v7H-Pn-YSQ" secondAttribute="leading" id="X1d-Ve-Iqd"/>
+                                    <constraint firstAttribute="height" secondItem="eqb-0Z-FbA" secondAttribute="height" id="fpc-Ru-wff"/>
                                     <constraint firstItem="eqb-0Z-FbA" firstAttribute="top" secondItem="v7H-Pn-YSQ" secondAttribute="top" id="wf7-yd-VuF"/>
                                 </constraints>
                             </scrollView>
@@ -187,7 +190,6 @@
                         <constraints>
                             <constraint firstItem="v7H-Pn-YSQ" firstAttribute="top" secondItem="VlH-ec-U0E" secondAttribute="topMargin" id="2sd-TN-gNH"/>
                             <constraint firstAttribute="trailing" secondItem="v7H-Pn-YSQ" secondAttribute="trailing" id="KBp-Yh-Nhc"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="v7H-Pn-YSQ" secondAttribute="bottom" id="hKQ-Te-0TZ"/>
                             <constraint firstItem="v7H-Pn-YSQ" firstAttribute="leading" secondItem="VlH-ec-U0E" secondAttribute="leading" id="uSX-YB-lCS"/>
                         </constraints>
                     </view>

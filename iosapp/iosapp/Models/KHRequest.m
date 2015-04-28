@@ -57,8 +57,8 @@ static NSString *const _requestUrlConfigurationName = @"kh.requesturl";
                                   (self.item != nil) ? self.item : @"", @"item",
                                   (self.category != nil) ? self.category : @"", @"category",
                                   [NSNumber numberWithInt: self.requestType], @"requestType",
-                                  (self.borrowDate != nil) ? [dateFormat stringFromDate: self.borrowDate] : @"", @"borrowDate",
-                                  (self.returnDate != nil) ? [dateFormat stringFromDate: self.returnDate] : @"", @"returnDate",
+                                  (self.borrowDate != nil) ? [dateFormat stringFromDate: self.borrowDate] : @"9999-12-31", @"borrowDate",
+                                  (self.returnDate != nil) ? [dateFormat stringFromDate: self.returnDate] : @"9999-12-31", @"returnDate",
                                   (self.message != nil) ? self.message : @"", @"message",
                                   nil];
     

@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" id="FKV-Jp-AHa"/>
                     <connections>
                         <outlet property="loginView" destination="zPG-Zm-imO" id="img-IM-Ue6"/>
-                        <segue destination="Uhc-gN-EsI" kind="presentation" identifier="showMainUITabBarController" id="RtG-7S-fth"/>
+                        <segue destination="Uhc-gN-EsI" kind="show" identifier="showMainUITabBarController" id="RtG-7S-fth"/>
                         <segue destination="UDe-Bb-Tgl" kind="custom" identifier="@Me" customClass="KHLinkedStoryboard" id="t9s-6C-rwi"/>
                     </connections>
                 </viewController>

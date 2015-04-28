@@ -20,9 +20,15 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *borrowDateUILabel;
 
+@property (nonatomic, weak) IBOutlet UILabel *serviceDateUILabel;
+
 @property (nonatomic, weak) IBOutlet UILabel *returnDateUILabel;
 
-@property (nonatomic, weak) IBOutlet UILabel *toBeReturnedUILabel;
+@property (nonatomic, weak) IBOutlet UITextView *messageUITextView;
+
+@property (nonatomic, weak) IBOutlet UIView *borrowItemDatesView;
+
+@property (nonatomic, weak) IBOutlet UIView *borrowServiceDateView;
 
 @property (nonatomic, weak) KHUser *khUser;
 

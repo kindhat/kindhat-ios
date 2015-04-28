@@ -23,6 +23,7 @@
 {
     KHBorrowItemUIViewController *khBorrowItemUIViewController = [[self navigationController] viewControllers][0];
     [[khBorrowItemUIViewController  itemUITextField] setText:[KHLiterals emptyString]];
+    [[khBorrowItemUIViewController borrowFavorUISegmentedControl] setSelectedSegmentIndex:0];
     
     KHMainUITabBarController *khMainUITabBarController = (KHMainUITabBarController *)[[khBorrowItemUIViewController parentViewController]parentViewController];
     [khMainUITabBarController setSelectedIndex:2];

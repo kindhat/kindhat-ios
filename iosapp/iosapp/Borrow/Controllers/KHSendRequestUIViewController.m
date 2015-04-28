@@ -30,24 +30,32 @@ static NSString *const dateFormatString = @"MM/dd/yyyy";
     
     [[self userUILabel] setText: [[self khUser] name]];
     [[self itemUILabel] setText: [[self khRequest] item]];
+    [[self messageUITextView] setText: [[self khRequest] message]];
     
     NSString *message = [KHLiterals emptyString];
     if([[self khRequest]requestType]==Item)
     {
         message = [KHConfiguration getConfiguration:borrowItemMessageName];
-        [[self toBeReturnedUILabel] setHidden:NO];
-        [[self returnDateUILabel] setHidden:NO];
+        
+        [[self borrowDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]borrowDate]]];
         [[self returnDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]returnDate]]];
+        
+        [[self borrowServiceDateView] setHidden:YES];
+        [[self borrowItemDatesView] setHidden:NO];
+
     }
     else
     {
         message = [KHConfiguration getConfiguration:borrowServiceMessageName];
-        [[self toBeReturnedUILabel] setHidden:YES];
-        [[self returnDateUILabel] setHidden:YES];
+        
+        [[self serviceDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]borrowDate]]];
+        
+        [[self borrowItemDatesView] setHidden:YES];
+        [[self borrowServiceDateView] setHidden:NO];
     }
     
     [[self messageUILabel] setText:message];
-    [[self borrowDateUILabel] setText:[dateFormat stringFromDate:[[self khRequest]borrowDate]]];
+    
 }
 
 - (IBAction)sendRequestClicked:(id)sender
