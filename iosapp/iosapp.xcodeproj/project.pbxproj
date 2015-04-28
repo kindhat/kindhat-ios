@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0409DD5E1AEC023C0025897D /* KHUserUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409DD5D1AEC023C0025897D /* KHUserUIViewController.m */; };
+		0409DD611AEEF1EE0025897D /* KHRequestSent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409DD601AEEF1EE0025897D /* KHRequestSent.m */; };
 		040DD66A19E5027E00AFD82E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD66919E5027E00AFD82E /* main.m */; };
 		040DD66D19E5027E00AFD82E /* KHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DD66C19E5027E00AFD82E /* KHAppDelegate.m */; };
 		040DD67519E5027E00AFD82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DD67419E5027E00AFD82E /* Images.xcassets */; };
@@ -110,6 +111,8 @@
 /* Begin PBXFileReference section */
 		0409DD5C1AEC01AB0025897D /* KHUserUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHUserUIViewController.h; sourceTree = "<group>"; };
 		0409DD5D1AEC023C0025897D /* KHUserUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHUserUIViewController.m; sourceTree = "<group>"; };
+		0409DD5F1AEEF1CF0025897D /* KHRequestSent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRequestSent.h; sourceTree = "<group>"; };
+		0409DD601AEEF1EE0025897D /* KHRequestSent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRequestSent.m; sourceTree = "<group>"; };
 		040DD66419E5027E00AFD82E /* iosapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DD66819E5027E00AFD82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040DD66919E5027E00AFD82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 				0472920A1ACA0B740012A30A /* KHBorrowMessageUIViewController.m */,
 				0472920D1ACA0B740012A30A /* KHSendRequestUIViewController.h */,
 				0472920E1ACA0B740012A30A /* KHSendRequestUIViewController.m */,
+				0409DD5F1AEEF1CF0025897D /* KHRequestSent.h */,
+				0409DD601AEEF1EE0025897D /* KHRequestSent.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -488,8 +493,6 @@
 		047293171ACB40B40012A30A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DBFAC7121AE9AC7900368ED9 /* KHSettingUITableViewController.h */,
-				DBFAC7131AE9AC7900368ED9 /* KHSettingUITableViewController.m */,
 				0458FF9E1AE8BEFB00A1A539 /* KHMoreUIViewController.h */,
 				0458FF9F1AE8BF4100A1A539 /* KHMoreUIViewController.m */,
 			);
@@ -835,6 +838,7 @@
 				0409DD5E1AEC023C0025897D /* KHUserUIViewController.m in Sources */,
 				047292111ACA0B740012A30A /* KHBorrowItemUIViewController.m in Sources */,
 				047292171ACA0B990012A30A /* KHMeUIViewController.m in Sources */,
+				0409DD611AEEF1EE0025897D /* KHRequestSent.m in Sources */,
 				04930B461A1EF59D000BD42C /* KHApiKey.m in Sources */,
 				047292121ACA0B740012A30A /* KHBorrowMessageUIViewController.m in Sources */,
 				049DED491AE6026A00321854 /* KHStoryboardUITabBarController.m in Sources */,
@@ -842,7 +846,6 @@
 				0472930B1ACA0C4D0012A30A /* KHAddressVerificationUIViewController.m in Sources */,
 				047292141ACA0B740012A30A /* KHSendRequestUIViewController.m in Sources */,
 				0472931D1ACB554B0012A30A /* KHMainUITabBarController.m in Sources */,
-				DBFAC7141AE9AC7900368ED9 /* KHSettingUITableViewController.m in Sources */,
 				04E0ADED1AEAE2720069DFED /* KHBackgroundUITableViewController.m in Sources */,
 				DBFAC70E1AE895EB00368ED9 /* KHUINavigationController.m in Sources */,
 				043354C519E999CA0047FEDF /* KHController.m in Sources */,

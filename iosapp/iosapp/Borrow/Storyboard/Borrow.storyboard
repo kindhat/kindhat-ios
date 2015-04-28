@@ -522,7 +522,7 @@
         <!--Request Sent-->
         <scene sceneID="2hR-Fu-fZU">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="0IY-kl-d4T" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="0IY-kl-d4T" customClass="KHRequestSent" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tv2-sZ-4kN"/>
                         <viewControllerLayoutGuide type="bottom" id="Vit-I6-ZYF"/>
@@ -577,6 +577,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Bfs-l1-4tM" kind="show" id="fQa-gf-XFq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -604,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0S-Fb-4tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4469" y="567"/>
+            <point key="canvasLocation" x="-761" y="531"/>
         </scene>
         <!--Send Request-->
         <scene sceneID="ZKS-HF-PF3">
