@@ -322,7 +322,7 @@
                                 </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" rowHeight="120" id="rEz-qs-NL9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" rowHeight="120" id="rEz-qs-NL9" customClass="KHShareUITableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEz-qs-NL9" id="LjY-rA-u20">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -391,6 +391,10 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
+                                            <outlet property="distance" destination="IoN-xQ-cJI" id="Z4p-2c-PIF"/>
+                                            <outlet property="message" destination="JWc-dg-idc" id="jla-Vf-CDz"/>
+                                            <outlet property="time" destination="ssE-nY-Tlg" id="A7a-Fj-SBf"/>
+                                            <outlet property="userImage" destination="35f-Aw-Ywx" id="fOV-K7-B9Q"/>
                                             <segue destination="nSn-I5-WdL" kind="show" id="F9c-H9-ztG"/>
                                         </connections>
                                     </tableViewCell>
