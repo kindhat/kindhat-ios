@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hyQ-lg-xUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hyQ-lg-xUF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -33,16 +33,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="936"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Pn-YSQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-0Z-FbA">
+                                <rect key="frame" x="0.0" y="-7" width="600" height="943"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="XVh-Vf-onE"/>
+                                    <constraint firstAttribute="height" constant="950" id="hwj-iK-aYk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XVh-Vf-onE"/>
+                                        <exclude reference="hwj-iK-aYk"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Pn-YSQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="950"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-0Z-FbA">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="950"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="600" id="XVh-Vf-onE"/>
-                                            <constraint firstAttribute="height" constant="950" id="hwj-iK-aYk"/>
-                                        </constraints>
-                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgR-mK-Bnj">
                                         <rect key="frame" x="150" y="0.0" width="300" height="950"/>
                                         <subviews>
@@ -176,20 +182,30 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="5A9-8U-DZi"/>
                                     <constraint firstItem="GgR-mK-Bnj" firstAttribute="top" secondItem="v7H-Pn-YSQ" secondAttribute="top" id="5iH-Gd-peV"/>
                                     <constraint firstAttribute="centerX" secondItem="GgR-mK-Bnj" secondAttribute="centerX" id="H0Y-bx-iD8"/>
-                                    <constraint firstAttribute="trailing" secondItem="eqb-0Z-FbA" secondAttribute="trailing" id="MUq-2k-bZq"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqb-0Z-FbA" secondAttribute="bottom" id="Po0-NL-ACC"/>
-                                    <constraint firstItem="eqb-0Z-FbA" firstAttribute="leading" secondItem="v7H-Pn-YSQ" secondAttribute="leading" id="X1d-Ve-Iqd"/>
-                                    <constraint firstAttribute="height" secondItem="eqb-0Z-FbA" secondAttribute="height" id="fpc-Ru-wff"/>
-                                    <constraint firstItem="eqb-0Z-FbA" firstAttribute="top" secondItem="v7H-Pn-YSQ" secondAttribute="top" id="wf7-yd-VuF"/>
+                                    <constraint firstAttribute="width" constant="600" id="Ofe-0W-tDF"/>
+                                    <constraint firstAttribute="height" constant="950" id="n0V-O8-yTa"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5A9-8U-DZi"/>
+                                        <exclude reference="Ofe-0W-tDF"/>
+                                        <exclude reference="n0V-O8-yTa"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v7H-Pn-YSQ" firstAttribute="top" secondItem="VlH-ec-U0E" secondAttribute="topMargin" id="2sd-TN-gNH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eqb-0Z-FbA" secondAttribute="trailing" constant="-16" id="7cq-Na-ddN"/>
+                            <constraint firstItem="eqb-0Z-FbA" firstAttribute="top" secondItem="Wsy-2w-MEa" secondAttribute="bottom" constant="-7" id="FxF-W4-HoY"/>
                             <constraint firstAttribute="trailing" secondItem="v7H-Pn-YSQ" secondAttribute="trailing" id="KBp-Yh-Nhc"/>
+                            <constraint firstItem="eqb-0Z-FbA" firstAttribute="leading" secondItem="VlH-ec-U0E" secondAttribute="leadingMargin" constant="-16" id="MIo-cz-g4g"/>
+                            <constraint firstItem="xoy-Oa-nr4" firstAttribute="top" secondItem="v7H-Pn-YSQ" secondAttribute="bottom" constant="-14" id="acv-0j-h9c"/>
+                            <constraint firstItem="xoy-Oa-nr4" firstAttribute="top" secondItem="eqb-0Z-FbA" secondAttribute="bottom" id="iDi-Xr-Whu"/>
                             <constraint firstItem="v7H-Pn-YSQ" firstAttribute="leading" secondItem="VlH-ec-U0E" secondAttribute="leading" id="uSX-YB-lCS"/>
                         </constraints>
                     </view>
