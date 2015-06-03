@@ -300,7 +300,7 @@
         <!--Share-->
         <scene sceneID="C3p-vD-w8d">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="fRv-57-Vxp" customClass="KHUserUIViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="fRv-57-Vxp" customClass="KHShareUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K6Y-hs-fTb"/>
                         <viewControllerLayoutGuide type="bottom" id="wfD-Vz-wyZ"/>
@@ -585,6 +585,9 @@
                     <navigationItem key="navigationItem" title="Share" id="l4b-Yo-t8b">
                         <barButtonItem key="backBarButtonItem" title="Back" id="f33-WD-so9"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="uiTableView" destination="YBb-On-aEV" id="goB-zM-uN8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HK2-48-ebp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
