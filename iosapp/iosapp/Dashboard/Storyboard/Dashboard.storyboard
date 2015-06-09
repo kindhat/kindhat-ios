@@ -460,7 +460,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="bell.png" id="drl-OI-GaB"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Notifications" id="1Hu-jP-kEr"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="1Hu-jP-kEr">
+                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="M9Y-fP-jUI"/>
+                        <barButtonItem key="rightBarButtonItem" image="tree.png" id="24W-gf-Blh"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4I-Ns-UcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -474,6 +477,7 @@
         <image name="bell.png" width="28" height="32"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
+        <image name="tree.png" width="22" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uSz-Rm-10g"/>

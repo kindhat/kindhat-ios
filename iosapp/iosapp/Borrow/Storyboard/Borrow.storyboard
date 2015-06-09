@@ -162,6 +162,7 @@
                                 <segue destination="bZb-7h-l5N" kind="show" identifier="showFavorController" id="iYj-cQ-5wm"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="tree.png" id="IBE-3t-tPI"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -829,6 +830,7 @@
         <image name="ghost button.png" width="293" height="80"/>
         <image name="hat.png" width="32" height="32"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
+        <image name="tree.png" width="22" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6Xs-XR-WkS"/>

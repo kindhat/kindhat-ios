@@ -313,7 +313,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-6E-b1R">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-On-aEV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-On-aEV">
                                 <rect key="frame" x="16" y="81" width="568" height="519"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="70Y-Dv-k3k"/>
@@ -528,7 +528,8 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Share" id="l4b-Yo-t8b">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="f33-WD-so9"/>
+                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="WCP-nx-38d"/>
+                        <barButtonItem key="rightBarButtonItem" image="tree.png" id="AKL-Dw-b3o"/>
                     </navigationItem>
                     <connections>
                         <outlet property="uiTableView" destination="YBb-On-aEV" id="goB-zM-uN8"/>
@@ -702,11 +703,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add user outline.png" width="54" height="54"/>
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
         <image name="heart.png" width="32" height="28"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
+        <image name="tree.png" width="22" height="32"/>
     </resources>
 </document>
