@@ -563,7 +563,7 @@
                                             <constraint firstAttribute="width" constant="300" id="lYZ-WP-5LD"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I just got a new printer and I want to connect it to my wifi network. Can anybody help me with this?" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-HP-8sv">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I just got a new printer and I want to connect it to my wifi network. Can anybody help me with this?" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-HP-8sv">
                                         <rect key="frame" x="0.0" y="477" width="300" height="93"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -575,7 +575,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3 hours ago" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-p0-2Bw">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3 hours ago" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-p0-2Bw">
                                         <rect key="frame" x="0.0" y="456" width="300" height="23"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -586,14 +586,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.5 miles away" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGS-yB-jdG">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.5 miles away" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGS-yB-jdG">
                                         <rect key="frame" x="0.0" y="456" width="300" height="27"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.52511160710000004" green="0.52511160710000004" blue="0.52511160710000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Wendy would like help installing a new printer" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rxH-JV-DXP">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Wendy would like help installing a new printer" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxH-JV-DXP">
                                         <rect key="frame" x="0.0" y="366" width="300" height="90"/>
                                         <color key="backgroundColor" red="0.018345424110000001" green="0.018345424110000001" blue="0.018345424110000001" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
