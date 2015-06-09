@@ -19,6 +19,10 @@
     return [UIStoryboard storyboardWithName:@"Borrow" bundle:nil];
 }
 
++ (UIStoryboard *)charitiesStoryboard {
+    return [UIStoryboard storyboardWithName:@"Charities" bundle:nil];
+}
+
 + (UIStoryboard *)dashboardStoryboard {
     return [UIStoryboard storyboardWithName:@"Dashboard" bundle:nil];
 }

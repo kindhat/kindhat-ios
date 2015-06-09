@@ -19,8 +19,8 @@
     NSArray * tabs = [NSArray arrayWithObjects:
                       [KHStoryboards borrowStoryboard],
                       [KHStoryboards shareStoryboard],
+                      [KHStoryboards charitiesStoryboard],
                       [KHStoryboards dashboardStoryboard],
-                      [KHStoryboards moreStoryboard],
                       nil];
     [self initializeTabBarWithStoryboards:tabs];
     

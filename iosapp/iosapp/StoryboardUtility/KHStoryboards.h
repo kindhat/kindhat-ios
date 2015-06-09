@@ -15,6 +15,8 @@
 
 + (UIStoryboard *)borrowStoryboard;
 
++ (UIStoryboard *)charitiesStoryboard;
+
 + (UIStoryboard *)dashboardStoryboard;
 
 + (UIStoryboard *)shareStoryboard;

@@ -7,12 +7,11 @@
 //
 
 #import "KHUINavigationController.h"
-
-@interface KHUINavigationController ()
-
-@end
+#import "../StoryboardUtility/KHStoryboards.h"
 
 @implementation KHUINavigationController
+
+static NSString *const moreButtonTitle = @"...";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,12 +21,26 @@
     self.navigationBar.shadowImage = [UIImage new];
     self.navigationBar.translucent = YES;
     
-    // Do any additional setup after loading the view.
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                              initWithTitle:moreButtonTitle
+                                              style:UIBarButtonItemStylePlain
+                                              target:self
+                                              action:@selector(navigateToMoreStoryboard)];
+    
+    self.navigationBar.items = @[self.navigationItem];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)navigateToMoreStoryboard {
+    UIStoryboard *moreUIStoryBoard = [KHStoryboards moreStoryboard];
+    UIViewController *moreUIVIewController = (UIViewController *)[moreUIStoryBoard instantiateInitialViewController];
+    [self pushViewController:moreUIVIewController animated:YES];
 }
 
 /*

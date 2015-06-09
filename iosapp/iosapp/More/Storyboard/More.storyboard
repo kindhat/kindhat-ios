@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y4l-00-SCk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kuP-xI-pBt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-378" y="-1153"/>
         </scene>
-        <!--More Awesome Stuff-->
+        <!--MoreUI View Controller-->
         <scene sceneID="8lo-PK-qda">
             <objects>
                 <tableViewController modalTransitionStyle="crossDissolve" id="kuP-xI-pBt" customClass="KHMoreUIViewController" sceneMemberID="viewController">
@@ -246,9 +246,6 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="More Awesome Stuff" id="RM4-VN-0cg">
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="ca7-QG-NEY"/>
-                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="loginView" destination="NXD-Mi-WND" id="9yo-5F-1Jl"/>
@@ -271,17 +268,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-z4-5Ec">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-z4-5Ec">
                                 <rect key="frame" x="0.0" y="56" width="600" height="495"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*** We ♡ feedback so please tell us about any features you would like to see, or any bugs or typos you have come across. ***" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-Ba-Lf4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*** We ♡ feedback so please tell us about any features you would like to see, or any bugs or typos you have come across. ***" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-Ba-Lf4">
                                 <rect key="frame" x="16" y="154" width="568" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-Xf-TjX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-Xf-TjX">
                                 <rect key="frame" x="16" y="218" width="568" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -290,7 +287,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-CK-6gk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-CK-6gk">
                                 <rect key="frame" x="231" y="368" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="TXC-D8-fr8"/>
@@ -437,7 +434,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-Jk-q9B">
                                 <rect key="frame" x="0.0" y="0.0" width="599" height="951"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-dQ-rzO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-dQ-rzO">
                                 <rect key="frame" x="16" y="-26" width="568" height="1026"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-xK-M7f">
@@ -675,36 +672,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDa-e0-o8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-314" y="293"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BW4-Zd-xj7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="y4l-00-SCk" customClass="KHUINavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Ljk-52-iOb"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Bjs-jM-5xJ"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z07-eB-ODX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="eZG-S7-lqd">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="kuP-xI-pBt" kind="relationship" relationship="rootViewController" id="7WB-jP-eFk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Xp-TC-7fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1447" y="-1882"/>
         </scene>
         <!--Settings-->
         <scene sceneID="UZC-l4-yOc">
@@ -955,7 +922,4 @@
         <image name="ghost button.png" width="293" height="80"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Bgy-DG-2ad"/>
-    </inferredMetricsTieBreakers>
 </document>
