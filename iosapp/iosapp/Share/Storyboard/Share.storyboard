@@ -529,7 +529,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Share" id="l4b-Yo-t8b">
                         <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="WCP-nx-38d"/>
-                        <barButtonItem key="rightBarButtonItem" image="tree.png" id="AKL-Dw-b3o"/>
+                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="AKL-Dw-b3o"/>
                     </navigationItem>
                     <connections>
                         <outlet property="uiTableView" destination="YBb-On-aEV" id="goB-zM-uN8"/>
@@ -707,9 +707,9 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
+        <image name="hamburger.png" width="30" height="30"/>
         <image name="heart.png" width="32" height="28"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
-        <image name="tree.png" width="22" height="32"/>
     </resources>
 </document>

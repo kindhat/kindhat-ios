@@ -560,7 +560,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Charities" id="Nh7-p1-ZKD">
                         <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="310-Y4-xhC"/>
-                        <barButtonItem key="rightBarButtonItem" image="tree.png" id="bYp-WF-CWi"/>
+                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="bYp-WF-CWi"/>
                     </navigationItem>
                     <connections>
                         <outlet property="uiTableView" destination="Gtr-B4-0kt" id="1k9-vS-Uyu"/>
@@ -738,10 +738,10 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
+        <image name="hamburger.png" width="30" height="30"/>
         <image name="kiddo.jpeg" width="400" height="400"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
         <image name="ribbon.png" width="30" height="30"/>
-        <image name="tree.png" width="22" height="32"/>
     </resources>
 </document>

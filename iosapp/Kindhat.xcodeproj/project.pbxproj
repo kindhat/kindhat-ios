@@ -97,6 +97,7 @@
 		04F990771AC689E700B8C7BB /* KHLinkedStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F990761AC689E700B8C7BB /* KHLinkedStoryboard.m */; };
 		41F494F21B1EC80200B396BD /* KHShareUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F494EF1B1EC80200B396BD /* KHShareUITableViewCell.m */; };
 		41F494F31B1EC80200B396BD /* KHShareUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F494F11B1EC80200B396BD /* KHShareUIViewController.m */; };
+		DB87482E1B2A05D0002B20E1 /* hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB87482D1B2A05D0002B20E1 /* hamburger@2x.png */; };
 		DBBC26A01B2213C400229F91 /* Charities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBC269F1B2213C400229F91 /* Charities.storyboard */; };
 		DBBC26A31B221A8300229F91 /* kiddo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBBC26A21B221A8300229F91 /* kiddo.jpeg */; };
 		DBBC26A71B2221B000229F91 /* ribbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBC26A61B2221B000229F91 /* ribbon@2x.png */; };
@@ -241,6 +242,7 @@
 		41F494EF1B1EC80200B396BD /* KHShareUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHShareUITableViewCell.m; sourceTree = "<group>"; };
 		41F494F01B1EC80200B396BD /* KHShareUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHShareUIViewController.h; sourceTree = "<group>"; };
 		41F494F11B1EC80200B396BD /* KHShareUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHShareUIViewController.m; sourceTree = "<group>"; };
+		DB87482D1B2A05D0002B20E1 /* hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@2x.png"; sourceTree = "<group>"; };
 		DBBC269F1B2213C400229F91 /* Charities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Charities.storyboard; path = Share/Storyboard/Charities.storyboard; sourceTree = "<group>"; };
 		DBBC26A21B221A8300229F91 /* kiddo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kiddo.jpeg; sourceTree = "<group>"; };
 		DBBC26A61B2221B000229F91 /* ribbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ribbon@2x.png"; sourceTree = "<group>"; };
@@ -587,6 +589,7 @@
 		04944D131AAEADA4009CDB95 /* tab icons */ = {
 			isa = PBXGroup;
 			children = (
+				DB87482D1B2A05D0002B20E1 /* hamburger@2x.png */,
 				04944D141AAEADA4009CDB95 /* add user outline@2x.png */,
 				04944D151AAEADA4009CDB95 /* add users@2x.png */,
 				04944D161AAEADA4009CDB95 /* bell filled@2x.png */,
@@ -751,7 +754,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 040DD65F19E5027E00AFD82E /* Build configuration list for PBXProject "iosapp" */;
+			buildConfigurationList = 040DD65F19E5027E00AFD82E /* Build configuration list for PBXProject "Kindhat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -826,6 +829,7 @@
 				04F990541AC5E73800B8C7BB /* black translucent.png in Resources */,
 				04944D2B1AAEADA4009CDB95 /* Icon-76@2x.png in Resources */,
 				04944D361AAEADA4009CDB95 /* iTunesArtwork@2x.png in Resources */,
+				DB87482E1B2A05D0002B20E1 /* hamburger@2x.png in Resources */,
 				04944D291AAEADA4009CDB95 /* Icon-72@2x.png in Resources */,
 				04944D321AAEADA4009CDB95 /* Icon-Small@2x.png in Resources */,
 				04944D491AAEADA4009CDB95 /* user@2x.png in Resources */,
@@ -1060,7 +1064,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		040DD65F19E5027E00AFD82E /* Build configuration list for PBXProject "iosapp" */ = {
+		040DD65F19E5027E00AFD82E /* Build configuration list for PBXProject "Kindhat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040DD68519E5027F00AFD82E /* Debug */,

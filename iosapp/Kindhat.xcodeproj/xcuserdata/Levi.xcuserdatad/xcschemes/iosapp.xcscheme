@@ -17,7 +17,7 @@
                BlueprintIdentifier = "040DD66319E5027E00AFD82E"
                BuildableName = "iosapp.app"
                BlueprintName = "iosapp"
-               ReferencedContainer = "container:iosapp.xcodeproj">
+               ReferencedContainer = "container:Kindhat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "040DD67C19E5027F00AFD82E"
                BuildableName = "iosappTests.xctest"
                BlueprintName = "iosappTests"
-               ReferencedContainer = "container:iosapp.xcodeproj">
+               ReferencedContainer = "container:Kindhat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "040DD67C19E5027F00AFD82E"
                BuildableName = "iosappTests.xctest"
                BlueprintName = "iosappTests"
-               ReferencedContainer = "container:iosapp.xcodeproj">
+               ReferencedContainer = "container:Kindhat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "040DD66319E5027E00AFD82E"
             BuildableName = "iosapp.app"
             BlueprintName = "iosapp"
-            ReferencedContainer = "container:iosapp.xcodeproj">
+            ReferencedContainer = "container:Kindhat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,13 +72,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "040DD66319E5027E00AFD82E"
             BuildableName = "iosapp.app"
             BlueprintName = "iosapp"
-            ReferencedContainer = "container:iosapp.xcodeproj">
+            ReferencedContainer = "container:Kindhat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -90,13 +91,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "040DD66319E5027E00AFD82E"
             BuildableName = "iosapp.app"
             BlueprintName = "iosapp"
-            ReferencedContainer = "container:iosapp.xcodeproj">
+            ReferencedContainer = "container:Kindhat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
