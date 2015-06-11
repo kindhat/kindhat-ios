@@ -11,7 +11,6 @@
 
 @implementation KHUINavigationController
 
-static NSString *const moreButtonTitle = @"...";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,16 +19,7 @@ static NSString *const moreButtonTitle = @"...";
                              forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
     self.navigationBar.translucent = YES;
-    
-    
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-                                              initWithTitle:moreButtonTitle
-                                              style:UIBarButtonItemStylePlain
-                                              target:self
-                                              action:@selector(navigateToMoreStoryboard)];
-    
-    self.navigationBar.items = @[self.navigationItem];
+
 }
 
 - (void)didReceiveMemoryWarning {
