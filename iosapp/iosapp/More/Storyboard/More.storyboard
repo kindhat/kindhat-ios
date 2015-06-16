@@ -435,8 +435,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-Jk-q9B">
                                 <rect key="frame" x="0.0" y="0.0" width="599" height="951"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-dQ-rzO">
-                                <rect key="frame" x="16" y="-26" width="568" height="1026"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-dQ-rzO">
+                                <rect key="frame" x="16" y="-46" width="568" height="1046"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-xK-M7f">
                                         <rect key="frame" x="10" y="64" width="548" height="1200"/>
