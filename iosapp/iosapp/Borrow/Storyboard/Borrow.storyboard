@@ -108,16 +108,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ladder, Tent, Drill, ect..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-YZ-cbt">
-                                <rect key="frame" x="16" y="205" width="568" height="30"/>
+                                <rect key="frame" x="16" y="205" width="568" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ntU-Gc-sHU"/>
+                                    <constraint firstAttribute="width" secondItem="rl4-YZ-cbt" secondAttribute="height" multiplier="284:30" id="sBh-pR-vYV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ntU-Gc-sHU"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF2-sQ-Xqe">
-                                <rect key="frame" x="231" y="265" width="139" height="42"/>
+                                <rect key="frame" x="231" y="295" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="5rp-VA-BdH"/>
                                     <constraint firstAttribute="height" constant="42" id="ubN-PH-4rX"/>
@@ -162,6 +168,7 @@
                                 <segue destination="bZb-7h-l5N" kind="show" identifier="showFavorController" id="iYj-cQ-5wm"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="IBE-3t-tPI"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -352,16 +359,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="House Sitting, Computer Help, ect.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oY5-uY-y9D">
-                                <rect key="frame" x="16" y="214" width="568" height="30"/>
+                                <rect key="frame" x="16" y="214" width="568" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="oY5-uY-y9D" secondAttribute="height" multiplier="284:30" id="cqW-0G-ffl"/>
                                     <constraint firstAttribute="height" constant="30" id="zin-79-qNi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zin-79-qNi"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ous-4l-orx">
-                                <rect key="frame" x="231" y="274" width="139" height="42"/>
+                                <rect key="frame" x="231" y="304" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="H0y-6Z-hOZ"/>
                                     <constraint firstAttribute="width" constant="139" id="lw4-ec-7zf"/>
@@ -406,6 +419,7 @@
                                 <segue destination="uT3-qB-5zg" kind="show" identifier="showBorrowItemController" id="JHO-Fu-3t7"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="uOp-vS-qhe"/>
                     </navigationItem>
                     <connections>
                         <outlet property="serviceUITextField" destination="oY5-uY-y9D" id="9K6-3U-MYF"/>
@@ -827,11 +841,12 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="ghost button.png" width="293" height="80"/>
+        <image name="hamburger.png" width="30" height="30"/>
         <image name="hat.png" width="32" height="32"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6Xs-XR-WkS"/>
-        <segue reference="BzP-Eg-jKW"/>
+        <segue reference="sNk-VL-RG6"/>
     </inferredMetricsTieBreakers>
 </document>

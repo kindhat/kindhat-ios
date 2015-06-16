@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="prH-DQ-ECl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="prH-DQ-ECl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -299,7 +299,7 @@
             </objects>
             <point key="canvasLocation" x="1387" y="1441"/>
         </scene>
-        <!--Share-->
+        <!--Charities-->
         <scene sceneID="ulQ-jJ-juS">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="FXL-vz-qAW" customClass="KHShareUIViewController" sceneMemberID="viewController">
@@ -314,7 +314,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image 1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="se3-gP-95T">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gtr-B4-0kt">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gtr-B4-0kt">
                                 <rect key="frame" x="16" y="81" width="568" height="470"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="70A-K3-Zcj"/>
@@ -323,16 +323,16 @@
                                     <constraint firstAttribute="width" constant="300" id="Wcn-8R-nl6"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="ShareUITableCell" rowHeight="120" id="Gex-cH-GfO" customClass="KHShareUITableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="ShareUITableCell" rowHeight="150" id="Gex-cH-GfO" customClass="KHShareUITableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gex-cH-GfO" id="lGl-Nz-GWo">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-d6-zW3">
-                                                    <rect key="frame" x="0.0" y="8" width="568" height="74"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-d6-zW3">
+                                                    <rect key="frame" x="0.0" y="8" width="568" height="90"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiddo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1Lu-L6-3H8">
-                                                            <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kiddo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1Lu-L6-3H8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="6WP-xF-Va6"/>
                                                                 <constraint firstAttribute="height" constant="60" id="Dh6-1p-yUt"/>
@@ -353,14 +353,14 @@
                                                                 </mask>
                                                             </variation>
                                                         </imageView>
-                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mill Valley, CA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E51-cu-P0M">
-                                                            <rect key="frame" x="74" y="59" width="83" height="15"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mill Valley, CA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E51-cu-P0M">
+                                                            <rect key="frame" x="90" y="75" width="83" height="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kiddo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6L-Tb-uwh">
-                                                            <rect key="frame" x="74" y="0.0" width="494" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kiddo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6L-Tb-uwh">
+                                                            <rect key="frame" x="90" y="0.0" width="478" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="210" id="BOP-op-0GV"/>
                                                             </constraints>
@@ -373,8 +373,8 @@
                                                                 </mask>
                                                             </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phi-CS-LBn">
-                                                            <rect key="frame" x="74" y="21" width="494" height="34"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phi-CS-LBn">
+                                                            <rect key="frame" x="90" y="21" width="478" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="210" id="BAq-Zd-NpI"/>
                                                             </constraints>
@@ -388,8 +388,8 @@
                                                                 </mask>
                                                             </variation>
                                                         </label>
-                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Education" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31K-fR-NCF">
-                                                            <rect key="frame" x="508" y="59" width="60" height="15"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Education" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31K-fR-NCF">
+                                                            <rect key="frame" x="508" y="75" width="60" height="15"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="v4e-RG-jKo"/>
                                                             </constraints>
@@ -401,6 +401,7 @@
                                                     <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="y6L-Tb-uwh" firstAttribute="top" secondItem="TFt-d6-zW3" secondAttribute="top" id="17m-gI-efz"/>
+                                                        <constraint firstAttribute="height" constant="90" id="3ii-jC-hRc"/>
                                                         <constraint firstAttribute="bottom" secondItem="E51-cu-P0M" secondAttribute="bottom" id="5FT-Do-jUs"/>
                                                         <constraint firstAttribute="bottom" secondItem="31K-fR-NCF" secondAttribute="bottom" id="7tu-fR-ozA"/>
                                                         <constraint firstItem="E51-cu-P0M" firstAttribute="top" secondItem="1Lu-L6-3H8" secondAttribute="bottom" id="9QC-Bf-cv7"/>
@@ -427,6 +428,7 @@
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
+                                                            <exclude reference="3ii-jC-hRc"/>
                                                             <exclude reference="CVJ-Fa-bbW"/>
                                                             <exclude reference="TB7-GV-xRx"/>
                                                             <exclude reference="kmn-ec-OjY"/>
@@ -441,25 +443,37 @@
                                                         </mask>
                                                     </variation>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvr-4i-xvI">
-                                                    <rect key="frame" x="0.0" y="82" width="284" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvr-4i-xvI">
+                                                    <rect key="frame" x="0.0" y="98" width="284" height="30"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" secondItem="pvr-4i-xvI" secondAttribute="height" multiplier="142:30" id="Teo-uu-M7b"/>
                                                         <constraint firstAttribute="height" constant="30" id="xUM-6a-oQt"/>
                                                     </constraints>
                                                     <state key="normal" title="Sponsor" backgroundImage="orange pixel.png">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="xUM-6a-oQt"/>
+                                                        </mask>
+                                                    </variation>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGo-QO-DvX">
-                                                    <rect key="frame" x="284" y="82" width="284" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGo-QO-DvX">
+                                                    <rect key="frame" x="284" y="98" width="284" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="EP8-Rd-JO6"/>
+                                                        <constraint firstAttribute="width" secondItem="CGo-QO-DvX" secondAttribute="height" multiplier="142:30" id="cpw-bz-pGD"/>
                                                     </constraints>
                                                     <state key="normal" title="Donate" backgroundImage="green pixel.png">
                                                         <color key="titleColor" red="0.99634951636904767" green="0.99634951636904767" blue="0.99634951636904767" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="EP8-Rd-JO6"/>
+                                                        </mask>
+                                                    </variation>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -472,6 +486,7 @@
                                                 <constraint firstItem="pvr-4i-xvI" firstAttribute="width" secondItem="TFt-d6-zW3" secondAttribute="height" multiplier="284:187" id="D6b-m9-yT2"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="TFt-d6-zW3" secondAttribute="trailing" constant="-8" id="EqE-pd-iKI"/>
                                                 <constraint firstItem="TFt-d6-zW3" firstAttribute="bottom" secondItem="CGo-QO-DvX" secondAttribute="top" id="GOw-wd-Mab"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pvr-4i-xvI" secondAttribute="bottom" constant="14" id="S2p-eH-K05"/>
                                                 <constraint firstItem="TFt-d6-zW3" firstAttribute="trailing" secondItem="CGo-QO-DvX" secondAttribute="trailing" id="UL6-zZ-oUK"/>
                                                 <constraint firstAttribute="centerX" secondItem="TFt-d6-zW3" secondAttribute="centerX" id="XF3-7B-muc"/>
                                                 <constraint firstItem="TFt-d6-zW3" firstAttribute="leading" secondItem="lGl-Nz-GWo" secondAttribute="leadingMargin" constant="-8" id="cbp-Gm-xbv"/>
@@ -487,6 +502,7 @@
                                                     <exclude reference="XF3-7B-muc"/>
                                                     <exclude reference="jss-Jt-fXm"/>
                                                     <exclude reference="D6b-m9-yT2"/>
+                                                    <exclude reference="S2p-eH-K05"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -542,8 +558,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Share" id="Nh7-p1-ZKD">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="6o0-8M-Q16"/>
+                    <navigationItem key="navigationItem" title="Charities" id="Nh7-p1-ZKD">
+                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="310-Y4-xhC"/>
+                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="bYp-WF-CWi"/>
                     </navigationItem>
                     <connections>
                         <outlet property="uiTableView" destination="Gtr-B4-0kt" id="1k9-vS-Uyu"/>
@@ -717,9 +734,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add user outline.png" width="54" height="54"/>
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
+        <image name="hamburger.png" width="30" height="30"/>
         <image name="kiddo.jpeg" width="400" height="400"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
