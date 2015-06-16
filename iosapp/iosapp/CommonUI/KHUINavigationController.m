@@ -19,6 +19,23 @@
                              forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
     self.navigationBar.translucent = YES;
+    
+    UIImage *moreImage = [UIImage imageNamed: @"hamburger.png"];
+    
+    UIBarButtonItem *uiMoreBarButtonItem = [[UIBarButtonItem alloc] initWithImage: moreImage style:UIBarButtonItemStylePlain target:self action:@selector(navigateToMoreStoryboard)];
+    
+    UIImage *addFriendImage = [UIImage imageNamed: @"add user outline.png"];
+    
+    UIBarButtonItem *uiAddBarButtonItem = [[UIBarButtonItem alloc] initWithImage: addFriendImage style:UIBarButtonItemStylePlain target:self action:@selector(navigateToAddFriendStoryboard)];
+    
+    self.navigationItem.rightBarButtonItem = uiMoreBarButtonItem;
+    self.navigationItem.leftBarButtonItem = uiAddBarButtonItem;
+    
+    UIViewController *rootViewController = [self.childViewControllers objectAtIndex:0];
+    
+    self.navigationItem.titleView = rootViewController.navigationItem.titleView;
+    
+    self.navigationBar.items = @[self.navigationItem];
 
 }
 
@@ -28,6 +45,13 @@
 }
 
 - (void)navigateToMoreStoryboard {
+    UIStoryboard *moreUIStoryBoard = [KHStoryboards moreStoryboard];
+    UIViewController *moreUIVIewController = (UIViewController *)[moreUIStoryBoard instantiateInitialViewController];
+    [self pushViewController:moreUIVIewController animated:YES];
+}
+
+
+- (void)navigateToAddFriendStoryboard {
     UIStoryboard *moreUIStoryBoard = [KHStoryboards moreStoryboard];
     UIViewController *moreUIVIewController = (UIViewController *)[moreUIStoryBoard instantiateInitialViewController];
     [self pushViewController:moreUIVIewController animated:YES];

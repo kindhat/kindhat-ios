@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bfs-l1-4tM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bfs-l1-4tM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -155,7 +155,6 @@
                     <tabBarItem key="tabBarItem" title="Borrow" image="hat.png" id="vbt-XN-MCI"/>
                     <navigationItem key="navigationItem" id="erK-hE-RJp">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="Uqt-EB-BuI"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Jtk-CJ-73m">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,7 +167,6 @@
                                 <segue destination="bZb-7h-l5N" kind="show" identifier="showFavorController" id="iYj-cQ-5wm"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="IBE-3t-tPI"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -406,7 +404,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="oNy-Gh-n3n">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="sHB-gz-cQQ"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="pmT-Na-7aC">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -419,7 +416,6 @@
                                 <segue destination="uT3-qB-5zg" kind="show" identifier="showBorrowItemController" id="JHO-Fu-3t7"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="uOp-vS-qhe"/>
                     </navigationItem>
                     <connections>
                         <outlet property="serviceUITextField" destination="oY5-uY-y9D" id="9K6-3U-MYF"/>
@@ -429,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="-2308" y="543"/>
         </scene>
-        <!--Borrow Navigation Controller-->
+        <!--Borrow-->
         <scene sceneID="HMK-Gd-KqM">
             <objects>
-                <navigationController title="Borrow Navigation Controller" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="crossDissolve" id="Bfs-l1-4tM" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Borrow" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="crossDissolve" id="Bfs-l1-4tM" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ytj-4C-EGb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -841,7 +837,6 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="ghost button.png" width="293" height="80"/>
-        <image name="hamburger.png" width="30" height="30"/>
         <image name="hat.png" width="32" height="32"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
     </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Cn-k9-NRQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Cn-k9-NRQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1564" y="1302"/>
         </scene>
-        <!--Notifications Navigation Controller-->
+        <!--Notifications-->
         <scene sceneID="bYR-bb-Fzf">
             <objects>
-                <navigationController title="Notifications Navigation Controller" modalTransitionStyle="crossDissolve" id="8Cn-k9-NRQ" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Notifications" modalTransitionStyle="crossDissolve" id="8Cn-k9-NRQ" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5Mg-wS-T3x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gGq-kU-lMQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -460,10 +460,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="bell.png" id="drl-OI-GaB"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Notifications" id="1Hu-jP-kEr">
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="M9Y-fP-jUI"/>
-                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="24W-gf-Blh"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Notifications" id="1Hu-jP-kEr"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4I-Ns-UcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,7 +473,6 @@
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="bell.png" width="28" height="32"/>
         <image name="black translucent.png" width="1" height="1"/>
-        <image name="hamburger.png" width="30" height="30"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>

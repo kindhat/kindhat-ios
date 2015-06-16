@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="prH-DQ-ECl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="prH-DQ-ECl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Charities Navigation Controller-->
+        <!--Charities-->
         <scene sceneID="QPo-BU-Aic">
             <objects>
-                <navigationController title="Charities Navigation Controller" id="prH-DQ-ECl" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Charities" id="prH-DQ-ECl" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pay-It-Forward" image="ribbon.png" id="h6W-04-2In"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jDW-h3-93N">
@@ -365,7 +365,7 @@
                                                                 <constraint firstAttribute="width" constant="210" id="BOP-op-0GV"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -380,7 +380,7 @@
                                                             </constraints>
                                                             <string key="text">Kiddo! funds art, music, drama, poetry, dance, P.E. and technology for the more than 3,000 students in the K-8 Mill Valley public schools.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -558,10 +558,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Charities" id="Nh7-p1-ZKD">
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="310-Y4-xhC"/>
-                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="bYp-WF-CWi"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Charities" id="Nh7-p1-ZKD"/>
                     <connections>
                         <outlet property="uiTableView" destination="Gtr-B4-0kt" id="1k9-vS-Uyu"/>
                     </connections>
@@ -734,11 +731,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add user outline.png" width="54" height="54"/>
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
-        <image name="hamburger.png" width="30" height="30"/>
         <image name="kiddo.jpeg" width="400" height="400"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ugE-F1-2xo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ugE-F1-2xo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Share Navigation Controller-->
+        <!--Share-->
         <scene sceneID="tzz-Sv-NlW">
             <objects>
-                <navigationController title="Share Navigation Controller" id="ugE-F1-2xo" customClass="KHUINavigationController" sceneMemberID="viewController">
+                <navigationController title="Share" id="ugE-F1-2xo" customClass="KHUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Share" image="heart.png" id="frn-pp-d6n"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VsZ-qF-mhH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -364,7 +364,7 @@
                                                                 <constraint firstAttribute="width" constant="210" id="0qG-bf-lNF"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -378,7 +378,7 @@
                                                                 <constraint firstAttribute="width" constant="210" id="Aq7-pP-WeO"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -392,7 +392,7 @@
                                                                 <constraint firstAttribute="width" constant="210" id="ElJ-G4-lbG"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -527,10 +527,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Share" id="l4b-Yo-t8b">
-                        <barButtonItem key="leftBarButtonItem" image="add user outline.png" id="WCP-nx-38d"/>
-                        <barButtonItem key="rightBarButtonItem" image="hamburger.png" id="AKL-Dw-b3o"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Share" id="l4b-Yo-t8b"/>
                     <connections>
                         <outlet property="uiTableView" destination="YBb-On-aEV" id="goB-zM-uN8"/>
                     </connections>
@@ -703,11 +700,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add user outline.png" width="54" height="54"/>
         <image name="background image 1536x2048.png" width="1536" height="2048"/>
         <image name="black translucent.png" width="1" height="1"/>
         <image name="green pixel.png" width="1" height="1"/>
-        <image name="hamburger.png" width="30" height="30"/>
         <image name="heart.png" width="32" height="28"/>
         <image name="orange pixel.png" width="1" height="1"/>
         <image name="puppies in hats.jpg" width="400" height="400"/>
