@@ -101,6 +101,8 @@
 		DBBC26A01B2213C400229F91 /* Charities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBC269F1B2213C400229F91 /* Charities.storyboard */; };
 		DBBC26A31B221A8300229F91 /* kiddo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBBC26A21B221A8300229F91 /* kiddo.jpeg */; };
 		DBBC26A71B2221B000229F91 /* ribbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBC26A61B2221B000229F91 /* ribbon@2x.png */; };
+		DBE4A9B51B327BDE0025D553 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE4A9B41B327BDD0025D553 /* profile.jpg */; };
+		DBE4A9B71B327D820025D553 /* Cheri Profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE4A9B61B327D820025D553 /* Cheri Profile.jpg */; };
 		DBFAC70E1AE895EB00368ED9 /* KHUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -246,6 +248,8 @@
 		DBBC269F1B2213C400229F91 /* Charities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Charities.storyboard; path = Share/Storyboard/Charities.storyboard; sourceTree = "<group>"; };
 		DBBC26A21B221A8300229F91 /* kiddo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kiddo.jpeg; sourceTree = "<group>"; };
 		DBBC26A61B2221B000229F91 /* ribbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ribbon@2x.png"; sourceTree = "<group>"; };
+		DBE4A9B41B327BDD0025D553 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		DBE4A9B61B327D820025D553 /* Cheri Profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cheri Profile.jpg"; sourceTree = "<group>"; };
 		DBFAC70C1AE895EB00368ED9 /* KHUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHUINavigationController.h; path = iosapp/CommonUI/KHUINavigationController.h; sourceTree = SOURCE_ROOT; };
 		DBFAC70D1AE895EB00368ED9 /* KHUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHUINavigationController.m; path = iosapp/CommonUI/KHUINavigationController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -534,6 +538,8 @@
 		04944CF21AAEADA4009CDB95 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				DBE4A9B41B327BDD0025D553 /* profile.jpg */,
+				DBE4A9B61B327D820025D553 /* Cheri Profile.jpg */,
 				04F990501AC5E73800B8C7BB /* black translucent.png */,
 				04F990511AC5E73800B8C7BB /* black translucent80.png */,
 				04F990521AC5E73800B8C7BB /* green pixel.png */,
@@ -783,6 +789,7 @@
 				04944D301AAEADA4009CDB95 /* Icon-Small-50@2x.png in Resources */,
 				04944D261AAEADA4009CDB95 /* Icon-60@2x.png in Resources */,
 				04944D201AAEADA4009CDB95 /* background image 1536x2048.png in Resources */,
+				DBE4A9B71B327D820025D553 /* Cheri Profile.jpg in Resources */,
 				04F990571AC5E73800B8C7BB /* orange pixel.png in Resources */,
 				04F990561AC5E73800B8C7BB /* green pixel.png in Resources */,
 				04944D2A1AAEADA4009CDB95 /* Icon-76.png in Resources */,
@@ -805,6 +812,7 @@
 				04944D461AAEADA4009CDB95 /* tree filled@2x.png in Resources */,
 				04944D3C1AAEADA4009CDB95 /* launch image 768x1024.png in Resources */,
 				DBBC26A31B221A8300229F91 /* kiddo.jpeg in Resources */,
+				DBE4A9B51B327BDE0025D553 /* profile.jpg in Resources */,
 				04944D431AAEADA4009CDB95 /* hat@2x.png in Resources */,
 				04944D441AAEADA4009CDB95 /* heart filled@2x.png in Resources */,
 				04944D341AAEADA4009CDB95 /* Icon.png in Resources */,
